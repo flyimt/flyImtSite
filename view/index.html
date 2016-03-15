@@ -4,31 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <link rel="stylesheet" href="../css/flyimt.css"/>
+  <link rel="stylesheet" href="../css/common.css"/>
+  <link rel="stylesheet" href="../css/index.css"/>
   <title></title>
 </head>
 <body>
-<nav class="navbar">
-  <div class="container">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-    <i class="fa fa-bars"></i>
-  </button>
-
-    <a href="index.html" class="navbar-brand">FlyImt</a>
-
-    <div class="navbar-collapse collapse" id="navbar">
-      <ul class="nav nav-brands navbar-nav">
-        <li class="nav-item"><a href="javascript:;" class="nav-link">开始</a></li>
-        <li class="nav-item"><a href="javascript:;" class="nav-link">全局样式</a></li>
-        <li class="nav-item"><a href="javascript:;" class="nav-link">组件</a></li>
-      </ul>
+<div class="container-full">
+  <div class="weather fixed-top-right">
+    <div class="media">
+      <div class="media-left">
+        <i class="fa fa-cloud"></i>
+      </div>
+      <div class="media-body">
+        <p class="media-heading">成都 <span class="right">晴</span></p>
+        <p>15℃ ~ 20℃</p>
+      </div>
     </div>
   </div>
-</nav>
 
-<div class="container">
-  你们都走开，我要发功装逼le
+  <div class="clock center">
+    时钟
+  </div>
+
+  <p class="warning text-center">千里之行，始于足下</p>
 </div>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/flyimt.min.js"></script>
+<script>
+  var browserHeight = $(window).height();
+  $('body').css('height', browserHeight);
+
+  var clockHeight = $('.clock').height();
+  $('.clock').css('margin-top', (browserHeight - clockHeight) / 2);
+</script>
 </body>
 </html>

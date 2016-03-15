@@ -1,0 +1,6 @@
+/* line 1, ../scss/common.scss */
+.fixed-top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,30 @@
+body {
+  background-image: url("../img/index/index-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather {
+  padding: 20px 20px;
+  width: 220px;
+  color: #fff;
+
+  .fa-cloud {
+    font-size: 50px;
+  }
+
+  p {
+    text-indent: 0;
+  }
+}
+
+.clock {
+  height: 300px;
+  width: 300px;
+  font-size: 150px;
+}
+
+.warning {
+  font-size: 30px;
+  color: #fff;
+}
