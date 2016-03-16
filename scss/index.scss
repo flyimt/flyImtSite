@@ -1,5 +1,6 @@
+@import "compass/css3";
 body {
-  background-image: url("../img/index/index-bg.png");
+  background-image: url("../img/index/index-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -25,6 +26,6 @@ body {
 }
 
 .warning {
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
 }
