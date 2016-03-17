@@ -4,3 +4,41 @@
   top: 0;
   right: 0;
 }
+
+/* line 7, ../scss/common.scss */
+.absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 13, ../scss/common.scss */
+.pt-relative {
+  position: relative;
+}
+
+/* line 17, ../scss/common.scss */
+.pt-absolute {
+  position: absolute;
+}
+
+/* line 21, ../scss/common.scss */
+.pt-fixed {
+  position: fixed;
+}
+
+/* line 25, ../scss/common.scss */
+.center-vt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* line 32, ../scss/common.scss */
+.center-vt-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

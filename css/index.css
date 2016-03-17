@@ -1,5 +1,5 @@
 /* line 2, ../scss/index.scss */
-body {
+.index-bg {
   background-image: url("../img/index/index-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,27 +7,31 @@ body {
 
 /* line 8, ../scss/index.scss */
 .weather {
+  position: absolute;
+  top: 53px;
+  right: 0;
   padding: 20px 20px;
   width: 220px;
   color: #fff;
 }
-/* line 13, ../scss/index.scss */
+/* line 16, ../scss/index.scss */
 .weather .fa-cloud {
   font-size: 50px;
 }
-/* line 17, ../scss/index.scss */
+/* line 20, ../scss/index.scss */
 .weather p {
   text-indent: 0;
 }
 
-/* line 22, ../scss/index.scss */
+/* line 25, ../scss/index.scss */
 .clock {
+  margin-top: 100px;
   height: 300px;
   width: 300px;
   font-size: 150px;
 }
 
-/* line 28, ../scss/index.scss */
+/* line 32, ../scss/index.scss */
 .warning {
   font-size: 50px;
   color: #fff;

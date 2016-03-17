@@ -6509,18 +6509,18 @@ code .note {
   transition: all 0.1s ease-in-out;
 }
 
-.dropdown.active > .dropdown-menu {
+.open > .dropdown-menu {
   display: block;
 }
-.dropdown.active > a {
+.open > a {
   outline: 0;
 }
-.dropdown.active .dropdown-toggle {
+.open .dropdown-toggle {
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.dropdown.active .dropdown-toggle.btn-link {
+.open .dropdown-toggle.btn-link {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;

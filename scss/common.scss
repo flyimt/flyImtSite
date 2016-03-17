@@ -3,3 +3,35 @@
   top: 0;
   right: 0;
 }
+
+.absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pt-relative {
+  position: relative;
+}
+
+.pt-absolute {
+  position: absolute;
+}
+
+.pt-fixed {
+  position: fixed;
+}
+
+.center-vt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.center-vt-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

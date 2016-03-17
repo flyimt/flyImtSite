@@ -8,9 +8,37 @@
   <link rel="stylesheet" href="../css/index.css"/>
   <title></title>
 </head>
-<body>
+<body class="index-bg">
+<nav class="navbar navbar-dark">
+  <div class="container">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <a href="index.html" class="navbar-brand">FlyImt</a>
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a href="javascript:;" class="nav-link">模块1</a></li>
+        <li class="nav-item"><a href="javascript:;" class="nav-link">模块2</a></li>
+        <li class="nav-item"><a href="javascript:;" class="nav-link">模块3</a></li>
+        <li class="nav-item"><a href="javascript:;" class="nav-link">模块4</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="javascript:;">flyimt</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="flyimt/introduction.html">简介</a></li>
+            <li class="dropdown-item"><a href="javascript:;">开始</a></li>
+            <li class="dropdown-item"><a href="javascript:;">全局样式</a></li>
+            <li class="dropdown-item"><a href="javascript:;">组件</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <div class="container-full">
-  <div class="weather fixed-top-right">
+  <div class="weather">
     <div class="media">
       <div class="media-left">
         <i class="fa fa-cloud"></i>
@@ -26,16 +54,9 @@
     时钟
   </div>
 
-  <p class="text-center"><a href="home.html" class="warning">千里之行，始于足下</a></p>
+  <p class="text-center warning">千里之行，始于足下</p>
 </div>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/flyimt.min.js"></script>
-<script>
-  var browserHeight = $(window).height();
-  $('body').css('height', browserHeight);
-
-  var clockHeight = $('.clock').height();
-  $('.clock').css('margin-top', (browserHeight - clockHeight) / 2);
-</script>
 </body>
 </html>
