@@ -26,12 +26,11 @@
 /* line 25, ../scss/index.scss */
 .clock {
   margin-top: 100px;
-  height: 300px;
-  width: 300px;
-  font-size: 150px;
+  height: 400px;
+  width: 400px;
 }
 
-/* line 32, ../scss/index.scss */
+/* line 31, ../scss/index.scss */
 .warning {
   font-size: 50px;
   color: #fff;

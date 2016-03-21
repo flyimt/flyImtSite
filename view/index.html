@@ -24,7 +24,7 @@
         <li class="nav-item"><a href="javascript:;" class="nav-link">模块3</a></li>
         <li class="nav-item"><a href="javascript:;" class="nav-link">模块4</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="javascript:;">flyimt</a>
+          <a class="nav-link dropdown-toggle" href="javascript:;">Flyimt</a>
           <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="flyimt/introduction.html">简介</a></li>
             <li class="dropdown-item"><a href="javascript:;">开始</a></li>
@@ -44,19 +44,21 @@
         <i class="fa fa-cloud"></i>
       </div>
       <div class="media-body">
-        <p class="media-heading">成都 <span class="right">晴</span></p>
-        <p>15℃ ~ 20℃</p>
+        <p class="media-heading" id="weather_city"></p>
+        <p id="weather_temperature"></p>
       </div>
     </div>
   </div>
 
   <div class="clock center">
-    时钟
+    <canvas id="canvas" width=400 height=400>如果你看到这段文字，说明你的浏览器弱爆了！</canvas>
   </div>
 
   <p class="text-center warning">千里之行，始于足下</p>
 </div>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/flyimt.min.js"></script>
+<script src="../js/clock.js"></script>
+<script src="../js/weather.js"></script>
 </body>
 </html>
