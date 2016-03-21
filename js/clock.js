@@ -1,4 +1,4 @@
-window.onload = function() {
+;(function() {
   function Clock(id) {
     this.canvas = document.getElementById(id);
     this.context = this.canvas.getContext('2d');
@@ -111,4 +111,5 @@ window.onload = function() {
 
   var clock = new Clock('canvas');
   clock.run();
-};
+})()
+
