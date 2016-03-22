@@ -1,0 +1,41 @@
+.fi-docs-masthead {
+  position: relative;
+  padding: 80px 0;
+  background-color: #2EC6A0;
+  background-image: linear-gradient(to bottom, #2EC6A0 0px, #74EDCE 100%);
+  background-repeat: repeat-x;
+  color: #CEEDE5;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.fi-docs-feature {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: #fff;
+  color: #555;
+}
+
+.fi-docs-title {
+  color: #333;
+  font-size: 40px;
+}
+
+.fi-docs-footer {
+  font-size: .85em;
+
+  .container,
+  .container-full {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #ddd;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .list-group {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}

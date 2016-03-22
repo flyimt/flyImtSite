@@ -8303,4 +8303,13 @@ button.list-group-item-state.active:hover {
   padding: 0.5rem 0.9rem;
 }
 
+.list-group-hz {
+  display: table;
+}
+.list-group-hz .list-group-item {
+  display: table-cell;
+  padding: 5px 10px;
+  border: none !important;
+}
+
 /*# sourceMappingURL=flyimt.css.map */

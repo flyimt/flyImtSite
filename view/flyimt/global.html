@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="../../css/flyimt.css"/>
+  <link rel="stylesheet" href="../../css/common.css"/>
+  <link rel="stylesheet" href="../../css/docs.css"/>
+  <title></title>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <a href="../index.html" class="navbar-brand">FlyImt</a>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a href="javascript:;" class="nav-link">模块1</a></li>
+          <li class="nav-item"><a href="javascript:;" class="nav-link">模块2</a></li>
+          <li class="nav-item"><a href="javascript:;" class="nav-link">模块3</a></li>
+          <li class="nav-item"><a href="javascript:;" class="nav-link">模块4</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:;">Flyimt</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="introduction.html">简介</a></li>
+              <li class="dropdown-item"><a href="start.html">开始</a></li>
+              <li class="dropdown-item"><a href="javascript:;">全局样式</a></li>
+              <li class="dropdown-item"><a href="javascript:;">组件</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="fi-docs-masthead">
+    <div class="container">
+      <h1>全局样式</h1>
+      <h4>设置CSS全局样式；对HTML元素的样式进行重置并可以通过Class进行增强；还有不可缺少的栅格系统等。</h4>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+
+        <div class="fi-docs-feature" id="grid_system">
+          <h1 class="m-b-6">栅格系统</h1>
+          <p class="lead">栅格系统对于布局尤其是响应式来说至关重要，它随着屏幕或者窗口视口的大小自动布局。</p>
+
+          <h2>简介</h2>
+          <p>栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，你的内容就可以放入这些创建好的布局中。
+            下面就介绍一下 flyimt 栅格系统的工作原理：
+          </p>
+          <ul>
+            <li>“行（row）”必须包含在 <code>.container</code>（固定宽度）或<code>.container-fluid</code>（100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）。</li>
+            <li>通过“行（row）”在水平方向创建一组“列（column）”。</li>
+            <li>内容应当放置于“列（column）”内，并且，只有“列（column）”可以作为行（row）”的直接子元素。</li>
+            <li>类似<code>.row</code>和<code>.col-xs-4</code> 这种预定义的类，可以用来快速创建栅格布局。</li>
+            <li>通过为“列（column）”设置 padding 属性，从而创建列与列之间的间隔（gutter）。</li>
+            <li>栅格系统中的列是通过指定1到12的值来表示其跨越的范围。例如，三个等宽的列可以使用三个 <code>.col-xs-4</code> 来创建。</li>
+            <li>如果一“行（row）”中包含了的“列（column）”大于 12，多余的“列（column）”所在的元素将被作为一个整体另起一行排列。</li>
+            <li>栅格类适用于与屏幕宽度大于或等于分界点大小的设备 ， 并且针对小屏幕设备覆盖栅格类。 因此，在元素上应用任何 <code>.col-md-*</code> 栅格类适用于
+              与屏幕宽度大于或等于分界点大小的设备 ， 并且针对小屏幕设备覆盖栅格类。 因此，在元素上应用任何 <code>.col-lg-*</code> 不存在， 也影响大屏幕设备。</li>
+          </ul>
+          <p class="text-info">作者在使用了Bootstrap、Foundation、Amaze UI、Semantic UI后，决定使用Bootstrap的栅格结构。原因如下：</p>
+          <p>此栅格系统的精巧之处</p>
+          <ul>
+            <li>根据工作原理可知此栅格系统是锯齿状，默认的锯齿深度是 <span class="text-info">15px</span>。</li>
+            <li><code>.container</code>和<code>.container-full</code>类有<span class="text-info">15px</span>的 <code>padding</code>值。</li>
+            <li><code>.row</code>类有<span class="text-info">-15px</span>的 <code>margin</code>值，抵消掉<code>.container</code>的<code>padding</code>值。</li>
+            <li><code>.col-*-*</code>类有<span class="text-info">15px</span>的 <code>padding</code>值，这样<code>.col-*-*</code>有相当于一个新的<code>.container</code>，
+              里面可以继续放<code>.row</code>。</li>
+          </ul>
+
+          <h2>参数</h2>
+          <p>参看下表可以查看栅格系统在不同设备的表现。</p>
+          <div class="table-responsive">
+            <table class="table font-sm">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>超小屏幕 <small>手机<code>(<768px)</code></small></th>
+                  <th>小屏幕 <small>ipad<code>(≥768px)</code></small></th>
+                  <th>中等屏幕 <small>桌面显示器<code>(≥992px)</code></small></th>
+                  <th>大屏幕 <small>桌面显示器<code>(≥1360px)</code></small></th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row"><code>.container</code>最大宽度</th>
+                <td>auto</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1280px</td>
+              </tr>
+              <tr>
+                <th scope="row">列数</th>
+                <td colspan="4">12</td>
+              </tr>
+              <tr>
+                <th scope="row">间距</th>
+                <td colspan="4">30px</td>
+              </tr>
+              <tr>
+                <th scope="row">偏移</th>
+                <td><code>col-xs-offset-*</code></td>
+                <td><code>col-sm-offset-*</code></td>
+                <td><code>col-md-offset-*</code></td>
+                <td><code>col-lg-offset-*</code></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="fi-docs-footer">
+  <div class="container">
+    <p class="text-center">Designed by my girlfriend and built by me.</p>
+    <p class="text-center">wellcome to feedback, and we will make it better.</p>
+    <ul class="list-group list-group-hz center">
+      <li class="list-group-item"><a href="javascript:;" class="text-muted">当前版本1.0.0</a></li>
+      <li class="list-group-item"><a href="javascript:;">github</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/flyimt.min.js"></script>
+</body>
+</html>
