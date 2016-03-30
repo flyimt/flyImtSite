@@ -1,0 +1,23 @@
+/* line 3, ../scss/global.scss */
+.sidebar {
+  padding-top: 40px;
+}
+/* line 6, ../scss/global.scss */
+.sidebar .nav-link {
+  padding-left: 20px;
+  color: #55595c;
+}
+/* line 11, ../scss/global.scss */
+.sidebar .nav .nav-link.active {
+  color: #2EC6A0;
+  border-left: 2px solid #2EC6A0;
+}
+/* line 18, ../scss/global.scss */
+.sidebar ul > ul {
+  display: none;
+  font-size: 80%;
+}
+/* line 23, ../scss/global.scss */
+.sidebar ul .nav-link.active + ul {
+  display: block;
+}

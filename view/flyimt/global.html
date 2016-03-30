@@ -6,9 +6,10 @@
   <link rel="stylesheet" href="../../css/flyimt.css"/>
   <link rel="stylesheet" href="../../css/common.css"/>
   <link rel="stylesheet" href="../../css/docs.css"/>
+  <link rel="stylesheet" href="../../css/global.css"/>
   <title></title>
 </head>
-<body>
+<body data-spy="scroll" data-offset="180">
 <header>
   <nav class="navbar navbar-dark">
     <div class="container">
@@ -121,11 +122,15 @@
       </div>
 
       <div class="col-md-3">
-        <div class="sidebar" style="position: fixed;top: 0;">
-          <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link" href="#grid_system" data-toggle="tab">栅格系统</a></li>
-            <li class="nav-item"><a class="nav-link" href="#grid_system_introduce" data-toggle="tab">简介</a></li>
-            <li class="nav-item"><a class="nav-link" href="#grid_system_options" data-toggle="tab">参数</a></li>
+        <div class="sidebar">
+          <ul class="nav">
+            <li>
+              <a class="nav-link" href="#grid_system">栅格系统</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#grid_system_introduce">简介</a></li>
+                <li><a class="nav-link" href="#grid_system_options">参数</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -145,5 +150,38 @@
 </footer>
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/flyimt.min.js"></script>
+<script>
+  (function() {
+    $(window).scroll(function() {
+      var yheight = getScrollTop(); //滚动条距顶端的距离
+      var referenceTop = $('#grid_system').offset().top;
+
+      if(yheight >= referenceTop) {
+        $('.sidebar').css({'position':'fixed','top':'0','padding-top':'20px'})
+      }else {
+        $('.sidebar').css({'position':'static'})
+      }
+
+    })
+
+    /**
+     * 获取滚动条距离顶端的距离
+     * @return {}支持IE6
+     */
+    function getScrollTop() {
+      var scrollPos;
+      if (window.pageYOffset) {
+        scrollPos = window.pageYOffset;
+      }
+      else if (document.compatMode && document.compatMode != 'BackCompat') {
+        scrollPos = document.documentElement.scrollTop;
+      }
+      else if (document.body) {
+        scrollPos = document.body.scrollTop;
+      }
+      return scrollPos;
+    }
+  })()
+</script>
 </body>
 </html>

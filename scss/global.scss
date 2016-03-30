@@ -1,0 +1,29 @@
+@import "variables";
+
+.sidebar {
+  padding-top: 40px;
+
+  .nav-link {
+    padding-left: 20px;
+    color: $gray;
+  }
+  .nav {
+    .nav-link.active {
+      color: $brand-theme-color;
+      border-left: 2px solid $brand-theme-color;
+    }
+  }
+
+  ul{
+    > ul {
+      display: none;
+      font-size: 80%;
+    }
+
+    .nav-link.active + ul {
+      display: block;
+    }
+
+  }
+
+}
