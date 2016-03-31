@@ -1,0 +1,29 @@
+/* line 4, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav-link {
+  position: relative;
+  padding-left: 20px;
+  color: #55595c;
+}
+/* line 9, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav-link:before {
+  position: absolute;
+  left: 0;
+}
+/* line 15, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav .nav-link.active {
+  color: #2EC6A0;
+}
+/* line 18, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav .nav-link.active:before {
+  content: "\27A4";
+}
+/* line 25, ../scss/sidebar-scrollspy.scss */
+.sidebar ul ul {
+  display: none;
+  font-size: 80%;
+  padding-left: 10px;
+}
+/* line 31, ../scss/sidebar-scrollspy.scss */
+.sidebar ul .nav-link.active + ul {
+  display: block;
+}

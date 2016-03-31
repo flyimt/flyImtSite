@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../../css/flyimt.css"/>
   <link rel="stylesheet" href="../../css/common.css"/>
   <link rel="stylesheet" href="../../css/docs.css"/>
-  <link rel="stylesheet" href="../../css/global.css"/>
+  <link rel="stylesheet" href="../../css/sidebar-scrollspy.css"/>
   <title></title>
 </head>
 <body data-spy="scroll" data-offset="180">
@@ -50,11 +50,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-9">
-        <div class="fi-docs-feature" id="grid_system">
-          <h1 class="m-b-6">栅格系统</h1>
+        <section class="fi-docs-section" id="grid">
+          <h1 class="m-b-6">栅格系统 <small><code>grid.scss</code></small></h1>
           <p class="lead">栅格系统对于布局尤其是响应式来说至关重要，它随着屏幕或者窗口视口的大小自动布局。</p>
 
-          <h2 id="grid_system_introduce">简介</h2>
+          <h3 id="grid_introduce">简介</h3>
           <p>栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，你的内容就可以放入这些创建好的布局中。
             下面就介绍一下 flyimt 栅格系统的工作原理：
           </p>
@@ -79,7 +79,8 @@
               里面可以继续放<code>.row</code>。</li>
           </ul>
 
-          <h2 id="grid_system_options">参数</h2>
+
+          <h3 id="grid_options">参数</h3>
           <p>参看下表可以查看栅格系统在不同设备的表现。</p>
           <div class="table-responsive">
             <table class="table font-sm">
@@ -115,20 +116,100 @@
                 <td><code>col-md-offset-*</code></td>
                 <td><code>col-lg-offset-*</code></td>
               </tr>
+              <tr>
+                <th scope="row">向左移动<code>(1 ~ 12)</code></th>
+                <td><code>col-xs-lt-*</code></td>
+                <td><code>col-sm-lt-*</code></td>
+                <td><code>col-md-lt-*</code></td>
+                <td><code>col-lg-lt-*</code></td>
+              </tr>
+              <tr>
+                <th scope="row">向右移动<code>(1 ~ 12)</code></th>
+                <td><code>col-xs-rt-*</code></td>
+                <td><code>col-sm-rt-*</code></td>
+                <td><code>col-md-rt-*</code></td>
+                <td><code>col-lg-rt-*</code></td>
+              </tr>
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
+
+        <section class="fi-docs-section" id="type">
+          <h1 class="m-b-6">调整<small><code>type.scss</code></small></h1>
+          <p class="lead">在这里，作者对一些标签做了一些调整。</p>
+
+          <h3 id="type_head">标题</h3>
+          <p>对HTML中的标题标签<code>&lt;h1> ~ &lt;h6></code>进行了字体大小的调整，并对其内部的 <code>&lt;small></code>标签进行了特殊处理，大小为 <span class="text-info">60%</span>。</p>
+          <div class="fi-docs-example">
+            <h1>h1 . Flyimt heading <small>font-size: 2.5rem</small></h1>
+            <h2>h2 . Flyimt heading <small>font-size: 2rem</small></h2>
+            <h3>h3 . Flyimt heading <small>font-size: 1.75rem</small></h3>
+            <h4>h4 . Flyimt heading <small>font-size: 1.5rem</small></h4>
+            <h5>h5 . Flyimt heading <small>font-size: 1.25rem</small></h5>
+            <h6>h6 . Flyimt heading <small>font-size: 1rem</small></h6>
+          </div>
+
+          <h3 id="type_mark">标记</h3>
+          <p><code>&lt;mark></code>突出显示部分文本。</p>
+          <div class="fi-docs-example">
+            <span>如果能从来，我要选<mark>李白</mark>。</span>
+          </div>
+
+          <h3 id="type_del_ins">更新和修正</h3>
+          <p><code>&lt;del>、&lt;ins></code>配合使用，来描述文档中的更新和修正。</p>
+          <div class="fi-docs-example">
+            <span>如果能从来，我要选<del>杜甫</del><ins>李白</ins>。</span>
+          </div>
+
+          <h3 id="type_abbr">缩写</h3>
+          <p><code>&lt;abbr></code>指示简称或缩写，比如 "WWW" 或 "NATO"。</p>
+          <div class="fi-docs-example">
+            <span><abbr title="World Wide Web">WWW</abbr>是环球信息网的缩写，中文名字为“万维网”，“环球网”等，常简称为Web。</span>
+          </div>
+
+          <h3 id="type_address">地址</h3>
+          <p><code>&lt;address></code>定义文档或文章的作者/拥有者的联系信息。如果它位于<code>&lt;body></code>元素内，则它表示文档联系信息。
+            如果它位于<code>&lt;article></code>元素内，则它表示文章的联系信息。</p>
+          <div class="fi-docs-example">
+            <address>
+              <strong>Yayo, Inc.</strong><br>
+              天府大道，中段<br>
+              中国，四川，成都<br>
+              <abbr title="电话号码">P:</abbr> (028) 909-0950
+            </address>
+          </div>
+
+          <h3 id="type_blockquote">引用</h3>
+          <p><code>&lt;blockquote></code>定义块引用。它之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进（增加外边距），
+            而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。</p>
+          <div class="fi-docs-example">
+            <blockquote>
+              <p>爱生活，爱老婆。</p>
+              <footer>出自 <cite title="Source Title">杨氏语录</cite></footer>
+            </blockquote>
+          </div>
+        </section>
       </div>
 
       <div class="col-md-3">
         <div class="sidebar">
           <ul class="nav">
             <li>
-              <a class="nav-link" href="#grid_system">栅格系统</a>
+              <a class="nav-link" href="#grid">栅格系统</a>
               <ul class="nav">
-                <li><a class="nav-link" href="#grid_system_introduce">简介</a></li>
-                <li><a class="nav-link" href="#grid_system_options">参数</a></li>
+                <li><a class="nav-link" href="#grid_introduce">简介</a></li>
+                <li><a class="nav-link" href="#grid_options">参数</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#type">调整</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#type_head">标题</a></li>
+                <li><a class="nav-link" href="#type_mark">标记</a></li>
+                <li><a class="nav-link" href="#type_del_ins">更新和修正</a></li>
+                <li><a class="nav-link" href="#type_abbr">缩写</a></li>
+                <li><a class="nav-link" href="#type_address">地址</a></li>
               </ul>
             </li>
           </ul>
@@ -140,7 +221,7 @@
 
 <footer class="fi-docs-footer">
   <div class="container">
-    <p class="text-center">Designed by my girlfriend and built by me.</p>
+    <p class="text-center">Designed by my kelp and built by me.</p>
     <p class="text-center">wellcome to feedback, and we will make it better.</p>
     <ul class="list-group list-group-hz center">
       <li class="list-group-item"><a href="javascript:;" class="text-muted">当前版本1.0.0</a></li>
@@ -154,7 +235,7 @@
   (function() {
     $(window).scroll(function() {
       var yheight = getScrollTop(); //滚动条距顶端的距离
-      var referenceTop = $('#grid_system').offset().top;
+      var referenceTop = $('#grid').offset().top;
 
       if(yheight >= referenceTop) {
         $('.sidebar').css({'position':'fixed','top':'0','padding-top':'20px'})

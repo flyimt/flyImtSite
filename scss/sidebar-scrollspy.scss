@@ -1,23 +1,31 @@
 @import "variables";
 
 .sidebar {
-  padding-top: 40px;
-
   .nav-link {
+    position: relative;
     padding-left: 20px;
     color: $gray;
+
+    &:before {
+      position: absolute;
+      left: 0;
+    }
   }
   .nav {
     .nav-link.active {
       color: $brand-theme-color;
-      border-left: 2px solid $brand-theme-color;
+
+      &:before {
+        content: "\27A4";
+      }
     }
   }
 
   ul{
-    > ul {
+    ul {
       display: none;
       font-size: 80%;
+      padding-left: $space-base * 2;
     }
 
     .nav-link.active + ul {

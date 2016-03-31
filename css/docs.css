@@ -1,15 +1,25 @@
-/* line 1, ../scss/docs.scss */
+@charset "UTF-8";
+/* line 3, ../scss/docs.scss */
 .fi-docs-masthead {
   position: relative;
   padding: 80px 0;
+  margin-bottom: 60px;
   background-color: #2EC6A0;
   background-image: linear-gradient(to bottom, #2EC6A0 0px, #74EDCE 100%);
   background-repeat: repeat-x;
   color: #CEEDE5;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
+/* line 13, ../scss/docs.scss */
+.fi-docs-masthead h1 {
+  font-size: 60px;
+}
+/* line 17, ../scss/docs.scss */
+.fi-docs-masthead h4 {
+  font-size: 24px;
+}
 
-/* line 11, ../scss/docs.scss */
+/* line 22, ../scss/docs.scss */
 .fi-docs-feature {
   padding-bottom: 40px;
   padding-top: 40px;
@@ -17,28 +27,50 @@
   color: #555;
 }
 
-/* line 18, ../scss/docs.scss */
+/* line 29, ../scss/docs.scss */
+.fi-docs-section {
+  margin-bottom: 60px;
+}
+
+/* line 33, ../scss/docs.scss */
 .fi-docs-title {
   color: #333;
   font-size: 40px;
 }
 
-/* line 23, ../scss/docs.scss */
+/* line 38, ../scss/docs.scss */
+.fi-docs-example {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+/* line 47, ../scss/docs.scss */
+.fi-docs-example:before {
+  content: "实例：";
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500px;
+  color: #818a91;
+}
+
+/* line 57, ../scss/docs.scss */
 .fi-docs-footer {
   font-size: .85em;
 }
-/* line 26, ../scss/docs.scss */
+/* line 60, ../scss/docs.scss */
 .fi-docs-footer .container,
 .fi-docs-footer .container-full {
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: 1px solid #ddd;
 }
-/* line 33, ../scss/docs.scss */
+/* line 67, ../scss/docs.scss */
 .fi-docs-footer p {
   margin-bottom: 0;
 }
-/* line 37, ../scss/docs.scss */
+/* line 71, ../scss/docs.scss */
 .fi-docs-footer .list-group {
   margin-top: 10px;
   margin-bottom: 5px;

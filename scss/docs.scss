@@ -1,11 +1,22 @@
+@import "variables";
+
 .fi-docs-masthead {
   position: relative;
   padding: 80px 0;
+  margin-bottom: 60px;
   background-color: #2EC6A0;
   background-image: linear-gradient(to bottom, #2EC6A0 0px, #74EDCE 100%);
   background-repeat: repeat-x;
   color: #CEEDE5;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
 }
 
 .fi-docs-feature {
@@ -15,9 +26,32 @@
   color: #555;
 }
 
+.fi-docs-section {
+  margin-bottom: 60px;
+}
+
 .fi-docs-title {
   color: #333;
   font-size: 40px;
+}
+
+.fi-docs-example {
+  width: 100%;
+  padding: $space-base * 3;
+  margin-bottom: $space-base * 4;
+  border: 1px solid #ddd;
+  @if $enable-round {
+    border-radius: $border-radius;
+  }
+
+  &:before {
+    content: "ÊµÀý£º";
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500px;
+    color: $gray-light;
+  }
 }
 
 .fi-docs-footer {
