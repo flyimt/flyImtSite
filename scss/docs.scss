@@ -37,21 +37,69 @@
 
 .fi-docs-example {
   width: 100%;
-  padding: $space-base * 3;
   margin-bottom: $space-base * 4;
-  border: 1px solid #ddd;
-  @if $enable-round {
-    border-radius: $border-radius;
+
+  .fi-docs-surface,
+  .fi-docs-code {
+    position: relative;
+    width: 100%;
+    padding: $space-base * 3;
+    border: 1px solid #ddd;
+    @if $enable-round {
+      border-radius: $border-radius;
+    }
+
+    &:before {
+      font-size: 14px;
+      font-weight: 500px;
+      color: $gray-light;
+    }
   }
 
-  &:before {
-    content: "ÊµÀý£º";
-    display: block;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: 500px;
-    color: $gray-light;
+  .fi-docs-surface {
+    &:before {
+      content: "ÊµÀý£º";
+      display: block;
+      margin-bottom: 20px;
+    }
   }
+
+  .fi-docs-code {
+    margin-top: -1px;
+
+    .fi-docs-copy {
+      content: "¸´ÖÆ";
+      display: inline-block;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      font-size: 12px;
+
+      &:hover {
+        background-color: $brand-success;
+        border-color: $brand-success;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.fi-docs-note {
+  padding: 24px 20px 20px 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #E0EDED;
+  background-image:
+  linear-gradient(90deg, transparent 60px, #abced4  60px, #abced4  62px, transparent 62px),
+  linear-gradient(#D1E5E5 .1em, transparent .1em);
+  background-size: 100% 23px;
+  color: $gray-dark;
+  font-size: 14px;
+  line-height: 23px;
 }
 
 .fi-docs-footer {

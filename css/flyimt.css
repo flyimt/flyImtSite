@@ -3515,7 +3515,7 @@ fieldset[disabled] a.btn {
 code,
 kbd,
 pre {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Arial, sans-serif;
 }
 
 code {
@@ -3555,12 +3555,11 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 10px 20px;
-  font-size: 90%;
+  padding: 10px 0;
+  font-size: 14px;
   line-height: 1.5;
   color: #373a3c;
   background-color: #f7f7f9;
-  white-space: nowrap;
   -moz-border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   border-radius: 0.3rem;
@@ -3578,21 +3577,74 @@ pre code {
   overflow-y: scroll;
 }
 
-pre .label,
-code .label {
+pre,
+code {
+  font-size: 14px !important;
+}
+pre .label-begin,
+pre .label-end
+.attr,
+pre .value,
+pre .note,
+code .label-begin,
+code .label-end
+.attr,
+code .value,
+code .note {
+  padding: 0;
+  font-size: 14px !important;
+}
+pre .label-begin,
+code .label-begin {
   color: #2f6f9f;
+}
+pre .label-begin:before,
+code .label-begin:before {
+  content: "<";
+}
+pre .label-end,
+code .label-end {
+  color: #2f6f9f;
+}
+pre .label-end:after,
+code .label-end:after {
+  content: ">";
 }
 pre .attr,
 code .attr {
   color: #4f9fcf;
 }
+pre .attr:before,
+code .attr:before {
+  content: " ";
+}
+pre .attr:after,
+code .attr:after {
+  content: "=";
+}
 pre .value,
 code .value {
   color: #d44950;
 }
+pre .value:before,
+code .value:before {
+  content: '"';
+}
+pre .value:after,
+code .value:after {
+  content: '"';
+}
 pre .note,
 code .note {
   color: #818a91;
+}
+pre .note:before,
+code .note:before {
+  content: "<!-- ";
+}
+pre .note:after,
+code .note:after {
+  content: " -->";
 }
 
 .img-responsive {
