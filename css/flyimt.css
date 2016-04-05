@@ -3553,13 +3553,16 @@ kbd kbd {
 
 pre {
   display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 10px 0;
-  font-size: 14px;
+  background-color: #3f3f3f;
+  border: 1px solid #ccc;
+  color: #fff;
+  font-size: 13px;
   line-height: 1.5;
-  color: #373a3c;
-  background-color: #f7f7f9;
+  margin: 0;
+  padding: 10px 15px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: nowrap;
   -moz-border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   border-radius: 0.3rem;
@@ -3596,7 +3599,7 @@ code .note {
 }
 pre .label-begin,
 code .label-begin {
-  color: #2f6f9f;
+  color: #7CB7F1;
 }
 pre .label-begin:before,
 code .label-begin:before {
@@ -3604,7 +3607,7 @@ code .label-begin:before {
 }
 pre .label-end,
 code .label-end {
-  color: #2f6f9f;
+  color: #7CB7F1;
 }
 pre .label-end:after,
 code .label-end:after {
@@ -3612,7 +3615,7 @@ code .label-end:after {
 }
 pre .attr,
 code .attr {
-  color: #4f9fcf;
+  color: #2CC92E;
 }
 pre .attr:before,
 code .attr:before {
@@ -3624,7 +3627,7 @@ code .attr:after {
 }
 pre .value,
 code .value {
-  color: #d44950;
+  color: #EFD167;
 }
 pre .value:before,
 code .value:before {
@@ -3636,7 +3639,7 @@ code .value:after {
 }
 pre .note,
 code .note {
-  color: #818a91;
+  color: #C4C4C4;
 }
 pre .note:before,
 code .note:before {

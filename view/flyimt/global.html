@@ -158,7 +158,7 @@
             </div>
           </div>
 
-          <h3 id="type_mark">标记</h3>
+          <h3 id="type_mark">突出文本</h3>
           <p><code>&lt;mark></code>突出显示部分文本。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
@@ -167,9 +167,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <code>
-                  如果能从来，我要选<span class="label-begin">mark></span>李白<span class="label-begin">/mark></span>。
-                </code>
+                如果能从来，我要选<span class="label-begin">mark></span>李白<span class="label-begin">/mark></span>。
               </pre>
             </div>
           </div>
@@ -183,9 +181,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <code>
-                  如果能从来，我要选<span class="label-begin">del></span>杜甫<span class="label-begin">/del></span><span class="label-begin">ins></span>李白<span class="label-begin">/ins></span>。
-                </code>
+                如果能从来，我要选<span class="label-begin">del></span>杜甫<span class="label-begin">/del></span><span class="label-begin">ins></span>李白<span class="label-begin">/ins></span>。
               </pre>
             </div>
           </div>
@@ -199,9 +195,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <code>
-                  <span class="label-begin">abbr</span><span class="attr">title</span><span class="value">World Wide Web</span><span class="label-end"></span>WWW<span class="label-begin">/abbr></span>是环球信息网的缩写，中文名字为“万维网”，“环球网”等，常简称为Web。
-                </code>
+                <span class="label-begin">abbr</span><span class="attr">title</span><span class="value">World Wide Web</span><span class="label-end"></span>WWW<span class="label-begin">/abbr></span>是环球信息网的缩写，中文名字为“万维网”，“环球网”等，常简称为Web。
               </pre>
             </div>
           </div>
@@ -221,15 +215,13 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <!--<code>-->
-                  <span class="label-begin">address></span><br/>
-                    <span class="label-begin">strong></span>Flyimt, Inc.<span class="label-begin">strong></span><span class="label-begin">br/></span><br/>
-                    天府大道，中段<span class="label-begin">br/></span><br/>
-                    中国，四川，成都<span class="label-begin">br/></span><br/>
-                  <span class="label-begin">abbr</span><span class="attr">title</span><span class="value">电话号码</span>P: <span class="label-begin">/abbr></span>
-                  (028) 909-0950
-                  <span class="label-begin">/address></span>
-                <!--</code>-->
+                <span class="label-begin">address></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">strong></span>Flyimt, Inc.<span class="label-begin">strong></span><span class="label-begin">br/></span><br/>
+                &nbsp;&nbsp;天府大道，中段<span class="label-begin">br/></span><br/>
+                &nbsp;&nbsp;中国，四川，成都<span class="label-begin">br/></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">abbr</span><span class="attr">title</span><span class="value">电话号码</span><span class="label-end"></span>
+                P: <span class="label-begin">/abbr></span>(028) 909-0950 <br/>
+                <span class="label-begin">/address></span>
               </pre>
             </div>
           </div>
@@ -238,57 +230,106 @@
           <p><code>&lt;blockquote></code>定义块引用。它之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进（增加外边距），
             而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。</p>
           <div class="fi-docs-example">
-            <blockquote>
-              <p>爱生活，爱老婆。</p>
-              <footer>出自 <cite title="Source Title">杨氏语录</cite></footer>
-            </blockquote>
+            <div class="fi-docs-surface">
+              <blockquote>
+                <p>爱生活，爱老婆。</p>
+                <footer>出自 <cite title="Source Title">杨氏语录</cite></footer>
+              </blockquote>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">bloclquote></span><br/>
+                &nbsp;&nbsp; <span class="label-begin">p></span>爱生活，爱老婆。<span class="label-begin">/p></span><br/>
+                &nbsp;&nbsp; <span class="label-begin">footer></span>出自<span class="label-begin">cite></span><span class="attr">title</span>
+                <span class="value">Source Title</span><span class="label-end"></span>杨氏语录 <span class="label-end">/cite></span><span class="label-end">/footer</span><br/>
+                <span class="label-begin">/blockquote></span>
+              </pre>
+            </div>
           </div>
 
           <h4>反向引用</h4>
           <p>给<code>&lt;blockquote></code>加上<code>.blockquote-reverse</code>类。此时，引用会出现在右侧。</p>
-          <div>
-            <div class="fi-docs-example">
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
               <blockquote class="blockquote-reverse">
                 <p>爱生活，爱老婆。</p>
                 <footer>出自 <cite title="Source Title">杨氏语录</cite></footer>
               </blockquote>
             </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">bloclquote</span><span class="attr">class</span><span class="value">blockquote</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp; <span class="label-begin">p></span>爱生活，爱老婆。<span class="label-begin">/p></span><br/>
+                &nbsp;&nbsp; <span class="label-begin">footer></span>出自<span class="label-begin">cite></span><span class="attr">title</span>
+                <span class="value">Source Title</span><span class="label-end"></span>杨氏语录 <span class="label-end">/cite></span><span class="label-end">/footer</span><br/>
+                <span class="label-begin">/blockquote></span>
+              </pre>
+            </div>
           </div>
 
           <div class="fi-docs-note">
-            作者在写反向引用时遇到了一个纠结的问题，用<span class="text-danger"> inverse </span>还是<span class="text-danger"> reverse </span>
-            <br/>
+            <p>作者在写反向引用时遇到了一个纠结的问题，用<span class="text-danger"> inverse </span>还是<span class="text-danger"> reverse </span>。<br/></p>
             它哥俩的解释分别是：<br/>
-            <span class="text-danger"> inverse </span>：反面，相反的事物；反向的；倒数，反选。<br/>
-            <span class="text-danger"> reverse </span>：反面，背面，倒退；颠倒，倒车，撤销；相反的，反面的。<br/>
-            有没有一种日了狗的感觉？
-            <br/>
-            <br/>
-            最后决定在<span class="text-danger"> 空间 </span>上的相反用reverse，比如这里的反向引用，左右位置的互换。至于inverse，它和数学的关系更加接近，
-            比如反函数，反比等等，适合抽象的相反。
+              <p><span class="text-danger"> inverse </span>：反面，相反的事物；反向的；倒数，反选。</p>
+              <p><span class="text-danger"> reverse </span>：反面，背面，倒退；颠倒，倒车，撤销；相反的，反面的。</p>
+              有没有一种日了狗的感觉？</p>
+            <p>
+              最后决定在<span class="text-danger"> 空间 </span>上的相反用reverse，比如这里的反向引用，左右位置的互换。至于inverse，它和数学的关系更加接近，
+              比如反函数，反比等等，适合抽象的相反。
+            </p>
           </div>
 
           <h3 id="type_dl">描述</h3>
           <p><code>&lt;dl></code>定义了“定义列表”，即带有描述的短语列表。它用于结合<code>&lt;dt></code>（定义列表中的项目）和<code>&lt;dd></code>（描述列表中的项目）。</p>
           <div class="fi-docs-example">
-            <dl>
-              <dt>描述列表</dt>
-                <dd>描述列表适合用来定义</dd>
-              <dt>打烊</dt>
-                <dd>商店晚上关门停止营业。</dd>
-                <dd>引申为歇业。</dd>
-            </dl>
+            <div class="fi-docs-surface">
+              <dl>
+                <dt>描述列表</dt>
+                  <dd>描述列表适合用来定义</dd>
+                <dt>打烊</dt>
+                  <dd>商店晚上关门停止营业。</dd>
+                  <dd>引申为歇业。</dd>
+              </dl>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">dl></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">dt></span>描述列表<span class="label-begin">/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>描述列表适合用来定义。<span class="label-begin">/dd></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">dt></span>打烊<span class="label-begin">/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>商店晚上关门停止营业。<span class="label-begin">/dd></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>引申为歇业。<span class="label-begin">/dd></span><br/>
+                <span class="label-begin">/dl></span>
+              </pre>
+            </div>
           </div>
           <h4>水平描述</h4>
           <p>在<code>&lt;dl></code>上添加<code>.dl-hz</code>类。描述会水平显示。</p>
           <div class="fi-docs-example">
-            <dl class="dl-hz">
-              <dt>描述列表 160px</dt>
+            <div class="fi-docs-surface">
+              <dl class="dl-hz">
+                <dt>描述列表 160px</dt>
                 <dd>描述列表适合用来定义</dd>
-              <dt>打烊</dt>
+                <dt>打烊</dt>
                 <dd>商店晚上关门停止营业。</dd>
                 <dd>引申为歇业。</dd>
-            </dl>
+              </dl>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">dl <span class="attr">class</span><span class="value">dl-hz</span><span class="label-end"></span></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">dt></span>描述列表<span class="label-begin">/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>描述列表适合用来定义。<span class="label-begin">/dd></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">dt></span>打烊<span class="label-begin">/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>商店晚上关门停止营业。<span class="label-begin">/dd></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>引申为歇业。<span class="label-begin">/dd></span><br/>
+                <span class="label-begin">/dl></span>
+              </pre>
+            </div>
           </div>
         </section>
 
@@ -298,39 +339,94 @@
           <h3 id="code_code">内联代码</h3>
           <p><code>&lt;code></code>包裹内联样式的代码片段。</p>
           <div class="fi-docs-example">
-            一般，我们把直接显示在网页上的代码写在<code>&lt;code></code>标签里面。
+            <div class="fi-docs-surface">
+              一般，我们把直接显示在网页上的代码写在<code>&lt;code></code>标签里面。
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                 一般，我们把直接显示在网页上的代码写在<span class="label-begin">code></span>&amp;lt;code><span class="label-begin">/code></span> 标签里面。
+              </pre>
+            </div>
           </div>
 
           <h3 id="code_kbd">键盘文本</h3>
           <p><code>&lt;kbd></code>定义键盘文本。它表示文本是从键盘上键入的。</p>
           <div class="fi-docs-example">
-            同时按住 <kbd>Alt</kbd> + <kbd>Print Screen</kbd>，我们可以截取桌面。
+            <div class="fi-docs-surface">
+              同时按住 <kbd>Alt</kbd> + <kbd>Print Screen</kbd>，我们可以截取当前运行窗口。
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                 同时按住 <span class="label-begin">kbd></span>Alt<span class="label-begin">/kbd></span> +
+                <span class="label-begin">kbd></span>Print Screen<span class="label-begin">/kbd></span>，我们可以截取当前运行窗口。
+              </pre>
+            </div>
           </div>
 
           <h3 id="code_pre">代码块</h3>
-          <p><code>&lt;pre>、&lt;code></code>共同完成代码块的展示。</p>
-          <p>用 <code>.note, .label, .attr, .value</code>分别对注释，标签名，属性名，属性值进行样式增强。只是很繁琐。</p>
+          <p>Flyimt 用<code>&lt;pre></code> 来展示代码块的内容。</p>
+          <ul>
+            <li><code>.note：</code>用于注释。默认添加了<code>&lt;!-- --></code>，标签内部直接包含注释内容。</li>
+            <li><code>.label-begin：</code>用于标签名。默认已经添加了<code>&lt;</code>。</li>
+            <li><code>.label-end：</code>用于标签名，固定显示闭合符<code>&gt;</code>，此标签内部不用写任何代码。一般用在含有属性的标签上。</li>
+            <li><code>.attr：</code>用于属性名称。默认包含了<code>=</code>，标签内部直接包含属性名称。</li>
+            <li><code>.value：</code>用于属性值。默认包含了<code>""</code>，标签内部直接包含属性值。</li>
+            <li>代码中的换行和空格需要使用<code>&lt;br/>、&amp;nbsp;</code>实现。</li>
+          </ul>
           <div class="fi-docs-example">
-            <pre>
-              <code>
-                <span class="note">&lt;!-- 要用br换行 --&gt;</span>
+            <div class="fi-docs-surface">
+              <pre>
+                <span class="note">要用&lt;br/>换行</span>
                 <br/>
-                <span class="label">&lt;tr</span>
-                <span class="attr">class=</span><span class="value">"active"</span><span class="label">></span>
-                ...
-                <span class="label">&lt;/tr></span>
+                <span class="label-begin">ul></span>
                 <br/>
-                <span class="label">&lt;tr</span>
-                <span class="attr">class=</span><span class="value">"active"</span><span class="label">></span>
-                ...
-                <span class="label">&lt;/tr></span>
+                &nbsp;&nbsp;<span class="label-begin">li</span><span class="attr">class</span><span class="value">active</span>
+                <span class="label-end"></span>爱生活，爱老婆。<span class="label-begin">/li></span>
                 <br/>
-                <span class="label">&lt;tr</span>
-                <span class="attr">class=</span><span class="value">"active"</span><span class="label">></span>
-                ...
-                <span class="label">&lt;/tr></span>
-              </code>
-            </pre>
+                &nbsp;&nbsp;<span class="label-begin">li></span>爱生活，爱老婆。<span class="label-begin">/li></span>
+                <br/>
+                <span class="label-begin">/ul></span>
+              </pre>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">pre></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">note</span>
+                <span class="label-end"></span>要用&amp;lt;br/>换行 <span class="label-begin">/span></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
+                <span class="label-end"></span>ul><span class="label-begin">/span></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
+                &nbsp;&nbsp;&amp;nbsp;&amp;nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
+                <span class="label-end"></span>li<span class="label-begin">/span>&lt;span</span><span class="attr">class</span><span class="value">attr</span>
+                <span class="label-end"></span>class<span class="label-begin">/span>&lt;span</span><span class="attr">class</span><span class="value">value</span>
+                <span class="label-end"></span>active<span class="label-begin">/span></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-end</span><span class="label-end"></span>
+                <span class="label-begin">/span></span>爱生活，爱老婆。<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
+                <span class="label-end"></span>/li<span class="label-begin">/span></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
+                &nbsp;&nbsp;&amp;nbsp;&amp;nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span><span class="label-end"></span>li>
+                <span class="label-begin">/span></span>爱生活，爱老婆。<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
+                <span class="label-end"></span>/li><span class="label-begin">/span></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span><span class="label-end"></span>/ul><span class="label-begin">/span></span><br/>
+                <span class="label-begin">/pre></span>
+              </pre>
+            </div>
+          </div>
+
+          <div class="fi-docs-note">
+            为什么要用<code>&lt;br/>、&amp;nbsp;</code>来换行和缩进呢，<code>&lt;pre></code>不是所见即所得的吗？
+            <br/>
+            这里yayo为<code>&lt;pre></code>添加了下面的样式：
+            <p><span class="text-primary">white-space</span>: <span class="text-warning">nowrap;</span></p>
+            原因：<br/>
+            <p><code>&lt;pre></code>在没有进行样式重写前的确是所见即所得，但是你写的html代码存在被压缩的可能，这就把里面的空格，换行全给kill掉了。因此，为了维护世界和平，还是显示的写出来吧。</p>
+            <br/>
+            ps：这里的<code>&lt;pre></code>里的代码样式是我在webstorm里使用的代码风格。
           </div>
         </section>
       </div>
@@ -349,7 +445,7 @@
               <a class="nav-link" href="#type">调整</a>
               <ul class="nav">
                 <li><a class="nav-link" href="#type_head">标题</a></li>
-                <li><a class="nav-link" href="#type_mark">标记</a></li>
+                <li><a class="nav-link" href="#type_mark">突出文本</a></li>
                 <li><a class="nav-link" href="#type_del_ins">更新和修正</a></li>
                 <li><a class="nav-link" href="#type_abbr">缩写</a></li>
                 <li><a class="nav-link" href="#type_address">地址</a></li>
@@ -362,6 +458,7 @@
               <ul class="nav">
                 <li><a class="nav-link" href="#code_code">内联代码</a></li>
                 <li><a class="nav-link" href="#code_kbd">键盘文本</a></li>
+                <li><a class="nav-link" href="#code_pre">键盘文本</a></li>
               </ul>
             </li>
           </ul>
