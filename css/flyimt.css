@@ -308,7 +308,7 @@ caption {
   padding-bottom: 0.75rem;
   color: #818a91;
   text-align: left;
-  caption-side: bottom;
+  caption-side: top;
 }
 
 td,
