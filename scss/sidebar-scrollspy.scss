@@ -1,6 +1,7 @@
 @import "variables";
 
 .sidebar {
+  width: 100%;
   .nav-link {
     position: relative;
     padding-left: 20px;
@@ -9,6 +10,13 @@
     &:before {
       position: absolute;
       left: 0;
+    }
+
+    + ul {
+      position: absolute;
+      width: 100%;
+      top: 2px;
+      left: 85px;
     }
   }
   .nav {
@@ -34,4 +42,7 @@
 
   }
 
+  > ul > li {
+    position: relative;
+  }
 }

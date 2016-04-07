@@ -370,6 +370,10 @@ small,
   font-size: 60%;
   font-weight: normal;
 }
+small code,
+.small code {
+  font-size: 100% !important;
+}
 
 mark,
 .mark {
@@ -2962,9 +2966,9 @@ input[type="checkbox"] {
   padding: 0.37rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
-  -moz-border-radius: 0.25rem / 0.25rem;
-  -webkit-border-radius: 0.25rem 0.25rem;
-  border-radius: 0.25rem / 0.25rem;
+  -moz-border-radius: 0 / 0;
+  -webkit-border-radius: 0 0;
+  border-radius: 0 / 0;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
@@ -3469,27 +3473,27 @@ input[type="checkbox"] {
   padding: 0.75rem 1.25rem;
   font-size: 1.25rem;
   line-height: 1.33333;
-  -moz-border-radius: 0.3rem / 0.3rem;
-  -webkit-border-radius: 0.3rem 0.3rem;
-  border-radius: 0.3rem / 0.3rem;
+  -moz-border-radius: 0 / 0;
+  -webkit-border-radius: 0 0;
+  border-radius: 0 / 0;
 }
 
 .btn-sm, .btn-group-sm .btn {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
   line-height: 1.5;
-  -moz-border-radius: 0.2rem / 0.2rem;
-  -webkit-border-radius: 0.2rem 0.2rem;
-  border-radius: 0.2rem / 0.2rem;
+  -moz-border-radius: 0 / 0;
+  -webkit-border-radius: 0 0;
+  border-radius: 0 / 0;
 }
 
 .btn-xs {
   padding: 0.02rem 0.3125rem;
   font-size: 0.75rem;
   line-height: 1.5;
-  -moz-border-radius: 0.1875rem / 0.1875rem;
-  -webkit-border-radius: 0.1875rem 0.1875rem;
-  border-radius: 0.1875rem / 0.1875rem;
+  -moz-border-radius: 0 / 0;
+  -webkit-border-radius: 0 0;
+  border-radius: 0 / 0;
 }
 
 .btn-block {
@@ -3515,7 +3519,7 @@ fieldset[disabled] a.btn {
 code,
 kbd,
 pre {
-  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Arial, sans-serif;
+  font-family: Menlo, Monaco, Consolas, "Courier New", Monospace !important;
 }
 
 code {
@@ -3711,7 +3715,7 @@ code .note:after {
   background-color: #fff;
 }
 .table tbody tr:hover:hover {
-  background-color: #f5f5f5;
+  background-color: #ddd;
 }
 
 .table-sm th,
@@ -3732,20 +3736,20 @@ code .note:after {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
+  background-color: #eee;
 }
 
 .row-bg-active,
 .row-bg-active > th,
 .row-bg-active > td {
-  background-color: #f5f5f5;
+  background-color: #ddd;
 }
 .row-bg-active:hover:hover {
-  background-color: #e8e8e8;
+  background-color: #d0d0d0;
 }
 .row-bg-active:hover:hover > td,
 .row-bg-active:hover:hover > th {
-  background-color: #e8e8e8;
+  background-color: #d0d0d0;
 }
 
 .row-bg-primary,

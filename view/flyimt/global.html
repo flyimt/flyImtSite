@@ -51,7 +51,7 @@
     <div class="row">
       <div class="col-md-9">
         <section class="fi-docs-section" id="grid">
-          <h1 class="m-b-6">栅格系统 <small><code>grid.scss</code></small></h1>
+          <h1 class="m-b-6">栅格系统 <small><code>_grid.scss</code></small></h1>
           <p class="lead">栅格系统对于布局尤其是响应式来说至关重要，它随着屏幕或者窗口视口的大小自动布局。</p>
 
           <h3 id="grid_introduce">简介</h3>
@@ -136,7 +136,7 @@
         </section>
 
         <section class="fi-docs-section" id="type">
-          <h1 class="m-b-6">调整<small><code>type.scss</code></small></h1>
+          <h1 class="m-b-6">调整<small><code>_type.scss</code></small></h1>
           <p class="lead">在这里，yayo对一些标签做了一些调整。</p>
 
           <h3 id="type_head">标题</h3>
@@ -334,7 +334,7 @@
         </section>
 
         <section class="fi-docs-section" id="code">
-          <h1 class="m-b-6">代码<small><code>&lt;code.scss></code></small></h1>
+          <h1 class="m-b-6">代码<small><code>_code.scss</code></small></h1>
 
           <h3 id="code_code">内联代码</h3>
           <p><code>&lt;code></code>包裹内联样式的代码片段。</p>
@@ -370,7 +370,7 @@
           <ul>
             <li><code>.note：</code>用于注释。默认添加了<code>&lt;!-- --></code>，标签内部直接包含注释内容。</li>
             <li><code>.label-begin：</code>用于标签名。默认已经添加了<code>&lt;</code>。</li>
-            <li><code>.label-end：</code>用于标签名，固定显示闭合符<code>&gt;</code>，此标签内部不用写任何代码。一般用在含有属性的标签上。</li>
+            <li><code>.label-end：</code>用于标签名，固定显示闭合符<code>&gt;</code>，此标签内部不用写任何代码，自闭和标签可以添加一个<code>/</code>。一般用在含有属性的标签上。</li>
             <li><code>.attr：</code>用于属性名称。默认包含了<code>=</code>，标签内部直接包含属性名称。</li>
             <li><code>.value：</code>用于属性值。默认包含了<code>""</code>，标签内部直接包含属性值。</li>
             <li>代码中的换行和空格需要使用<code>&lt;br/>、&amp;nbsp;</code>实现。</li>
@@ -431,10 +431,344 @@
         </section>
 
         <section class="fi-docs-section" id="table">
-          <h1 class="m-b-6">表格<small><code>tables.scss</code></small></h1>
+          <h1 class="m-b-6">表格<small><code>_tables.scss</code></small></h1>
+          <p>想要和栗子保持一致，就别偷懒把<code>&lt;thead>、&lt;tbody></code>这些元素给落下了哦。</p>
 
-          <h3 id="table-default">默认表格</h3>
+          <h3 id="table_default">默认表格</h3>
           <p>在<code>&lt;table></code>标签上添加<code>.table</code>类，为其添加默认样式。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <table class="table">
+                <caption>默认样式表格</caption>
+                <thead>
+                  <tr><th>#</th><th>First</th><th>Second</th><th>Third</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table</span><span class="label-end"></span><br/>
+                ··· <br/>
+                <span class="label-begin">/table></span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="table_responsive">响应式表格</h3>
+          <p>在<code>&lt;table></code>标签外面包裹一层类为<code>.table-responsive</code>的<code>&lt;div></code>。此时如果表格超过宽度会在此<code>&lt;div></code>
+            上产生水平滚动条，而不会在浏览器窗口产生滚动条。
+          </p>
+          <p class="text-info">只针对于很长的连续的字符串。如果是中文的话，会自动换行，都不会产生滚动条，可以不使用这种表格。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="table-responsive">
+                <table class="table">
+                  <caption>响应式表格</caption>
+                  <thead>
+                    <tr><th>#</th><th>First</th><th>Second</th><th>Third</th><th>Fourth</th><th>Fifth</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">First</th><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td></tr>
+                    <tr><th scope="row">First</th><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td></tr>
+                    <tr><th scope="row">First</th><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td><td>abcdefghijklmnopqrstuvwxyz</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">table-responsice</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">table</span><span class="attr">class</span><span class="value">table</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;··· <br/>
+                &nbsp;&nbsp;<span class="label-begin">/table></span><br/>
+                <span class="label-begin">/div></span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="table_sm">紧凑型表格</h3>
+          <p>在<code>&lt;table></code>标签添加<code>.table-sm</code>类。表格会显示得更为紧凑。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <table class="table table-sm">
+                <caption>紧凑型表格</caption>
+                <thead>
+                  <tr><th>#</th><th>First</th><th>Second</th><th>Third</th><th>Fourth</th><th>Fifth</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table table-sm</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;··· <br/>
+                <span class="label-begin">/table></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="table_striped">带条纹表格</h3>
+          <p>在<code>&lt;table></code>标签添加<code>.table-striped</code>类。表格会隔行显示背景，便于区分行。</p>
+          <p class="text-danger">必须要有<code>&lt;tbody></code>标签。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <table class="table table-striped">
+                <caption>条纹表格</caption>
+                <thead>
+                  <tr><th>#</th><th>First</th><th>Second</th><th>Third</th><th>Fourth</th><th>Fifth</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table table-striped</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;···<br/>
+                <span class="label-begin">/table></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="table_bordered">带边框表格</h3>
+          <p>在<code>&lt;table></code>标签添加<code>.table-bordered</code>类。表格每一项之间都有边框。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <table class="table table-bordered">
+                <caption>边框表格</caption>
+                <thead>
+                  <tr><th>#</th><th>First</th><th>Second</th><th>Third</th><th>Fourth</th><th>Fifth</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                  <tr><th scope="row">First</th><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td><td>abcdef</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table table-bordered</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;···<br/>
+                <span class="label-begin">/table></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="table_row_status">表格行状态</h3>
+          <p>在<code>&lt;tr></code>标签上添加相应的类，让该行区别于其他行。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <table class="table">
+                <caption>This is border tables</caption>
+                <thead>
+                  <tr><th>#</th><th>First</th><th>Second</th><th>Third</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr class="row-bg-active"><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr class="row-bg-primary"><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr class="row-bg-secondary"><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr class="row-bg-success"><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr class="row-bg-info"><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr class="row-bg-warning"><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                  <tr class="row-bg-danger"><th scope="row">First</th><td>first</td><td>second</td><td>third</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-active</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-primary</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-secondary</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-success</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-info</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-warning</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-danger</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
+                <span class="label-begin">/table></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <p class="text-info">当然，你也可以把上面集中样式搭配使用，只要在<code>&lt;table></code>标签上添加相应的类即可。</p>
+        </section>
+
+        <section class="fi-docs-section" id="form">
+          <h1 class="m-b-6">表单<small><code>_forms.scss</code></small></h1>
+          <p>表单样式，敬请期待。</p>
+        </section>
+
+        <section class="fi-docs-section" id="button">
+          <h1 class="m-b-6">按钮<small><code>_buttons.scss</code></small></h1>
+          <p>可以为<code>&lt;a>、&lt;button>、&lt;input></code>添加样式。</p>
+          <p class="text-danger">所有按钮都要添加<code>.btn</code>基类。</p>
+
+          <h3 id="button_brand">基本按钮</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <button type="button" class="btn btn-default">Default</button>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-default</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-secondary</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-success</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-warning</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-danger</span><span class="label-begin">/button></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="button_outline">轮廓按钮</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <button type="button" class="btn btn-default-outline">Default</button>
+              <button type="button" class="btn btn-primary-outline">Primary</button>
+              <button type="button" class="btn btn-secondary-outline">Secondary</button>
+              <button type="button" class="btn btn-info-outline">Info</button>
+              <button type="button" class="btn btn-success-outline">Success</button>
+              <button type="button" class="btn btn-warning-outline">Warning</button>
+              <button type="button" class="btn btn-danger-outline">Danger</button>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-default-outline</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary-outline</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-secondary-outline</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info-outline</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-success-outline</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-warning-outline</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-danger-outline</span><span class="label-begin">/button></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="button_link">链接按钮</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <button type="button" class="btn btn-link">link</button>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-link</span><span class="label-begin">/button></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="button_assist">增强样式</h3>
+          <h4>按钮大小</h4>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <button type="button" class="btn btn-primary btn-xs">极小</button>
+              <button type="button" class="btn btn-info btn-sm">小</button>
+              <button type="button" class="btn btn-success">默认大小</button>
+              <button type="button" class="btn btn-warning btn-lg">大按钮</button>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary btn-xs</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info btn-sm</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-success</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-warning btn-lg</span><span class="label-begin">/button></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>按钮圆角</h4>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <button type="button" class="btn btn-primary btn-round">小圆角按钮</button>
+              <button type="button" class="btn btn-info btn-circle">圆形按钮</button>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary btn-round</span><span class="label-begin">/button></span><br/>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info btn-circle</span><span class="label-begin">/button></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>块按钮</h4>
+          <p>块按钮的宽度是<code>100%</code>。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <button type="button" class="btn btn-primary btn-block">块级按钮</button>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary btn-block</span><span class="label-begin">/button></span><br/>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="fi-docs-section" id="image">
+          <h1 class="m-b-6">图片<small><code>_images.scss</code></small></h1>
+
+          <h3 id="image_responsive">响应式图片</h3>
+          <p>
+            <code>.img-responsive</code>类可以让图片支持响应式布局。其实质是为图片设置了<code>display: block; max-width: 100%; height: auto;</code>属性，从而让图片在其父元素中更好的缩放。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <img class="img-responsive" src="../../img/海绵宝宝.jpg" alt=""/>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-responsive</span><span class="label-end">/</span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="image_style">图片样式</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <img class="img-round" src="../../img/海绵宝宝.jpg" alt=""/>
+              <img class="img-circle" src="../../img/海绵宝宝.jpg" alt=""/>
+              <img class="img-thumbnail" src="../../img/海绵宝宝.jpg" alt=""/>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-round</span><span class="label-end">/</span><br/>
+                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-circle</span><span class="label-end">/</span><br/>
+                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-thumbnail</span><span class="label-end">/</span><br/>
+              </pre>
+            </div>
+          </div>
         </section>
       </div>
 
@@ -471,9 +805,39 @@
             <li>
               <a class="nav-link" href="#table">表格</a>
               <ul class="nav">
-                <li><a class="nav-link" href="#">内联代码</a></li>
-                <li><a class="nav-link" href="#">键盘文本</a></li>
-                <li><a class="nav-link" href="#">键盘文本</a></li>
+                <li><a class="nav-link" href="#table_default">默认表格</a></li>
+                <li><a class="nav-link" href="#table_responsive">响应式表格</a></li>
+                <li><a class="nav-link" href="#table_sm">紧凑型表格</a></li>
+                <li><a class="nav-link" href="#table_striped">带条纹表格</a></li>
+                <li><a class="nav-link" href="#table_bordered">带边框表格</a></li>
+                <li><a class="nav-link" href="#table_row_status">表格行状态</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#form">表单</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#">默认表单</a></li>
+                <li><a class="nav-link" href="#">表单</a></li>
+                <li><a class="nav-link" href="#">表单</a></li>
+                <li><a class="nav-link" href="#">表单</a></li>
+                <li><a class="nav-link" href="#">表单</a></li>
+                <li><a class="nav-link" href="#">表单</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#button">按钮</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#button_brand">默认按钮</a></li>
+                <li><a class="nav-link" href="#button_outline">轮廓按钮</a></li>
+                <li><a class="nav-link" href="#button_link">链接按钮</a></li>
+                <li><a class="nav-link" href="#button_assist">增强样式</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#image">图片</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#image_responsive">响应式图片</a></li>
+                <li><a class="nav-link" href="#image_style">图片样式</a></li>
               </ul>
             </li>
           </ul>
@@ -497,6 +861,10 @@
 <script src="../../js/flyimt.min.js"></script>
 <script>
   (function() {
+
+    // BEGIN: 通过滚动距离设置侧边导航的position
+    //
+
     $(window).scroll(function() {
       var yheight = getScrollTop(); //滚动条距顶端的距离
       var referenceTop = $('#grid').offset().top;
@@ -526,6 +894,9 @@
       }
       return scrollPos;
     }
+
+    //
+    // END: 通过滚动距离设置侧边导航的position
   })()
 </script>
 </body>
