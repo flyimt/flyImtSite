@@ -52,7 +52,7 @@
       <div class="col-md-9">
         <section class="fi-docs-section" id="grid">
           <h1 class="m-b-6">栅格系统 <small><code>_grid.scss</code></small></h1>
-          <p class="lead">栅格系统对于布局尤其是响应式来说至关重要，它随着屏幕或者窗口视口的大小自动布局。</p>
+          <h4>栅格系统对于布局尤其是响应式来说至关重要，它随着屏幕或者窗口视口的大小自动布局。</h4>
 
           <h3 id="grid_introduce">简介</h3>
           <p>栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，你的内容就可以放入这些创建好的布局中。
@@ -137,7 +137,6 @@
 
         <section class="fi-docs-section" id="type">
           <h1 class="m-b-6">调整<small><code>_type.scss</code></small></h1>
-          <p class="lead">在这里，yayo对一些标签做了一些调整。</p>
 
           <h3 id="type_head">标题</h3>
           <p>对HTML中的标题标签<code>&lt;h1> ~ &lt;h6></code>进行了字体大小的调整，并对其内部的 <code>&lt;small></code>标签进行了特殊处理，大小为 <span class="text-info">60%</span>。</p>
@@ -763,12 +762,276 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-round</span><span class="label-end">/</span><br/>
-                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-circle</span><span class="label-end">/</span><br/>
-                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-thumbnail</span><span class="label-end">/</span><br/>
+                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-round</span><span class="attr">src</span><span class="value">···</span><span class="attr">alt</span><span class="value">···</span><span class="label-end">/</span><br/>
+                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-circle</span><span class="attr">src</span><span class="value">···</span><span class="attr">alt</span><span class="value">···</span><span class="label-end">/</span><br/>
+                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-thumbnail</span><span class="attr">src</span><span class="value">···</span><span class="attr">alt</span><span class="value">···</span><span class="label-end">/</span><br/>
               </pre>
             </div>
           </div>
+        </section>
+
+        <section class="fi-docs-section" id="assist">
+          <h1 class="m-b-6">辅助类</h1>
+          <p>辅助类设定了一些在任何地方都可以使用的类。</p>
+
+          <h3 id="assist_font_size">文字大小</h3>
+          <p>调试中</p>
+
+          <h3 id="assist_text_alignment">排列方式</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <p class="text-left">左对齐</p>
+              <div class="divider-sm"></div>
+              <p class="text-center">居中</p>
+              <div class="divider-sm"></div>
+              <p class="text-right">右对齐</p>
+              <div class="divider-sm"></div>
+              <p class="text-justify">值 justify 可以使文本的两端都对齐。在两端对齐文本中，文本行的左右两端都放在父元素的内边界上。然后，调整单词和字母间的
+                间隔，使各行的长度恰好相等。您也许已经注意到了，两端对齐文本在打印领域很常见。不过在 CSS 中，还需要多做些考虑。<br/>
+                要由用户代理（而不是 CSS）来确定两端对齐文本如何拉伸，以填满父元素左右边界之间的空间。例如，有些浏览器可能只在单词之间增加额外的空间，
+                而另外一些浏览器可能会平均分布字母间的额外空间（不过 CSS 规范特别指出，如果 letter-spacing 属性指定为一个长度值，“用户代理不能进一步增加或
+                减少字符间的空间”）。还有一些用户代理可能会减少某些行的空间，使文本挤得更紧密。所有这些做法都会影响元素的外观，甚至改变其高度，这取决于用户代理
+                的对齐选择影响了多少文本行。<br/>
+                CSS 也没有指定应当如何处理连字符。大多数两端对齐文本都使用连字符将长单词分开放在两行上，从而缩小单词之间的间隔，改善文本行的外观。不过，由于 CSS
+                没有定义连字符行为，用户代理不太可能自动加连字符。因此，在 CSS 中，两端对齐文本看上去没有打印出来好看，特别是元素可能太窄，以至于每行只能放下几个
+                单词。当然，使用窄设计元素是可以的，不过要当心相应的缺点。
+              </p>
+              <div class="divider-sm"></div>
+              <p class="text-nowrap text-muted bg-success" style="width: 100px;">这是不碰到 “br” 不换行的犟驴子，本段宽度只有100px，但是它就是不换行。</p>
+              <div class="divider-sm"></div>
+              <p class="text-truncate" style="width: 100px;">超出了截断文本的宽度会用省略号显示。</p>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-left</span><span class="label-end"></span>左对齐<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-center</span><span class="label-end"></span>居中<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-right</span><span class="label-end"></span>右对齐<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-justify</span><span class="label-end"></span>两端对齐<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-nowrap</span><span class="label-end"></span>整行文本<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-truncate</span><span class="label-end"></span>超出了截断文本的宽度会用省略号显示<span class="label-begin">/p></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_text_case">大小写转换</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <p class="text-uppercase">It will switch text to upper case.</p>
+              <p class="text-lowercase">It will switch text to lower case.</p>
+              <p class="text-capitalize">It will switch the first letter of everyone words to uppper case.</p>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-uppercase</span><span class="label-end"></span>大写转换<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-lowercase</span><span class="label-end"></span>小写转换<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-capitalize</span><span class="label-end"></span>首字母大写<span class="label-begin">/p></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_text_color">文本颜色</h3>
+          <p>为标签添加<code>.text-*</code>类，设置文本颜色。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <p class="text-primary m-b-0">primary</p>
+              <p class="text-secondary m-b-0">secondary</p>
+              <p class="text-info m-b-0">info</p>
+              <p class="text-success m-b-0">success</p>
+              <p class="text-warning m-b-0">warning</p>
+              <p class="text-danger m-b-0">danger</p>
+              <p class="text-black m-b-0">black</p>
+              <p class="text-white bg-black p-l-2">white</p>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-primary</span><span class="label-end"></span>primary<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-secondary</span><span class="label-end"></span>secondary<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-info</span><span class="label-end"></span>info<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-success</span><span class="label-end"></span>success<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-warning</span><span class="label-end"></span>warning<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-danger</span><span class="label-end"></span>danger<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-black</span><span class="label-end"></span>black<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-white</span><span class="label-end"></span>white<span class="label-begin">/p></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_bg">背景</h3>
+          <p>为标签添加<code>.text-*</code>类，设置背景。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <p class="bg-primary m-b-2">primary</p>
+              <p class="bg-secondary m-b-2">secondary</p>
+              <p class="bg-info m-b-2">info</p>
+              <p class="bg-success m-b-2">success</p>
+              <p class="bg-warning m-b-2">warning</p>
+              <p class="bg-danger m-b-2">danger</p>
+              <p class="bg-black text-white m-b-2">black</p>
+              <p class="bg-white">white</p>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-primary</span><span class="label-end"></span>primary<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-secondary</span><span class="label-end"></span>secondary<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-info</span><span class="label-end"></span>info<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-success</span><span class="label-end"></span>success<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-warning</span><span class="label-end"></span>warning<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-danger</span><span class="label-end"></span>danger<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-black</span><span class="label-end"></span>black<span class="label-begin">/p></span><br/>
+                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-white</span><span class="label-end"></span>white<span class="label-begin">/p></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_list">列表</h3>
+          <p>设置了无样式列表和内联列表。</p>
+
+          <h4>无样式列表</h4>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ul class="list-none">
+                <li>无样式列表</li>
+                <li>无样式列表</li>
+                <li>无样式列表</li>
+              </ul>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">ul</span><span class="attr">class</span><span class="value">list-none</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">li></span>无样式列表<span class="label-begin">/li></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">li></span>无样式列表<span class="label-begin">/li></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">li></span>无样式列表<span class="label-begin">/li></span><br/>
+                <span class="label-begin">/ul></span>
+              </pre>
+            </div>
+          </div>
+
+          <h4>内联列表</h4>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ul class="list-inline">
+                <li>内联列表</li>
+                <li>内联列表</li>
+                <li>内联列表</li>
+              </ul>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label-begin">ul</span><span class="attr">class</span><span class="value">list-inline</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">li></span>内联列表<span class="label-begin">/li></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">li></span>内联列表<span class="label-begin">/li></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">li></span>内联列表<span class="label-begin">/li></span><br/>
+                <span class="label-begin">/ul></span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_float">浮动</h3>
+          <h4>快速浮动</h4>
+          <p>通过添加一个类，可以将任意元素向左或向右浮动。<code>!important</code>被用来明确 CSS 样式的优先级。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface clearfix">
+              <div class="bg-success text-white p-hz-2 p-vt-2 left" style="width: 400px;">
+                float 属性定义元素在哪个方向浮动。以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，
+                而不论它本身是何种元素。如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄。注释：假如在一行之上只有极少的空间可供浮动元素，
+                那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。
+              </div>
+              <div class="bg-success text-white p-hz-2 p-vt-2 right" style="width: 400px;">
+                float 属性定义元素在哪个方向浮动。以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，
+                而不论它本身是何种元素。如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄。注释：假如在一行之上只有极少的空间可供浮动元素，
+                那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">left</span><span class="label-end"></span>左浮动<span class="label-begin">/div></span><br/>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">right</span><span class="label-end"></span>右浮动<span class="label-begin">/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>清除浮动</h4>
+          <p>子元素设置了浮动过后，父元素会塌陷，即没有高度，除了设置父元素<code>overflow: hidden;</code>属性以外，还可以给父元素添加<code>.clearfix</code>类。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="bg-success text-white p-hz-2 p-vt-2">
+                子元素含有浮动元素，在父元素上添加<code>.clearfix</code>类
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">clearfix</span><span class="label-end"></span><br/>
+                &nbsp;&nbsp;<span class="label-begin">div</span><span class="attr">class</span><span class="value">left</span><span class="label-end"></span><span class="label-begin">/div</span><br/>
+                &nbsp;&nbsp;or<br/>
+                &nbsp;&nbsp;<span class="label-begin">div</span><span class="attr">class</span><span class="value">right</span><span class="label-end"></span><span class="label-begin">/div</span><br/>
+                <span class="label-begin">/div></span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_close">关闭按钮</h3>
+          <p>一个象征关闭的图标。在<code>&lt;button></code>标签上添加<code>.close</code>类。</p>
+          <p class="text-danger">这里的“×”是乘号，不是字母x，而是转义字符"&amp;times;" 或者 "&amp;#215;"</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface clearfix">
+              <button class="close">&times;</button>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">button</span><span class="attr">class</span><span class="value">close</span><span class="label-end"></span>&amp;times;<span class="label-begin">/button></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_triangle">三角符号</h3>
+          <p>显示三角符号。在<code>&lt;div></code>标签上添加<code>.triangle-*</code>类。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface clearfix">
+              <div class="triangle-up"></div>
+              <div class="triangle-down"></div>
+              <div class="triangle-left"></div>
+              <div class="triangle-right"></div>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-up</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-down</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-left</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
+                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-right</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_margin">外边距</h3>
+          <p>辅助标签设置外边距，Flyimt预设了6种类型的外边距。</p>
+          <ul>
+            <li><code>.m-0: </code>清除外边距。</li>
+            <li><code>.m-t-*: </code>上外边距。</li>
+            <li><code>.m-r-*: </code>右外边距。</li>
+            <li><code>.m-b-*: </code>下外边距。</li>
+            <li><code>.m-l-*: </code>左外边距。</li>
+            <li><code>.m-hz-*: </code>水平方向外边距。</li>
+            <li><code>.m-vt-*: </code>垂直方向外边距。</li>
+            <li>以上<code>*</code>为 <span class="text-info">0 ~ 10</span>。</li>
+          </ul>
+          <p><code>*</code>以 <span class="text-info">5px</span> 为基准。如：<code>.m-t-5</code>代表上边距为 <span class="text-info">25px</span>。</p>
+
+          <h3 id="assist_padding">内边距</h3>
+          <p>辅助标签设置内边距，Flyimt预设了6种类型的内边距。</p>
+          <ul>
+            <li><code>.p-0: </code>清除内边距。</li>
+            <li><code>.p-t-*: </code>上内边距。</li>
+            <li><code>.p-r-*: </code>右内边距。</li>
+            <li><code>.p-b-*: </code>下内边距。</li>
+            <li><code>.p-l-*: </code>左内边距。</li>
+            <li><code>.p-hz-*: </code>水平方向内边距。</li>
+            <li><code>.p-vt-*: </code>垂直方向内边距。</li>
+            <li>以上<code>*</code>为 <span class="text-info">0 ~ 10</span>。</li>
+          </ul>
+          <p><code>*</code>以 <span class="text-info">5px</span> 为基准。如：<code>.p-t-5</code>代表上边距为 <span class="text-info">25px</span>。</p>
+
         </section>
       </div>
 
@@ -838,6 +1101,22 @@
               <ul class="nav">
                 <li><a class="nav-link" href="#image_responsive">响应式图片</a></li>
                 <li><a class="nav-link" href="#image_style">图片样式</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#assist">辅助类</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#assist_font_size">文字大小</a></li>
+                <li><a class="nav-link" href="#assist_text_alignment">排列方式</a></li>
+                <li><a class="nav-link" href="#assist_text_case">大小写转换</a></li>
+                <li><a class="nav-link" href="#assist_text_color">文本颜色</a></li>
+                <li><a class="nav-link" href="#assist_bg">背景</a></li>
+                <li><a class="nav-link" href="#assist_list">列表</a></li>
+                <li><a class="nav-link" href="#assist_float">浮动</a></li>
+                <li><a class="nav-link" href="#assist_close">关闭按钮</a></li>
+                <li><a class="nav-link" href="#assist_triangle">三角</a></li>
+                <li><a class="nav-link" href="#assist_margin">外边距</a></li>
+                <li><a class="nav-link" href="#assist_padding">内边距</a></li>
               </ul>
             </li>
           </ul>

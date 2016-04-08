@@ -644,8 +644,15 @@ button.close {
   color: #818a91 !important;
 }
 
+.text-black {
+  color: #373a3c !important;
+}
+
+.text-white {
+  color: #f7f7f9 !important;
+}
+
 .bg-primary {
-  color: #fff;
   background-color: #0275d8;
 }
 
@@ -654,7 +661,6 @@ a.bg-primary:focus, a.bg-primary:hover {
 }
 
 .bg-secondary {
-  color: #fff;
   background-color: #375A7F;
 }
 
@@ -663,7 +669,6 @@ a.bg-secondary:focus, a.bg-secondary:hover {
 }
 
 .bg-info {
-  color: #fff;
   background-color: #3bb4f2;
 }
 
@@ -672,7 +677,6 @@ a.bg-info:focus, a.bg-info:hover {
 }
 
 .bg-success {
-  color: #fff;
   background-color: #2EC6A0;
 }
 
@@ -681,7 +685,6 @@ a.bg-success:focus, a.bg-success:hover {
 }
 
 .bg-warning {
-  color: #fff;
   background-color: #f0ad4e;
 }
 
@@ -690,7 +693,6 @@ a.bg-warning:focus, a.bg-warning:hover {
 }
 
 .bg-danger {
-  color: #fff;
   background-color: #d9534f;
 }
 
@@ -699,12 +701,27 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 .bg-muted {
-  color: #fff;
   background-color: #818a91;
 }
 
 a.bg-muted:focus, a.bg-muted:hover {
   background-color: #687077;
+}
+
+.bg-black {
+  background-color: #373a3c;
+}
+
+a.bg-black:focus, a.bg-black:hover {
+  background-color: #1f2021;
+}
+
+.bg-white {
+  background-color: #f7f7f9;
+}
+
+a.bg-white:focus, a.bg-white:hover {
+  background-color: #dadae3;
 }
 
 .m-0 {
