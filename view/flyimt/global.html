@@ -21,17 +21,15 @@
 
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="nav-item"><a href="javascript:;" class="nav-link">模块1</a></li>
-          <li class="nav-item"><a href="javascript:;" class="nav-link">模块2</a></li>
-          <li class="nav-item"><a href="javascript:;" class="nav-link">模块3</a></li>
-          <li class="nav-item"><a href="javascript:;" class="nav-link">模块4</a></li>
+          <li class="nav-item"><a href="javascript:;" class="nav-link">敬请期待</a></li>
+          <li class="nav-item"><a href="javascript:;" class="nav-link">敬请期待</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="javascript:;">Flyimt</a>
             <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="introduction.html">简介</a></li>
-              <li class="dropdown-item"><a href="start.html">开始</a></li>
-              <li class="dropdown-item"><a href="javascript:;">全局样式</a></li>
-              <li class="dropdown-item"><a href="javascript:;">组件</a></li>
+              <li class="dropdown-item"><a href="./introduction.html">简介</a></li>
+              <li class="dropdown-item"><a href="./start.html">开始</a></li>
+              <li class="dropdown-item"><a href="./global.html">全局样式</a></li>
+              <li class="dropdown-item"><a href="./components.html">组件</a></li>
             </ul>
           </li>
         </ul>
@@ -48,6 +46,7 @@
     </div>
   </div>
   <div class="container">
+    <div id="sidebar_top_marker"></div>
     <div class="row">
       <div class="col-md-9">
         <section class="fi-docs-section" id="grid">
@@ -152,7 +151,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">h1></span>h1. Flyimt heading<span class="label-begin">small></span>font-size: 2.5rem<span class="label-begin">/small></span><span class="label-begin">/h1></span>
+                <span class="label">&lt;h1></span>h1. Flyimt heading<span class="label">&lt;small></span>font-size: 2.5rem<span class="label">&lt;/small></span><span class="label">&lt;/h1></span>
               </pre>
             </div>
           </div>
@@ -166,7 +165,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                如果能从来，我要选<span class="label-begin">mark></span>李白<span class="label-begin">/mark></span>。
+                如果能从来，我要选<span class="label">&lt;mark></span>李白<span class="label">&lt;/mark></span>。
               </pre>
             </div>
           </div>
@@ -180,7 +179,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                如果能从来，我要选<span class="label-begin">del></span>杜甫<span class="label-begin">/del></span><span class="label-begin">ins></span>李白<span class="label-begin">/ins></span>。
+                如果能从来，我要选<span class="label">&lt;del></span>杜甫<span class="label">&lt;/del></span><span class="label">&lt;ins></span>李白<span class="label">&lt;/ins></span>。
               </pre>
             </div>
           </div>
@@ -194,7 +193,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">abbr</span><span class="attr">title</span><span class="value">World Wide Web</span><span class="label-end"></span>WWW<span class="label-begin">/abbr></span>是环球信息网的缩写，中文名字为“万维网”，“环球网”等，常简称为Web。
+                <span class="label">&lt;abbr</span><span class="attr"> title=</span><span class="value">"World Wide Web"</span><span class="label">&gt;</span>WWW<span class="label">&lt;/abbr></span>是环球信息网的缩写，中文名字为“万维网”，“环球网”等，常简称为Web。
               </pre>
             </div>
           </div>
@@ -214,13 +213,12 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">address></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">strong></span>Flyimt, Inc.<span class="label-begin">strong></span><span class="label-begin">br/></span><br/>
-                &nbsp;&nbsp;天府大道，中段<span class="label-begin">br/></span><br/>
-                &nbsp;&nbsp;中国，四川，成都<span class="label-begin">br/></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">abbr</span><span class="attr">title</span><span class="value">电话号码</span><span class="label-end"></span>
-                P: <span class="label-begin">/abbr></span>(028) 909-0950 <br/>
-                <span class="label-begin">/address></span>
+                <span class="label">&lt;address></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;strong></span>Flyimt, Inc.<span class="label">&lt;/strong></span><span class="label">&lt;br/></span><br/>
+                &nbsp;&nbsp;天府大道，中段<span class="label">&lt;br/></span><br/>
+                &nbsp;&nbsp;中国，四川，成都<span class="label">&lt;br/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;abbr</span><span class="attr"> title=</span><span class="value">"电话号码"</span><span class="label">&gt;</span>P:<span class="label">&lt;/abbr></span>(028) 909-0950 <br/>
+                <span class="label">&lt;/address></span>
               </pre>
             </div>
           </div>
@@ -238,11 +236,10 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">bloclquote></span><br/>
-                &nbsp;&nbsp; <span class="label-begin">p></span>爱生活，爱老婆。<span class="label-begin">/p></span><br/>
-                &nbsp;&nbsp; <span class="label-begin">footer></span>出自<span class="label-begin">cite></span><span class="attr">title</span>
-                <span class="value">Source Title</span><span class="label-end"></span>杨氏语录 <span class="label-end">/cite></span><span class="label-end">/footer</span><br/>
-                <span class="label-begin">/blockquote></span>
+                <span class="label">&lt;bloclquote></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;p></span>爱生活，爱老婆。<span class="label">&lt;/p></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;footer></span>出自<span class="label">&lt;cite</span><span class="attr"> title=</span><span class="value">"Source Title"</span><span class="label">&gt;</span>杨氏语录<span class="label">&lt;/cite></span><span class="label">&lt;/footer></span><br/>
+                <span class="label">&lt;/blockquote></span>
               </pre>
             </div>
           </div>
@@ -259,11 +256,10 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">bloclquote</span><span class="attr">class</span><span class="value">blockquote</span><span class="label-end"></span><br/>
-                &nbsp;&nbsp; <span class="label-begin">p></span>爱生活，爱老婆。<span class="label-begin">/p></span><br/>
-                &nbsp;&nbsp; <span class="label-begin">footer></span>出自<span class="label-begin">cite></span><span class="attr">title</span>
-                <span class="value">Source Title</span><span class="label-end"></span>杨氏语录 <span class="label-end">/cite></span><span class="label-end">/footer</span><br/>
-                <span class="label-begin">/blockquote></span>
+                <span class="label">&lt;blockquote</span><span class="attr"> class=</span><span class="value">"blockquote-reverse"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;p></span>爱生活，爱老婆。<span class="label">&lt;/p></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;footer></span>出自<span class="label">&lt;cite></span><span class="attr"> title=</span><span class="value">"Source Title"</span><span class="label">&gt;</span>杨氏语录<span class="label">&lt;/cite></span><span class="label">&lt;/footer</span><br/>
+                <span class="label">&lt;/blockquote></span>
               </pre>
             </div>
           </div>
@@ -295,13 +291,13 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">dl></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">dt></span>描述列表<span class="label-begin">/dt></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>描述列表适合用来定义。<span class="label-begin">/dd></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">dt></span>打烊<span class="label-begin">/dt></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>商店晚上关门停止营业。<span class="label-begin">/dd></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>引申为歇业。<span class="label-begin">/dd></span><br/>
-                <span class="label-begin">/dl></span>
+                <span class="label">&lt;dl></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;dt></span>描述列表<span class="label">&lt;/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;dd></span>描述列表适合用来定义。<span class="label">&lt;/dd></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;dt></span>打烊<span class="label">&lt;/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;dd></span>商店晚上关门停止营业。<span class="label">&lt;/dd></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;dd></span>引申为歇业。<span class="label">&lt;/dd></span><br/>
+                <span class="label">&lt;/dl></span>
               </pre>
             </div>
           </div>
@@ -320,13 +316,13 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">dl <span class="attr">class</span><span class="value">dl-hz</span><span class="label-end"></span></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">dt></span>描述列表<span class="label-begin">/dt></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>描述列表适合用来定义。<span class="label-begin">/dd></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">dt></span>打烊<span class="label-begin">/dt></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>商店晚上关门停止营业。<span class="label-begin">/dd></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label-begin">dd></span>引申为歇业。<span class="label-begin">/dd></span><br/>
-                <span class="label-begin">/dl></span>
+                <span class="label">&lt;dl<span class="attr"> class=</span><span class="value">"dl-hz"</span><span class="label">&gt;</span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;dt></span>描述列表<span class="label">&lt;/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;dd></span>描述列表适合用来定义。<span class="label">&lt;/dd></span><br/>
+                &nbsp;&nbsp;<span class="label">dt></span>打烊<span class="label">/dt></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;dd></span>商店晚上关门停止营业。<span class="label">&lt;/dd></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;dd></span>引申为歇业。<span class="label">&lt;/dd></span><br/>
+                <span class="label">&lt;/dl></span>
               </pre>
             </div>
           </div>
@@ -339,12 +335,12 @@
           <p><code>&lt;code></code>包裹内联样式的代码片段。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
-              一般，我们把直接显示在网页上的代码写在<code>&lt;code></code>标签里面。
+              <code>var a = 1234;</code>
             </div>
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                 一般，我们把直接显示在网页上的代码写在<span class="label-begin">code></span>&amp;lt;code><span class="label-begin">/code></span> 标签里面。
+                 <span class="label">&lt;code></span>var a = 1234;<span class="label">&lt;/code></span>
               </pre>
             </div>
           </div>
@@ -358,8 +354,8 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                 同时按住 <span class="label-begin">kbd></span>Alt<span class="label-begin">/kbd></span> +
-                <span class="label-begin">kbd></span>Print Screen<span class="label-begin">/kbd></span>，我们可以截取当前运行窗口。
+                 同时按住 <span class="label">&lt;kbd></span>Alt<span class="label">&lt;/kbd></span> +
+                <span class="label">&lt;kbd></span>Print Screen<span class="label">&lt;/kbd></span>，我们可以截取当前运行窗口。
               </pre>
             </div>
           </div>
@@ -367,52 +363,33 @@
           <h3 id="code_pre">代码块</h3>
           <p>Flyimt 用<code>&lt;pre></code> 来展示代码块的内容。</p>
           <ul>
-            <li><code>.note：</code>用于注释。默认添加了<code>&lt;!-- --></code>，标签内部直接包含注释内容。</li>
-            <li><code>.label-begin：</code>用于标签名。默认已经添加了<code>&lt;</code>。</li>
-            <li><code>.label-end：</code>用于标签名，固定显示闭合符<code>&gt;</code>，此标签内部不用写任何代码，自闭和标签可以添加一个<code>/</code>。一般用在含有属性的标签上。</li>
-            <li><code>.attr：</code>用于属性名称。默认包含了<code>=</code>，标签内部直接包含属性名称。</li>
-            <li><code>.value：</code>用于属性值。默认包含了<code>""</code>，标签内部直接包含属性值。</li>
+            <li><code>.note：</code>用于注释。</li>
+            <li><code>.label：</code>用于标签名</li>
+            <li><code>.attr：</code>用于属性名称。</li>
+            <li><code>.value：</code>用于属性值。</li>
             <li>代码中的换行和空格需要使用<code>&lt;br/>、&amp;nbsp;</code>实现。</li>
           </ul>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
               <pre>
-                <span class="note">要用&lt;br/>换行</span>
+                <span class="note">&lt;!-- 要用&lt;br/>换行 --></span>
                 <br/>
-                <span class="label-begin">ul></span>
+                <span class="label">&lt;ul></span>
                 <br/>
-                &nbsp;&nbsp;<span class="label-begin">li</span><span class="attr">class</span><span class="value">active</span>
-                <span class="label-end"></span>爱生活，爱老婆。<span class="label-begin">/li></span>
-                <br/>
-                &nbsp;&nbsp;<span class="label-begin">li></span>爱生活，爱老婆。<span class="label-begin">/li></span>
-                <br/>
-                <span class="label-begin">/ul></span>
+                &nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"active"</span><span class="label">&gt;</span>爱生活，爱老婆。<span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span>爱生活，爱老婆。<span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ul></span>
               </pre>
             </div>
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">pre></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">note</span>
-                <span class="label-end"></span>要用&amp;lt;br/>换行 <span class="label-begin">/span></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
-                <span class="label-end"></span>ul><span class="label-begin">/span></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
-                &nbsp;&nbsp;&amp;nbsp;&amp;nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
-                <span class="label-end"></span>li<span class="label-begin">/span>&lt;span</span><span class="attr">class</span><span class="value">attr</span>
-                <span class="label-end"></span>class<span class="label-begin">/span>&lt;span</span><span class="attr">class</span><span class="value">value</span>
-                <span class="label-end"></span>active<span class="label-begin">/span></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-end</span><span class="label-end"></span>
-                <span class="label-begin">/span></span>爱生活，爱老婆。<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
-                <span class="label-end"></span>/li<span class="label-begin">/span></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
-                &nbsp;&nbsp;&amp;nbsp;&amp;nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span><span class="label-end"></span>li>
-                <span class="label-begin">/span></span>爱生活，爱老婆。<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span>
-                <span class="label-end"></span>/li><span class="label-begin">/span></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">br/></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">span</span><span class="attr">class</span><span class="value">label-begin</span><span class="label-end"></span>/ul><span class="label-begin">/span></span><br/>
-                <span class="label-begin">/pre></span>
+                <span class="label">&lt;pre></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"note"</span><span class="label">&gt;</span>&lt;!-- 要用&amp;lt;br/>换行 --><span class="label">&lt;/span></span><span class="label">&lt;br/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label"</span><span class="label">&gt;</span>&lt;ul><span class="label">&lt;/span></span><span class="label">&lt;br/></span><br/>
+                &nbsp;&nbsp;&amp;nbsp;&amp;nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label"</span><span class="label">&gt;</span>&lt;li<span class="label">&lt;/span>&lt;span</span><span class="attr"> class=</span><span class="value">"attr"</span><span class="label">&gt;</span>class<span class="label">&lt;/span>&lt;span</span><span class="attr"> class=</span><span class="value">"value"</span><span class="label">&gt;</span>active<span class="label">/span></span><br/>
+                &nbsp;&nbsp;...<br/>
+                <span class="label">/pre></span>
               </pre>
             </div>
           </div>
@@ -424,6 +401,8 @@
             <p><span class="text-primary">white-space</span>: <span class="text-warning">nowrap;</span></p>
             原因：<br/>
             <p><code>&lt;pre></code>在没有进行样式重写前的确是所见即所得，但是你写的html代码存在被压缩的可能，这就把里面的空格，换行全给kill掉了。因此，为了维护世界和平，还是显示的写出来吧。</p>
+            <br/>
+            <p>这里解释一下为什么yayo不用<code>:before, :after</code>伪类的<code>content</code>属性将<code>"、&lt;、空格、= 等</code>这些字符默认添加了呢，原因是，坑爹的无法用鼠标拖动进行选中啊！！！</p>
             <br/>
             ps：这里的<code>&lt;pre></code>里的代码样式是我在webstorm里使用的代码风格。
           </div>
@@ -452,9 +431,9 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table</span><span class="label-end"></span><br/>
+                <span class="label">&lt;table</span><span class="attr"> class=</span><span class="value">"table"</span><span class="label">&gt;</span><br/>
                 ··· <br/>
-                <span class="label-begin">/table></span>
+                <span class="label">&lt;/table></span>
               </pre>
             </div>
           </div>
@@ -483,11 +462,11 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">table-responsice</span><span class="label-end"></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">table</span><span class="attr">class</span><span class="value">table</span><span class="label-end"></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"table-responsice"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;table</span><span class="attr"> class=</span><span class="value">"table"</span><span class="label">&gt;</span><br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;··· <br/>
-                &nbsp;&nbsp;<span class="label-begin">/table></span><br/>
-                <span class="label-begin">/div></span>
+                &nbsp;&nbsp;<span class="label">&lt;/table></span><br/>
+                <span class="label">&lt;/div></span>
               </pre>
             </div>
           </div>
@@ -511,9 +490,9 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table table-sm</span><span class="label-end"></span><br/>
+                <span class="label">&lt;table</span><span class="attr"> class=</span><span class="value">"table table-sm"</span><span class="label">&gt;</span><br/>
                 &nbsp;&nbsp;··· <br/>
-                <span class="label-begin">/table></span><br/>
+                <span class="label">&lt;/table></span><br/>
               </pre>
             </div>
           </div>
@@ -538,9 +517,9 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table table-striped</span><span class="label-end"></span><br/>
+                <span class="label">&lt;table</span><span class="attr"> class=</span><span class="value">"table table-striped"</span><span class="label">&gt;</span><br/>
                 &nbsp;&nbsp;···<br/>
-                <span class="label-begin">/table></span><br/>
+                <span class="label">&lt;/table></span><br/>
               </pre>
             </div>
           </div>
@@ -564,9 +543,9 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table table-bordered</span><span class="label-end"></span><br/>
+                <span class="label">&lt;table</span><span class="attr"> class=</span><span class="value">"table table-bordered"</span><span class="label">&gt;</span><br/>
                 &nbsp;&nbsp;···<br/>
-                <span class="label-begin">/table></span><br/>
+                <span class="label">&lt;/table></span><br/>
               </pre>
             </div>
           </div>
@@ -595,15 +574,15 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">table</span><span class="attr">class</span><span class="value">table</span><span class="label-end"></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-active</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-primary</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-secondary</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-success</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-info</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-warning</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">tr</span><span class="attr">class</span><span class="value">row-bg-danger</span><span class="label-end"></span>···<span class="label-begin">/tr></span><br/>
-                <span class="label-begin">/table></span><br/>
+                <span class="label">&lt;table</span><span class="attr"> class=</span><span class="value">"table"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;tr</span><span class="attr"> class=</span><span class="value">"row-bg-active"</span><span class="label">&gt;</span>···<span class="label">&lt;/tr></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;tr</span><span class="attr"> class=</span><span class="value">"row-bg-primary"</span><span class="label">&gt;</span>···<span class="label">&lt;/tr></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;tr</span><span class="attr"> class=</span><span class="value">"row-bg-secondary"</span><span class="label">&gt;</span>···<span class="label">&lt;/tr></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;tr</span><span class="attr"> class=</span><span class="value">"row-bg-success"</span><span class="label">&gt;</span>···<span class="label">&lt;v/tr></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;tr</span><span class="attr"> class=</span><span class="value">"row-bg-info"</span><span class="label">&gt;</span>···<span class="label">&lt;/tr></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;tr</span><span class="attr"> class=</span><span class="value">"row-bg-warning"</span><span class="label">&gt;</span>···<span class="label">&lt;/tr></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;tr</span><span class="attr"> class=</span><span class="value">"row-bg-danger"</span><span class="label">&gt;</span>···<span class="label">&lt;/tr></span><br/>
+                <span class="label">&lt;/table></span><br/>
               </pre>
             </div>
           </div>
@@ -635,13 +614,13 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-default</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-secondary</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-success</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-warning</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-danger</span><span class="label-begin">/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-primary"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-secondary"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-info"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-success"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-warning"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-danger"</span><span class="label">&lt;/button></span><br/>
               </pre>
             </div>
           </div>
@@ -660,13 +639,13 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-default-outline</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary-outline</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-secondary-outline</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info-outline</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-success-outline</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-warning-outline</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-danger-outline</span><span class="label-begin">/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-default-outline"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-primary-outline"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-secondary-outline"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-info-outline"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-success-outline"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-warning-outline"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-danger-outline"</span><span class="label">&lt;/button></span><br/>
               </pre>
             </div>
           </div>
@@ -679,7 +658,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-link</span><span class="label-begin">/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-link"</span><span class="label">&gt;</span>link<span class="label">&lt;/button></span><br/>
               </pre>
             </div>
           </div>
@@ -696,10 +675,10 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary btn-xs</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info btn-sm</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-success</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-warning btn-lg</span><span class="label-begin">/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-primary btn-xs"</span><span class="label">&gt;</span>极小<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-info btn-sm"</span><span class="label">&gt;</span>小<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-success"</span><span class="label">&gt;</span>默认大小<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-warning btn-lg"</span><span class="label">&gt;</span>大按钮<span class="label">&lt;/button></span><br/>
               </pre>
             </div>
           </div>
@@ -713,8 +692,8 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary btn-round</span><span class="label-begin">/button></span><br/>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-info btn-circle</span><span class="label-begin">/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-primary btn-round"</span><span class="label">&gt;</span>小圆角按钮<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-info btn-circle"</span><span class="label">&gt;</span>圆形按钮<span class="label">&lt;/button></span><br/>
               </pre>
             </div>
           </div>
@@ -728,7 +707,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">button</span><span class="attr">type</span><span class="value">button</span><span class="attr">class</span><span class="value">btn btn-primary btn-block</span><span class="label-begin">/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-primary btn-block"</span><span class="label">&gt;</span>块级按钮<span class="label">&lt;/button></span><br/>
               </pre>
             </div>
           </div>
@@ -747,7 +726,7 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-responsive</span><span class="label-end">/</span><br/>
+                <span class="label">&lt;img</span><span class="attr"> class=</span><span class="value">"img-responsive"</span><span class="label">/></span><br/>
               </pre>
             </div>
           </div>
@@ -762,9 +741,9 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-round</span><span class="attr">src</span><span class="value">···</span><span class="attr">alt</span><span class="value">···</span><span class="label-end">/</span><br/>
-                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-circle</span><span class="attr">src</span><span class="value">···</span><span class="attr">alt</span><span class="value">···</span><span class="label-end">/</span><br/>
-                <span class="label-begin">img</span><span class="attr">class</span><span class="value">img-thumbnail</span><span class="attr">src</span><span class="value">···</span><span class="attr">alt</span><span class="value">···</span><span class="label-end">/</span><br/>
+                <span class="label">&lt;img</span><span class="attr"> class=</span><span class="value">"img-round"</span><span class="attr"> src=</span><span class="value">"···"</span><span class="attr"> alt=</span><span class="value">"···"</span><span class="label">/></span><br/>
+                <span class="label">&lt;img</span><span class="attr"> class=</span><span class="value">"img-circle"</span><span class="attr"> src=</span><span class="value">"···"</span><span class="attr"> alt=</span><span class="value">"···"</span><span class="label">/></span><br/>
+                <span class="label">&lt;img</span><span class="attr"> class=</span><span class="value">"img-thumbnail"</span><span class="attr"> src=</span><span class="value">"···"</span><span class="attr"> alt=</span><span class="value">"···"</span><span class="label">/></span><br/>
               </pre>
             </div>
           </div>
@@ -797,18 +776,18 @@
                 单词。当然，使用窄设计元素是可以的，不过要当心相应的缺点。
               </p>
               <div class="divider-sm"></div>
-              <p class="text-nowrap text-muted bg-success" style="width: 100px;">这是不碰到 “br” 不换行的犟驴子，本段宽度只有100px，但是它就是不换行。</p>
+              <p class="text-nowrap text-muted bg-success" style="width: 100px;">这是不碰到 “br” 不换行的犟驴子，本段宽度只有100px，但是弄死不换行。</p>
               <div class="divider-sm"></div>
               <p class="text-truncate" style="width: 100px;">超出了截断文本的宽度会用省略号显示。</p>
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-left</span><span class="label-end"></span>左对齐<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-center</span><span class="label-end"></span>居中<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-right</span><span class="label-end"></span>右对齐<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-justify</span><span class="label-end"></span>两端对齐<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-nowrap</span><span class="label-end"></span>整行文本<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-truncate</span><span class="label-end"></span>超出了截断文本的宽度会用省略号显示<span class="label-begin">/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-left"</span><span class="label">&gt;</span>左对齐<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-center"</span><span class="label">&gt;</span>居中<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-right"</span><span class="label">&gt;</span>右对齐<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-justify"</span><span class="label">&gt;</span>两端对齐<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-nowrap"</span><span class="label">&gt;</span>整行文本<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-truncate"</span><span class="label">&gt;</span>超出了截断文本的宽度会用省略号显示<span class="label">&lt;/p></span><br/>
               </pre>
             </div>
           </div>
@@ -822,9 +801,9 @@
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-uppercase</span><span class="label-end"></span>大写转换<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-lowercase</span><span class="label-end"></span>小写转换<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-capitalize</span><span class="label-end"></span>首字母大写<span class="label-begin">/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-uppercase"</span><span class="label">&gt;</span>大写转换<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-lowercase"</span><span class="label">&gt;</span>小写转换<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-capitalize"</span><span class="label">&gt;</span>首字母大写<span class="label">&lt;/p></span>
               </pre>
             </div>
           </div>
@@ -844,14 +823,14 @@
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-primary</span><span class="label-end"></span>primary<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-secondary</span><span class="label-end"></span>secondary<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-info</span><span class="label-end"></span>info<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-success</span><span class="label-end"></span>success<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-warning</span><span class="label-end"></span>warning<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-danger</span><span class="label-end"></span>danger<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-black</span><span class="label-end"></span>black<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">text-white</span><span class="label-end"></span>white<span class="label-begin">/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-primary"</span><span class="label">&gt;</span>primary<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-secondary"</span><span class="label">&gt;</span>secondary<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-info"</span><span class="label">&gt;</span>info<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-success"</span><span class="label">&gt;</span>success<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-warning"</span><span class="label">&gt;</span>warning<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-danger"</span><span class="label">&gt;</span>danger<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-black"</span><span class="label">&gt;</span>black<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-white"</span><span class="label">&gt;</span>white<span class="label">&lt;/p></span><br/>
               </pre>
             </div>
           </div>
@@ -871,14 +850,14 @@
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-primary</span><span class="label-end"></span>primary<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-secondary</span><span class="label-end"></span>secondary<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-info</span><span class="label-end"></span>info<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-success</span><span class="label-end"></span>success<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-warning</span><span class="label-end"></span>warning<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-danger</span><span class="label-end"></span>danger<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-black</span><span class="label-end"></span>black<span class="label-begin">/p></span><br/>
-                <span class="label-begin">p</span><span class="attr">class</span><span class="value">bg-white</span><span class="label-end"></span>white<span class="label-begin">/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-primary"</span><span class="label">&gt;</span>primary<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-secondary"</span><span class="label">&gt;</span>secondary<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-info"</span><span class="label">&gt;</span>info<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-success"</span><span class="label">&gt;</span>success<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-warning"</span><span class="label">&gt;</span>warning<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-danger"</span><span class="label">&gt;</span>danger<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-black"</span><span class="label">&gt;</span>black<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-white"</span><span class="label">&gt;</span>white<span class="label">&lt;/p></span><br/>
               </pre>
             </div>
           </div>
@@ -898,11 +877,11 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">ul</span><span class="attr">class</span><span class="value">list-none</span><span class="label-end"></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">li></span>无样式列表<span class="label-begin">/li></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">li></span>无样式列表<span class="label-begin">/li></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">li></span>无样式列表<span class="label-begin">/li></span><br/>
-                <span class="label-begin">/ul></span>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"list-none"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span>无样式列表<span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span>无样式列表<span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span>无样式列表<span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ul></span>
               </pre>
             </div>
           </div>
@@ -919,11 +898,11 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label-begin">ul</span><span class="attr">class</span><span class="value">list-inline</span><span class="label-end"></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">li></span>内联列表<span class="label-begin">/li></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">li></span>内联列表<span class="label-begin">/li></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">li></span>内联列表<span class="label-begin">/li></span><br/>
-                <span class="label-begin">/ul></span>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"list-inline"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span>无样式列表<span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span>无样式列表<span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span>无样式列表<span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ul></span>
               </pre>
             </div>
           </div>
@@ -946,8 +925,8 @@
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">left</span><span class="label-end"></span>左浮动<span class="label-begin">/div></span><br/>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">right</span><span class="label-end"></span>右浮动<span class="label-begin">/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"left"</span><span class="label">&gt;</span>左浮动<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"right"</span><span class="label">&gt;</span>右浮动<span class="label">&lt;/div></span><br/>
               </pre>
             </div>
           </div>
@@ -962,11 +941,11 @@
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">clearfix</span><span class="label-end"></span><br/>
-                &nbsp;&nbsp;<span class="label-begin">div</span><span class="attr">class</span><span class="value">left</span><span class="label-end"></span><span class="label-begin">/div</span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"clearfix"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"left"</span><span class="label">&gt;</span><span class="label">&lt;/div></span><br/>
                 &nbsp;&nbsp;or<br/>
-                &nbsp;&nbsp;<span class="label-begin">div</span><span class="attr">class</span><span class="value">right</span><span class="label-end"></span><span class="label-begin">/div</span><br/>
-                <span class="label-begin">/div></span>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"right"</span><span class="label">&gt;</span><span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;/div></span>
               </pre>
             </div>
           </div>
@@ -980,7 +959,7 @@
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">button</span><span class="attr">class</span><span class="value">close</span><span class="label-end"></span>&amp;times;<span class="label-begin">/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"close"</span><span class="label">&gt;</span>&amp;times;<span class="label">&lt;/button></span><br/>
               </pre>
             </div>
           </div>
@@ -996,11 +975,11 @@
             </div>
             <div class="fi-docs-code">
               <pre>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-up</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-down</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-left</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
-                <span class="label-begin">div</span><span class="attr">class</span><span class="value">triangle-right</span><span class="label-end"></span><span class="label-begin">/div></span><br/>
-              </pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"triangle-up"</span><span class="label">&gt;</span><span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"triangle-down"</span><span class="label">&gt;</span><span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"triangle-left"</span><span class="label">&gt;</span><span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"triangle-right"</span><span class="label">&gt;</span><span class="label">&lt;/div></span><br/>
+              </pre>&lt;
             </div>
           </div>
 
@@ -1016,7 +995,7 @@
             <li><code>.m-vt-*: </code>垂直方向外边距。</li>
             <li>以上<code>*</code>为 <span class="text-info">0 ~ 10</span>。</li>
           </ul>
-          <p><code>*</code>以 <span class="text-info">5px</span> 为基准。如：<code>.m-t-5</code>代表上边距为 <span class="text-info">25px</span>。</p>
+          <p><code>*</code>以 <span class="text-info">5px</span> 为基准。如：<code>.m-t-5</code>表示为<code>margin-top: 25px;</code>。</p>
 
           <h3 id="assist_padding">内边距</h3>
           <p>辅助标签设置内边距，Flyimt预设了6种类型的内边距。</p>
@@ -1030,7 +1009,7 @@
             <li><code>.p-vt-*: </code>垂直方向内边距。</li>
             <li>以上<code>*</code>为 <span class="text-info">0 ~ 10</span>。</li>
           </ul>
-          <p><code>*</code>以 <span class="text-info">5px</span> 为基准。如：<code>.p-t-5</code>代表上边距为 <span class="text-info">25px</span>。</p>
+          <p><code>*</code>以 <span class="text-info">5px</span> 为基准。如：<code>.p-t-5</code>表示为<code>padding-top: 25px;</code>。</p>
 
         </section>
       </div>
@@ -1146,7 +1125,7 @@
 
     $(window).scroll(function() {
       var yheight = getScrollTop(); //滚动条距顶端的距离
-      var referenceTop = $('#grid').offset().top;
+      var referenceTop = $('#sidebar_top_marker').offset().top;
 
       if(yheight >= referenceTop) {
         $('.sidebar').css({'position':'fixed','top':'0','padding-top':'20px'})

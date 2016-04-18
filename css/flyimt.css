@@ -512,7 +512,7 @@ dd {
 
 .close {
   float: right;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1;
   color: #373a3c;
@@ -550,11 +550,11 @@ button.close {
 }
 
 .left {
-  float: left;
+  float: left !important;
 }
 
 .right {
-  float: right;
+  float: right !important;
 }
 
 .lead {
@@ -3577,8 +3577,8 @@ pre {
   background-color: #3f3f3f;
   border: 1px solid #ccc;
   color: #fff;
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.25;
   margin: 0;
   padding: 10px 15px;
   word-break: break-all;
@@ -3601,74 +3601,27 @@ pre code {
   overflow-y: scroll;
 }
 
-pre,
-code {
+pre {
   font-size: 14px !important;
 }
-pre .label-begin,
-pre .label-end
-.attr,
+pre .label,
+pre .attr,
 pre .value,
-pre .note,
-code .label-begin,
-code .label-end
-.attr,
-code .value,
-code .note {
+pre .note {
   padding: 0;
   font-size: 14px !important;
 }
-pre .label-begin,
-code .label-begin {
+pre .label {
   color: #7CB7F1;
 }
-pre .label-begin:before,
-code .label-begin:before {
-  content: "<";
-}
-pre .label-end,
-code .label-end {
-  color: #7CB7F1;
-}
-pre .label-end:after,
-code .label-end:after {
-  content: ">";
-}
-pre .attr,
-code .attr {
+pre .attr {
   color: #2CC92E;
 }
-pre .attr:before,
-code .attr:before {
-  content: " ";
-}
-pre .attr:after,
-code .attr:after {
-  content: "=";
-}
-pre .value,
-code .value {
+pre .value {
   color: #EFD167;
 }
-pre .value:before,
-code .value:before {
-  content: '"';
-}
-pre .value:after,
-code .value:after {
-  content: '"';
-}
-pre .note,
-code .note {
+pre .note {
   color: #C4C4C4;
-}
-pre .note:before,
-code .note:before {
-  content: "<!-- ";
-}
-pre .note:after,
-code .note:after {
-  content: " -->";
 }
 
 .img-responsive {
