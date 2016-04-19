@@ -216,7 +216,588 @@
 
         <section id="btn_group">
           <h1 class="m-b-6">按钮组</h1>
-          <p class="lead"></p>
+          <p class="lead">通过按钮组容器把一组按钮放在同一行里。按钮组中的<code>button</code>的样式可以随意组合。</p>
+
+          <h3 id="btn_group_example">实例</h3>
+          <p>将一组<code>&lt;button</code>包裹在<code>.btn-group</code>中形成按钮组。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="btn-group">
+                <button class="btn btn-default">left</button>
+                <button class="btn btn-default">center</button>
+                <button class="btn btn-default">right</button>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div</span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="btn_group_size">尺寸</h3>
+          <p>按钮组有3中尺寸可供选择，你可以在<code>.btn-group</code>上添加尺寸类。也可以直接在<code>&lt;button></code>上添加按钮尺寸类，这样就有4中尺寸了（多了<code>.btn-xs</code>）。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="btn-group btn-group-lg">
+                <button class="btn btn-primary">left</button>
+                <button class="btn btn-primary">center</button>
+                <button class="btn btn-primary">right</button>
+              </div>
+              <br/>
+              <div class="btn-group">
+                <button class="btn btn-success">left</button>
+                <button class="btn btn-success">center</button>
+                <button class="btn btn-success">right</button>
+              </div>
+              <br/>
+              <div class="btn-group btn-group-sm">
+                <button class="btn btn-warning-outline">left</button>
+                <button class="btn btn-warning-outline">center</button>
+                <button class="btn btn-warning-outline">right</button>
+              </div>
+              <br/>
+              <div class="btn-group">
+                <button class="btn btn-danger btn-xs">left</button>
+                <button class="btn btn-danger btn-xs">center</button>
+                <button class="btn btn-danger btn-xs">right</button>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group btn-lg"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-primary"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-primary"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-primary"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div</span><br/><br/>
+
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-success"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-success"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-success"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div</span><br/><br/>
+
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group btn-sm"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-warning-outline"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-warning-outline"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-warning-outline"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div</span><br/><br/>
+
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-danger btn-xs"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-danger btn-xs"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-danger btn-xs"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div</span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="btn_group_block">块组</h3>
+          <p>给<code>.btn-group</code>添加<code>.btn-group-block</code>类，按钮组将占满父元素的宽。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="btn-group btn-group-block">
+                <button class="btn btn-default">left</button>
+                <button class="btn btn-default">center</button>
+                <button class="btn btn-default">right</button>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group btn-group-block"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div</span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="btn_group_vt">垂直组</h3>
+          <p>给<code>.btn-group</code>添加<code>.btn-group-vt</code>类，按钮组将垂直排列。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="btn-group btn-group-vt">
+                <button class="btn btn-default">top</button>
+                <button class="btn btn-default">middle</button>
+                <button class="btn btn-default">bottom</button>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group btn-group-vt"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>top<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>middle<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>bottom<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div</span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="btn_group_dropdown">带下拉框的按钮组</h3>
+          <p>在<code>.dropdown</code>上添加</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="btn-group">
+                <button class="btn btn-default">left</button>
+                <button class="btn btn-default">center</button>
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle">right</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                    <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"dropdown"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default dropdown-toggle"</span><span class="label">&gt;</span>dropdown<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"dropdown-menu"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>Action<span class="label">&lt;/a>&lt;/li></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>Action<span class="label">&lt;/a>&lt;/li></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/ul></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;/div</span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="btn_group_bar">工具栏</h3>
+          <p><code>.btn-group、.btn、.input-group</code>可以组成工具栏。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="btn-bar">
+                <button class="btn btn-default">left</button>
+                <div class="btn-group">
+                  <button class="btn btn-default">left</button>
+                  <button class="btn btn-default">center</button>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle">dropdown</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                      <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon">$</span>
+                  <input type="text" class="form-control"/>
+                </div>
+                <button class="btn btn-default">right</button>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-bar"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"dropdown"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default dropdown-toggle"</span><span class="label">&gt;</span>dropdown<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"dropdown-menu"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>Action<span class="label">&lt;/a>&lt;/li></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>Action<span class="label">&lt;/a>&lt;/li></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/ul></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;/div</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;/div></span>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="fi-docs-section" id="input_group">
+          <h1 class="m-b-6">输入框组</h1>
+          <p class="lead">通过在文本输入框<code>&lt;input></code>前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。为<code>.input-group</code>赋予<code>.input-group-addon</code>类，可以给<code>.form-control</code>的前面或后面添加额外的元素。</p>
+
+          <h3 id="input_group_example">实例</h3>
+          <p>在输入框的任意一侧添加额外元素。你还可以在输入框的两侧同时添加额外元素。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+                <span class="input-group-addon">.00</span>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>.00<span class="label">&lt;/span></span><br/>
+                <span class="label">&lt;/div></span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="input_group_size">尺寸</h3>
+          <p>输入框组分三种大小。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+              </div>
+              <br/>
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+              </div>
+              <br/>
+              <div class="input-group input-group-sm">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-lg"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                <span class="label">&lt;/div></span><br/><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                <span class="label">&lt;/div></span><br/><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-sm"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                <span class="label">&lt;/div></span>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="input_group_btn">按钮输入框组</h3>
+          <p>在输入框的任意一侧添加按钮。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="input-group">
+                <input type="text" class="form-control"/>
+                <div class="input-group-btn">
+                  <button class="btn btn-primary">search</button>
+                </div>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group-btn"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-primary</span>search<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="input_group_block">块级输入框组</h3>
+          <p>块级输入框组占满父元素。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="input-group input-group-block">
+                <input type="text" class="form-control"/>
+                <div class="input-group-btn">
+                  <button class="btn btn-primary">search</button>
+                </div>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-block"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group-btn"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-primary</span>search<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="fi-docs-section" id="nav_path">
+          <h1 class="m-b-6">路径导航</h1>
+          <p class="lead">在一个带有层次的导航结构中标明当前页面的位置。</p>
+          <p>各路径间的分隔符已经自动通过<code>:before</code>和<code>content</code>属性添加了。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ol class="breadcrumb">
+                <li><a href="javascript:;">item</a></li>
+                <li><a href="javascript:;">item</a></li>
+                <li><a href="javascript:;">item</a></li>
+              </ol>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;ol</span><span class="attr"> class=</span><span class="value">"breadcrumb"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ol></span><br/>
+              </pre>
+            </div>
+          </div>
+          <div class="fi-docs-note">
+            为什么要用<span class="text-danger">breadcrumb</span>来作类名呢？<br/>
+            Because:
+            <p>歪果仁们喜欢用有象征意义的名字，breadcrumb 的意思是面包屑。想想大家吃的切片面包，再看看导航路径的样式，嘿嘿嘿。。。</p>
+          </div>
+        </section>
+
+        <section class="fi-docs-section" id="pagination">
+          <h1 class="m-b-6">分页</h1>
+          <p class="lead">提供带有展示页码的分页组件和翻页组件。</p>
+          <p><code>&laquo;</code>用<code>&amp;#171;</code>或<code>&amp;laquo;</code>表示，
+            <code>&raquo;</code>用<code>&amp;#187;</code>或<code>&amp;raquo;</code>表示。
+          </p>
+
+          <h3 id="pagination_default">默认分页</h3>
+          <p>给<code>&lt;ul></code>添加<code>.pagination</code>类，将其变为一个分页组件。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ul class="pagination">
+                <li><a href="javascript:;">&laquo;</a></li>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">&raquo;</a></li>
+              </ul>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"pagination"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>&amp;laquo;<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>1<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>2<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>3<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>4<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>&amp;raquo;<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ul></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="pagination_border">带边框的分页</h3>
+          <p>给<code>.pagination</code>分页组件添加<code>.pagination-border</code>类，使组件有边框。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ul class="pagination pagination-border">
+                <li><a href="javascript:;">&laquo;</a></li>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">&raquo;</a></li>
+              </ul>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"pagination pagination-border"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;... <br/>
+                <span class="label">&lt;/ul></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="pagination_status">激活和禁用状态</h3>
+          <p>给<code>&lt;li></code>添加<code>.active、.disabled</code>类，让其处于激活和禁用状态。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ul class="pagination">
+                <li class="disabled"><a href="javascript:;">&laquo;</a></li>
+                <li class="active"><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">&raquo;</a></li>
+              </ul>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"pagination"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"disabled"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>&amp;laquo;<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"active"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>1<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;... <br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>&amp;raquo;<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ul></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="pagination_size">尺寸</h3>
+          <p>分页组件有三种尺寸。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ul class="pagination pagination-lg">
+                <li><a href="javascript:;">&laquo;</a></li>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">&raquo;</a></li>
+              </ul>
+              <br/>
+              <ul class="pagination">
+                <li><a href="javascript:;">&laquo;</a></li>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">&raquo;</a></li>
+              </ul>
+              <br/>
+              <ul class="pagination pagination-sm">
+                <li><a href="javascript:;">&laquo;</a></li>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">&raquo;</a></li>
+              </ul>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"pagination pagination-lg"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;... <br/>
+                <span class="label">&lt;/ul></span><br/>
+                <br/>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"pagination"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;... <br/>
+                <span class="label">&lt;/ul></span><br/>
+                <br/>
+                <span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"pagination pagination-sm"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;... <br/>
+                <span class="label">&lt;/ul></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="pagination_pager">翻页</h3>
+          <p>两种翻页样式。当然也可以在<code>&lt;li></code>上添加<code>.disabled</code>类禁用。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <ol class="pager">
+                <li><a href="javascript:;">prev</a></li>
+                <li><a href="javascript:;">next</a></li>
+              </ol>
+              <ol class="pager">
+                <li class="pager-prev disabled"><a href="javascript:;">prev</a></li>
+                <li class="pager-next"><a href="javascript:;">next</a></li>
+              </ol>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;ol</span><span class="attr"> class=</span><span class="value">"pager"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>prev<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>next<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ol></span><br/>
+                <br/>
+                <span class="label">&lt;ol</span><span class="attr"> class=</span><span class="value">"pager"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"pager-prev disabled"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>prev<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"pager-next"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>next<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ol></span><br/>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="fi-docs-section" id="label">
+          <h1 class="m-b-6">标签</h1>
+          <p class="lead">标签的字体大小为父元素的75%;</p>
+
+          <h3 id="label_style">样式</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <span class="label label-default">default</span>
+              <span class="label label-primary">primary</span>
+              <span class="label label-secondary">secondary</span>
+              <span class="label label-success">success</span>
+              <span class="label label-info">info</span>
+              <span class="label label-warning">warning</span>
+              <span class="label label-danger">danger</span>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-default"</span><span class="label">&gt;</span>default<span class="label">&lt;/span></span><br/>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-primary"</span><span class="label">&gt;</span>primary<span class="label">&lt;/span></span><br/>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-secondary"</span><span class="label">&gt;</span>secondary<span class="label">&lt;/span></span><br/>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-success"</span><span class="label">&gt;</span>success<span class="label">&lt;/span></span><br/>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-info"</span><span class="label">&gt;</span>info<span class="label">&lt;/span></span><br/>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-warning"</span><span class="label">&gt;</span>warning<span class="label">&lt;/span></span><br/>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-danger"</span><span class="label">&gt;</span>danger<span class="label">&lt;/span></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="label_badge">徽章</h3>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <span class="label label-default label-badge">徽章</span>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-default label-badge"</span><span class="label">&gt;</span>徽章<span class="label">&lt;/span></span><br/>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="fi-docs-section" id="jumbotron">
+          <h1 class="m-b-6">巨幕</h1>
+          <p class="lead">这是一个轻量、灵活的组件，它能延伸至整个浏览器视口来展示网站上的关键内容。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="jumbotron">
+                <h1>这是超大巨幕</h1>
+                <p>On Friday night, London sought to distinguish itself from Beijing's 2008 spectacular by joining spectators
+                  and technology into an unusual team for the opening ceremony of the 2012 Olympics: the human Jumbotron.
+                  <br/>
+                  周五晚上，为了显示出自己有别于2008年北京奥运会盛大开幕式的独具一格的一面，2012年伦敦奥运会开幕式罕见地将现场观众和现代科技融为一体，由真人元素构成了一面超大屏幕。</p>
+                <div class="jumbotron-hr"></div>
+                <button class="btn btn-success btn-lg">大按钮</button>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"label label-default label-badge"</span><span class="label">&gt;</span>徽章<span class="label">&lt;/span></span><br/>
+              </pre>
+            </div>
+          </div>
         </section>
       </div>
 
@@ -236,6 +817,46 @@
                 <li><a class="nav-link" href="#dropdown_disabled">禁用子菜单</a></li>
               </ul>
             </li>
+            <li>
+              <a class="nav-link" href="#btn_group">按钮组</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#btn_group_example">实例</a></li>
+                <li><a class="nav-link" href="#btn_group_size">尺寸</a></li>
+                <li><a class="nav-link" href="#btn_group_block">块组</a></li>
+                <li><a class="nav-link" href="#btn_group_vt">垂直组</a></li>
+                <li><a class="nav-link" href="#btn_group_dropdown">带下拉框的按钮组</a></li>
+                <li><a class="nav-link" href="#btn_group_bar">工具栏</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#input_group">输入框组</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#input_group_example">实例</a></li>
+                <li><a class="nav-link" href="#input_group_size">尺寸</a></li>
+                <li><a class="nav-link" href="#input_group_btn">按钮输入框组</a></li>
+                <li><a class="nav-link" href="#input_group_block">块级输入框组</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#nav_path">路径导航</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#pagination">分页</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#pagination_default">默认分页</a></li>
+                <li><a class="nav-link" href="#pagination_border">带边框的分页</a></li>
+                <li><a class="nav-link" href="#pagination_status">激活和禁用状态</a></li>
+                <li><a class="nav-link" href="#pagination_size">尺寸</a></li>
+                <li><a class="nav-link" href="#pagination_pager">翻页</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#label">标签</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#label_style">样式</a></li>
+                <li><a class="nav-link" href="#label_badge">徽章</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -245,7 +866,7 @@
 
 <footer class="fi-docs-footer">
   <div class="container">
-    <p class="text-center">Designed by my kelp and built by yayo.</p>
+    <p class="text-center">Designed by kelp and built by yayo.</p>
     <p class="text-center">wellcome to feedback, and we will make it better.</p>
     <ul class="list-group list-group-hz center">
       <li class="list-group-item"><a href="javascript:;" class="text-muted">当前版本1.0.0</a></li>
@@ -258,10 +879,21 @@
 <script>
   (function() {
 
+    function setSidebarVisibility() {
+      var windowWidth = $(window).width();
+      if(windowWidth < 768) {
+        $('.sidebar').css({'display':'none'})
+        return false;
+      }else {
+        $('.sidebar').css({'display':'block'})
+        return true;
+      }
+    }
     // BEGIN: 通过滚动距离设置侧边导航的position
     //
 
     $(window).scroll(function() {
+      if(!setSidebarVisibility()) {return;}
       var yheight = getScrollTop(); //滚动条距顶端的距离
       var referenceTop = $('#sidebar_top_marker').offset().top;
 
@@ -293,6 +925,10 @@
 
     //
     // END: 通过滚动距离设置侧边导航的position
+
+    $(window).resize(function() {
+      setSidebarVisibility();
+    })
   })()
 </script>
 </body>
