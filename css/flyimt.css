@@ -3570,7 +3570,7 @@ pre .note {
 }
 
 .img-thumbnail {
-  padding: 0.25rem;
+  padding: 4px;
   line-height: 1.5;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -7433,11 +7433,6 @@ a.label:focus, a.label:hover {
     padding: 4rem 2rem;
   }
 }
-.jumbotron-full {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 .alert {
   padding: 15px;
   margin-bottom: 15px;
@@ -8249,6 +8244,42 @@ button.list-group-item-state.active:hover {
   display: table-cell;
   padding: 5px 10px;
   border: none !important;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  -moz-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.thumbnail > img,
+.thumbnail a > img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail a:hover,
+.thumbnail a:focus,
+.thumbnail a.active {
+  border-color: #0275d8;
+}
+.thumbnail .caption {
+  padding: 9px;
+  color: #373a3c;
+}
+.thumbnail .caption h1, .thumbnail .caption h2, .thumbnail .caption h3, .thumbnail .caption h4, .thumbnail .caption h5, .thumbnail .caption h6 {
+  margin-top: 10px;
+  margin-top: 15px;
+}
+.thumbnail .caption > p {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=flyimt.css.map */
