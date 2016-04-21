@@ -7548,7 +7548,7 @@ progress .progress {
   background-color: transparent;
 }
 
-.progress-bar {
+.progress-value {
   -moz-border-radius: 1000px;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
@@ -7576,7 +7576,7 @@ progress[value]::-moz-progress-bar {
   background-color: #0275d8;
 }
 
-.progress-striped .progress-bar {
+.progress-striped .progress-value {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
   background-size: 25px 25px;
 }
@@ -7590,7 +7590,7 @@ progress[value]::-moz-progress-bar {
   background-size: 25px 25px;
 }
 
-@keyframes progress-bar-stripes {
+@keyframes progress-value-stripes {
   from {
     background-position: 0 0;
   }
@@ -7598,20 +7598,20 @@ progress[value]::-moz-progress-bar {
     background-position: 75px 0;
   }
 }
-.progress-animated .progress-bar {
-  animation: progress-bar-stripes 2s linear infinite;
+.progress-animated .progress-value {
+  animation: progress-value-stripes 2s linear infinite;
 }
 .progress-animated[value]::-webkit-progress-value {
-  animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-value-stripes 2s linear infinite;
 }
 .progress-animated[value]::-moz-progress-bar {
-  animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-value-stripes 2s linear infinite;
 }
 
 .progress-secondary {
   border: 1px solid #375A7F;
 }
-.progress-secondary .progress-bar {
+.progress-secondary .progress-value {
   background-color: #375A7F;
 }
 .progress-secondary[value]::-webkit-progress-value {
@@ -7624,7 +7624,7 @@ progress[value]::-moz-progress-bar {
 .progress-gray {
   border: 1px solid #55595c;
 }
-.progress-gray .progress-bar {
+.progress-gray .progress-value {
   background-color: #55595c;
 }
 .progress-gray[value]::-webkit-progress-value {
@@ -7637,7 +7637,7 @@ progress[value]::-moz-progress-bar {
 .progress-success {
   border: 1px solid #2EC6A0;
 }
-.progress-success .progress-bar {
+.progress-success .progress-value {
   background-color: #2EC6A0;
 }
 .progress-success[value]::-webkit-progress-value {
@@ -7650,7 +7650,7 @@ progress[value]::-moz-progress-bar {
 .progress-info {
   border: 1px solid #3bb4f2;
 }
-.progress-info .progress-bar {
+.progress-info .progress-value {
   background-color: #3bb4f2;
 }
 .progress-info[value]::-webkit-progress-value {
@@ -7663,7 +7663,7 @@ progress[value]::-moz-progress-bar {
 .progress-warning {
   border: 1px solid #f0ad4e;
 }
-.progress-warning .progress-bar {
+.progress-warning .progress-value {
   background-color: #f0ad4e;
 }
 .progress-warning[value]::-webkit-progress-value {
@@ -7676,7 +7676,7 @@ progress[value]::-moz-progress-bar {
 .progress-danger {
   border: 1px solid #d9534f;
 }
-.progress-danger .progress-bar {
+.progress-danger .progress-value {
   background-color: #d9534f;
 }
 .progress-danger[value]::-webkit-progress-value {
@@ -8276,7 +8276,7 @@ button.list-group-item-state.active:hover {
 }
 .thumbnail .caption h1, .thumbnail .caption h2, .thumbnail .caption h3, .thumbnail .caption h4, .thumbnail .caption h5, .thumbnail .caption h6 {
   margin-top: 10px;
-  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .thumbnail .caption > p {
   text-align: justify;
