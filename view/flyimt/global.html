@@ -754,7 +754,45 @@
           <p>辅助类设定了一些在任何地方都可以使用的类。</p>
 
           <h3 id="assist_font_size">文字大小</h3>
-          <p>调试中</p>
+          <p>Flyimt可以快速设置9种大小的文字。</p>
+          <ul>
+            <li><code>.font-20:</code>20px</li>
+            <li><code>.font-19:</code>19px</li>
+            <li><code>.font-18:</code>18px</li>
+            <li><code>.font-17:</code>17px</li>
+            <li><code>.font-16:</code>16px</li>
+            <li><code>.font-15:</code>15px</li>
+            <li><code>.font-14:</code>14px</li>
+            <li><code>.font-13:</code>13px</li>
+            <li><code>.font-12:</code>12px</li>
+          </ul>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <p class="font-20">快速设置文字大小</p>
+              <p class="font-19">快速设置文字大小</p>
+              <p class="font-18">快速设置文字大小</p>
+              <p class="font-17">快速设置文字大小</p>
+              <p class="font-16">快速设置文字大小</p>
+              <p class="font-15">快速设置文字大小</p>
+              <p class="font-14">快速设置文字大小</p>
+              <p class="font-13">快速设置文字大小</p>
+              <p class="font-12">快速设置文字大小</p>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-20"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-19"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-18"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-17"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-16"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-15"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-14"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-13"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"font-12"</span><span class="label">&gt;</span>...<span class="label">&lt;/p></span><br/>
+              </pre>
+            </div>
+          </div>
+
 
           <h3 id="assist_text_alignment">排列方式</h3>
           <div class="fi-docs-example">
@@ -831,6 +869,42 @@
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-danger"</span><span class="label">&gt;</span>danger<span class="label">&lt;/p></span><br/>
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-black"</span><span class="label">&gt;</span>black<span class="label">&lt;/p></span><br/>
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-white"</span><span class="label">&gt;</span>white<span class="label">&lt;/p></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="assist_border">边框</h3>
+          <p>为标签添加<code>.border-*</code>类，设置盒子边框样式。预设了4种样式。</p>
+          <ul>
+            <li><code>.border-none:</code>无边框。</li>
+            <li><code>.border-square:</code>直角边框。</li>
+            <li><code>.border-round:</code>圆角边框。</li>
+            <li><code>.border-circle:</code>圆形边框。</li>
+          </ul>
+
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="bg-success border-none" style="width: 100px; height: 100px;"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="bg-info border-square" style="width: 100px; height: 100px;"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="bg-warning border-round" style="width: 100px; height: 100px;"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="bg-danger border-circle" style="width: 100px; height: 50px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"border-none"</span><span class="label">&gt;</span>...<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"border-square"</span><span class="label">&gt;</span>...<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"border-round"</span><span class="label">&gt;</span>...<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"border-circle"</span><span class="label">&gt;</span>...<span class="label">&lt;/div></span><br/>
               </pre>
             </div>
           </div>
@@ -1089,6 +1163,7 @@
                 <li><a class="nav-link" href="#assist_text_alignment">排列方式</a></li>
                 <li><a class="nav-link" href="#assist_text_case">大小写转换</a></li>
                 <li><a class="nav-link" href="#assist_text_color">文本颜色</a></li>
+                <li><a class="nav-link" href="#assist_border">边框</a></li>
                 <li><a class="nav-link" href="#assist_bg">背景</a></li>
                 <li><a class="nav-link" href="#assist_list">列表</a></li>
                 <li><a class="nav-link" href="#assist_float">浮动</a></li>
@@ -1109,9 +1184,9 @@
   <div class="container">
     <p class="text-center">Designed by my kelp and built by yayo.</p>
     <p class="text-center">wellcome to feedback, and we will make it better.</p>
-    <ul class="list-group list-group-hz center">
-      <li class="list-group-item"><a href="javascript:;" class="text-muted">当前版本1.0.0</a></li>
-      <li class="list-group-item"><a href="javascript:;">github</a></li>
+    <ul class="list-inline text-center">
+      <li><a href="javascript:;" class="text-muted">当前版本1.0.0</a></li>
+      <li><a href="javascript:;">github</a></li>
     </ul>
   </div>
 </footer>

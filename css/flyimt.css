@@ -1304,20 +1304,40 @@ a.bg-white:focus, a.bg-white:hover {
   padding-right: 50px;
 }
 
-.font-default {
-  font-size: 1rem;
+.font-12 {
+  font-size: 12px;
 }
 
-.font-lg {
-  font-size: 1.25rem;
+.font-13 {
+  font-size: 13px;
 }
 
-.font-sm {
-  font-size: 0.85rem;
+.font-14 {
+  font-size: 14px;
 }
 
-.font-xs {
-  font-size: 0.75rem;
+.font-15 {
+  font-size: 15px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-19 {
+  font-size: 19px;
+}
+
+.font-20 {
+  font-size: 20px;
 }
 
 .list-none {
@@ -1334,6 +1354,22 @@ a.bg-white:focus, a.bg-white:hover {
   display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.border-round {
+  border-radius: 0.25rem !important;
+}
+
+.border-circle {
+  border-radius: 1000px !important;
+}
+
+.border-square {
+  border-radius: 0 !important;
 }
 
 .container {
@@ -7742,8 +7778,20 @@ progress[value]::-moz-progress-bar {
 }
 
 .media-heading {
-  margin-top: 0;
+  margin-top: 3px;
   margin-bottom: 5px;
+}
+.media-heading, .media-heading > a {
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+}
+.media-heading > a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+.media-heading > a:hover {
+  color: #0275d8;
 }
 
 .media-list {
@@ -7759,8 +7807,9 @@ progress[value]::-moz-progress-bar {
 .list-group-item {
   position: relative;
   display: block;
-  padding: .75rem 1.25rem;
+  padding: 8px 15px;
   margin-bottom: -.0625rem;
+  font-size: 14px;
   background-color: #fff;
   border: 1px solid #ddd;
 }
@@ -7770,480 +7819,189 @@ progress[value]::-moz-progress-bar {
   border-radius: 0;
 }
 
-a.list-group-item,
-button.list-group-item {
-  width: 100%;
-  text-align: inherit;
-  color: #555;
-}
-a.list-group-item .list-group-item-heading,
-button.list-group-item .list-group-item-heading {
-  color: #333;
-}
-a.list-group-item:focus, a.list-group-item:hover,
-button.list-group-item:focus,
-button.list-group-item:hover {
-  color: #555;
-  text-decoration: none;
-  background-color: #f5f5f5;
-  outline: none;
+.list-group-noborder .list-group-item {
+  border: none !important;
 }
 
-.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
+.list-group-item {
+  width: 100%;
+  text-align: inherit;
+}
+.list-group-item .list-group-item-heading {
+  color: #333;
+}
+.list-group-item > a {
+  display: block;
+  width: 100%;
+}
+.list-group-item > a:focus, .list-group-item > a:hover {
+  text-decoration: none;
+}
+.list-group-item:focus, .list-group-item:hover {
+  background-color: #eee;
+}
+
+.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover, .list-group-item.disabled a, .list-group-item.disabled a:focus, .list-group-item.disabled a:hover {
   color: #818a91;
   cursor: not-allowed;
   background-color: #eceeef;
 }
-.list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading {
+.list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled a .list-group-item-heading, .list-group-item.disabled a:focus .list-group-item-heading, .list-group-item.disabled a:hover .list-group-item-heading {
   color: inherit;
 }
-.list-group-item.disabled .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text {
+.list-group-item.disabled .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .list-group-item.disabled a .list-group-item-text, .list-group-item.disabled a:focus .list-group-item-text, .list-group-item.disabled a:hover .list-group-item-text {
   color: #818a91;
 }
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+.list-group-item.active, .list-group-item.active a {
   z-index: 2;
-  color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
-}
-.list-group-item.active .list-group-item-heading,
-.list-group-item.active .list-group-item-heading > small,
-.list-group-item.active .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading,
-.list-group-item.active:focus .list-group-item-heading > small,
-.list-group-item.active:focus .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading,
-.list-group-item.active:hover .list-group-item-heading > small,
-.list-group-item.active:hover .list-group-item-heading > .small {
-  color: inherit;
-}
-.list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
-  color: #a8d6fe;
+  background-color: #ddd;
+  border-color: #ddd;
 }
 
 .list-group-item-heading {
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
 }
 
 .list-group-item-text {
   margin-bottom: 0;
   line-height: 1.3;
+  color: #777;
+  font-size: 12px;
 }
 
-.list-group-primary .list-group-item:focus, .list-group-primary .list-group-item:hover,
-.list-group-primary a.list-group-item:focus,
-.list-group-primary a.list-group-item:hover,
-.list-group-primary button.list-group-item:focus,
-.list-group-primary button.list-group-item:hover {
-  color: #fff;
-  background-color: #0275d8;
-}
-.list-group-primary .list-group-item.active, .list-group-primary .list-group-item.active:focus, .list-group-primary .list-group-item.active:hover,
-.list-group-primary a.list-group-item.active,
-.list-group-primary a.list-group-item.active:focus,
-.list-group-primary a.list-group-item.active:hover,
-.list-group-primary button.list-group-item.active,
-.list-group-primary button.list-group-item.active:focus,
-.list-group-primary button.list-group-item.active:hover {
+.list-group-primary .list-group-item:not(.disabled).active, .list-group-primary .list-group-item:not(.disabled).active > a {
   color: #fff;
   background-color: #0275d8;
   border-color: #0275d8;
 }
-
-.list-group-secondary .list-group-item:focus, .list-group-secondary .list-group-item:hover,
-.list-group-secondary a.list-group-item:focus,
-.list-group-secondary a.list-group-item:hover,
-.list-group-secondary button.list-group-item:focus,
-.list-group-secondary button.list-group-item:hover {
-  color: #fff;
-  background-color: #375A7F;
+.list-group-primary .list-group-item:not(.disabled).active .list-group-item-heading,
+.list-group-primary .list-group-item:not(.disabled).active .list-group-item-text, .list-group-primary .list-group-item:not(.disabled).active > a .list-group-item-heading,
+.list-group-primary .list-group-item:not(.disabled).active > a .list-group-item-text {
+  color: #f5f5f5;
 }
-.list-group-secondary .list-group-item.active, .list-group-secondary .list-group-item.active:focus, .list-group-secondary .list-group-item.active:hover,
-.list-group-secondary a.list-group-item.active,
-.list-group-secondary a.list-group-item.active:focus,
-.list-group-secondary a.list-group-item.active:hover,
-.list-group-secondary button.list-group-item.active,
-.list-group-secondary button.list-group-item.active:focus,
-.list-group-secondary button.list-group-item.active:hover {
+
+.list-group-secondary .list-group-item:not(.disabled).active, .list-group-secondary .list-group-item:not(.disabled).active > a {
   color: #fff;
   background-color: #375A7F;
   border-color: #375A7F;
 }
-
-.list-group-success .list-group-item:focus, .list-group-success .list-group-item:hover,
-.list-group-success a.list-group-item:focus,
-.list-group-success a.list-group-item:hover,
-.list-group-success button.list-group-item:focus,
-.list-group-success button.list-group-item:hover {
-  color: #fff;
-  background-color: #2EC6A0;
+.list-group-secondary .list-group-item:not(.disabled).active .list-group-item-heading,
+.list-group-secondary .list-group-item:not(.disabled).active .list-group-item-text, .list-group-secondary .list-group-item:not(.disabled).active > a .list-group-item-heading,
+.list-group-secondary .list-group-item:not(.disabled).active > a .list-group-item-text {
+  color: #f5f5f5;
 }
-.list-group-success .list-group-item.active, .list-group-success .list-group-item.active:focus, .list-group-success .list-group-item.active:hover,
-.list-group-success a.list-group-item.active,
-.list-group-success a.list-group-item.active:focus,
-.list-group-success a.list-group-item.active:hover,
-.list-group-success button.list-group-item.active,
-.list-group-success button.list-group-item.active:focus,
-.list-group-success button.list-group-item.active:hover {
+
+.list-group-success .list-group-item:not(.disabled).active, .list-group-success .list-group-item:not(.disabled).active > a {
   color: #fff;
   background-color: #2EC6A0;
   border-color: #2EC6A0;
 }
-
-.list-group-info .list-group-item:focus, .list-group-info .list-group-item:hover,
-.list-group-info a.list-group-item:focus,
-.list-group-info a.list-group-item:hover,
-.list-group-info button.list-group-item:focus,
-.list-group-info button.list-group-item:hover {
-  color: #fff;
-  background-color: #3bb4f2;
+.list-group-success .list-group-item:not(.disabled).active .list-group-item-heading,
+.list-group-success .list-group-item:not(.disabled).active .list-group-item-text, .list-group-success .list-group-item:not(.disabled).active > a .list-group-item-heading,
+.list-group-success .list-group-item:not(.disabled).active > a .list-group-item-text {
+  color: #f5f5f5;
 }
-.list-group-info .list-group-item.active, .list-group-info .list-group-item.active:focus, .list-group-info .list-group-item.active:hover,
-.list-group-info a.list-group-item.active,
-.list-group-info a.list-group-item.active:focus,
-.list-group-info a.list-group-item.active:hover,
-.list-group-info button.list-group-item.active,
-.list-group-info button.list-group-item.active:focus,
-.list-group-info button.list-group-item.active:hover {
+
+.list-group-info .list-group-item:not(.disabled).active, .list-group-info .list-group-item:not(.disabled).active > a {
   color: #fff;
   background-color: #3bb4f2;
   border-color: #3bb4f2;
 }
-
-.list-group-warning .list-group-item:focus, .list-group-warning .list-group-item:hover,
-.list-group-warning a.list-group-item:focus,
-.list-group-warning a.list-group-item:hover,
-.list-group-warning button.list-group-item:focus,
-.list-group-warning button.list-group-item:hover {
-  color: #fff;
-  background-color: #f0ad4e;
+.list-group-info .list-group-item:not(.disabled).active .list-group-item-heading,
+.list-group-info .list-group-item:not(.disabled).active .list-group-item-text, .list-group-info .list-group-item:not(.disabled).active > a .list-group-item-heading,
+.list-group-info .list-group-item:not(.disabled).active > a .list-group-item-text {
+  color: #f5f5f5;
 }
-.list-group-warning .list-group-item.active, .list-group-warning .list-group-item.active:focus, .list-group-warning .list-group-item.active:hover,
-.list-group-warning a.list-group-item.active,
-.list-group-warning a.list-group-item.active:focus,
-.list-group-warning a.list-group-item.active:hover,
-.list-group-warning button.list-group-item.active,
-.list-group-warning button.list-group-item.active:focus,
-.list-group-warning button.list-group-item.active:hover {
+
+.list-group-warning .list-group-item:not(.disabled).active, .list-group-warning .list-group-item:not(.disabled).active > a {
   color: #fff;
   background-color: #f0ad4e;
   border-color: #f0ad4e;
 }
-
-.list-group-danger .list-group-item:focus, .list-group-danger .list-group-item:hover,
-.list-group-danger a.list-group-item:focus,
-.list-group-danger a.list-group-item:hover,
-.list-group-danger button.list-group-item:focus,
-.list-group-danger button.list-group-item:hover {
-  color: #fff;
-  background-color: #d9534f;
+.list-group-warning .list-group-item:not(.disabled).active .list-group-item-heading,
+.list-group-warning .list-group-item:not(.disabled).active .list-group-item-text, .list-group-warning .list-group-item:not(.disabled).active > a .list-group-item-heading,
+.list-group-warning .list-group-item:not(.disabled).active > a .list-group-item-text {
+  color: #f5f5f5;
 }
-.list-group-danger .list-group-item.active, .list-group-danger .list-group-item.active:focus, .list-group-danger .list-group-item.active:hover,
-.list-group-danger a.list-group-item.active,
-.list-group-danger a.list-group-item.active:focus,
-.list-group-danger a.list-group-item.active:hover,
-.list-group-danger button.list-group-item.active,
-.list-group-danger button.list-group-item.active:focus,
-.list-group-danger button.list-group-item.active:hover {
+
+.list-group-danger .list-group-item:not(.disabled).active, .list-group-danger .list-group-item:not(.disabled).active > a {
   color: #fff;
   background-color: #d9534f;
   border-color: #d9534f;
+}
+.list-group-danger .list-group-item:not(.disabled).active .list-group-item-heading,
+.list-group-danger .list-group-item:not(.disabled).active .list-group-item-text, .list-group-danger .list-group-item:not(.disabled).active > a .list-group-item-heading,
+.list-group-danger .list-group-item:not(.disabled).active > a .list-group-item-text {
+  color: #f5f5f5;
 }
 
 .list-group-item-primary,
-a.list-group-item-primary,
-button.list-group-item-primary {
+.list-group-item-primary > a {
   color: #0275d8;
-  background-color: #fff;
-}
-.list-group-item-primary .list-group-item-heading,
-a.list-group-item-primary .list-group-item-heading,
-button.list-group-item-primary .list-group-item-heading {
-  color: inherit;
+  background-color: #95C6F7;
 }
 .list-group-item-primary:focus, .list-group-item-primary:hover,
-a.list-group-item-primary:focus,
-a.list-group-item-primary:hover,
-button.list-group-item-primary:focus,
-button.list-group-item-primary:hover {
-  color: #0275d8;
-  background-color: #f2f2f2;
-  border-color: #0275d8;
-}
-.list-group-item-primary:focus:not(:last-child), .list-group-item-primary:hover:not(:last-child),
-a.list-group-item-primary:focus:not(:last-child),
-a.list-group-item-primary:hover:not(:last-child),
-button.list-group-item-primary:focus:not(:last-child),
-button.list-group-item-primary:hover:not(:last-child) {
-  border-bottom-width: 2px;
-}
-.list-group-item-primary.active, .list-group-item-primary.active:focus, .list-group-item-primary.active:hover,
-a.list-group-item-primary.active,
-a.list-group-item-primary.active:focus,
-a.list-group-item-primary.active:hover,
-button.list-group-item-primary.active,
-button.list-group-item-primary.active:focus,
-button.list-group-item-primary.active:hover {
-  color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+.list-group-item-primary > a:focus,
+.list-group-item-primary > a:hover {
+  background-color: #95C6F7;
 }
 
 .list-group-item-secondary,
-a.list-group-item-secondary,
-button.list-group-item-secondary {
+.list-group-item-secondary > a {
   color: #375A7F;
-  background-color: #fff;
-}
-.list-group-item-secondary .list-group-item-heading,
-a.list-group-item-secondary .list-group-item-heading,
-button.list-group-item-secondary .list-group-item-heading {
-  color: inherit;
+  background-color: #ADBCC9;
 }
 .list-group-item-secondary:focus, .list-group-item-secondary:hover,
-a.list-group-item-secondary:focus,
-a.list-group-item-secondary:hover,
-button.list-group-item-secondary:focus,
-button.list-group-item-secondary:hover {
-  color: #375A7F;
-  background-color: #f2f2f2;
-  border-color: #375A7F;
-}
-.list-group-item-secondary:focus:not(:last-child), .list-group-item-secondary:hover:not(:last-child),
-a.list-group-item-secondary:focus:not(:last-child),
-a.list-group-item-secondary:hover:not(:last-child),
-button.list-group-item-secondary:focus:not(:last-child),
-button.list-group-item-secondary:hover:not(:last-child) {
-  border-bottom-width: 2px;
-}
-.list-group-item-secondary.active, .list-group-item-secondary.active:focus, .list-group-item-secondary.active:hover,
-a.list-group-item-secondary.active,
-a.list-group-item-secondary.active:focus,
-a.list-group-item-secondary.active:hover,
-button.list-group-item-secondary.active,
-button.list-group-item-secondary.active:focus,
-button.list-group-item-secondary.active:hover {
-  color: #fff;
-  background-color: #375A7F;
-  border-color: #375A7F;
+.list-group-item-secondary > a:focus,
+.list-group-item-secondary > a:hover {
+  background-color: #ADBCC9;
 }
 
 .list-group-item-success,
-a.list-group-item-success,
-button.list-group-item-success {
+.list-group-item-success > a {
   color: #2EC6A0;
-  background-color: #fff;
-}
-.list-group-item-success .list-group-item-heading,
-a.list-group-item-success .list-group-item-heading,
-button.list-group-item-success .list-group-item-heading {
-  color: inherit;
+  background-color: #ADF2E0;
 }
 .list-group-item-success:focus, .list-group-item-success:hover,
-a.list-group-item-success:focus,
-a.list-group-item-success:hover,
-button.list-group-item-success:focus,
-button.list-group-item-success:hover {
-  color: #2EC6A0;
-  background-color: #f2f2f2;
-  border-color: #2EC6A0;
-}
-.list-group-item-success:focus:not(:last-child), .list-group-item-success:hover:not(:last-child),
-a.list-group-item-success:focus:not(:last-child),
-a.list-group-item-success:hover:not(:last-child),
-button.list-group-item-success:focus:not(:last-child),
-button.list-group-item-success:hover:not(:last-child) {
-  border-bottom-width: 2px;
-}
-.list-group-item-success.active, .list-group-item-success.active:focus, .list-group-item-success.active:hover,
-a.list-group-item-success.active,
-a.list-group-item-success.active:focus,
-a.list-group-item-success.active:hover,
-button.list-group-item-success.active,
-button.list-group-item-success.active:focus,
-button.list-group-item-success.active:hover {
-  color: #fff;
-  background-color: #2EC6A0;
-  border-color: #2EC6A0;
+.list-group-item-success > a:focus,
+.list-group-item-success > a:hover {
+  background-color: #ADF2E0;
 }
 
 .list-group-item-info,
-a.list-group-item-info,
-button.list-group-item-info {
+.list-group-item-info > a {
   color: #3bb4f2;
-  background-color: #fff;
-}
-.list-group-item-info .list-group-item-heading,
-a.list-group-item-info .list-group-item-heading,
-button.list-group-item-info .list-group-item-heading {
-  color: inherit;
+  background-color: #D9EDF7;
 }
 .list-group-item-info:focus, .list-group-item-info:hover,
-a.list-group-item-info:focus,
-a.list-group-item-info:hover,
-button.list-group-item-info:focus,
-button.list-group-item-info:hover {
-  color: #3bb4f2;
-  background-color: #f2f2f2;
-  border-color: #3bb4f2;
-}
-.list-group-item-info:focus:not(:last-child), .list-group-item-info:hover:not(:last-child),
-a.list-group-item-info:focus:not(:last-child),
-a.list-group-item-info:hover:not(:last-child),
-button.list-group-item-info:focus:not(:last-child),
-button.list-group-item-info:hover:not(:last-child) {
-  border-bottom-width: 2px;
-}
-.list-group-item-info.active, .list-group-item-info.active:focus, .list-group-item-info.active:hover,
-a.list-group-item-info.active,
-a.list-group-item-info.active:focus,
-a.list-group-item-info.active:hover,
-button.list-group-item-info.active,
-button.list-group-item-info.active:focus,
-button.list-group-item-info.active:hover {
-  color: #fff;
-  background-color: #3bb4f2;
-  border-color: #3bb4f2;
+.list-group-item-info > a:focus,
+.list-group-item-info > a:hover {
+  background-color: #D9EDF7;
 }
 
 .list-group-item-warning,
-a.list-group-item-warning,
-button.list-group-item-warning {
+.list-group-item-warning > a {
   color: #f0ad4e;
-  background-color: #fff;
-}
-.list-group-item-warning .list-group-item-heading,
-a.list-group-item-warning .list-group-item-heading,
-button.list-group-item-warning .list-group-item-heading {
-  color: inherit;
+  background-color: #FCF8E3;
 }
 .list-group-item-warning:focus, .list-group-item-warning:hover,
-a.list-group-item-warning:focus,
-a.list-group-item-warning:hover,
-button.list-group-item-warning:focus,
-button.list-group-item-warning:hover {
-  color: #f0ad4e;
-  background-color: #f2f2f2;
-  border-color: #f0ad4e;
-}
-.list-group-item-warning:focus:not(:last-child), .list-group-item-warning:hover:not(:last-child),
-a.list-group-item-warning:focus:not(:last-child),
-a.list-group-item-warning:hover:not(:last-child),
-button.list-group-item-warning:focus:not(:last-child),
-button.list-group-item-warning:hover:not(:last-child) {
-  border-bottom-width: 2px;
-}
-.list-group-item-warning.active, .list-group-item-warning.active:focus, .list-group-item-warning.active:hover,
-a.list-group-item-warning.active,
-a.list-group-item-warning.active:focus,
-a.list-group-item-warning.active:hover,
-button.list-group-item-warning.active,
-button.list-group-item-warning.active:focus,
-button.list-group-item-warning.active:hover {
-  color: #fff;
-  background-color: #f0ad4e;
-  border-color: #f0ad4e;
+.list-group-item-warning > a:focus,
+.list-group-item-warning > a:hover {
+  background-color: #FCF8E3;
 }
 
 .list-group-item-danger,
-a.list-group-item-danger,
-button.list-group-item-danger {
+.list-group-item-danger > a {
   color: #d9534f;
-  background-color: #fff;
-}
-.list-group-item-danger .list-group-item-heading,
-a.list-group-item-danger .list-group-item-heading,
-button.list-group-item-danger .list-group-item-heading {
-  color: inherit;
+  background-color: #F2DEDE;
 }
 .list-group-item-danger:focus, .list-group-item-danger:hover,
-a.list-group-item-danger:focus,
-a.list-group-item-danger:hover,
-button.list-group-item-danger:focus,
-button.list-group-item-danger:hover {
-  color: #d9534f;
-  background-color: #f2f2f2;
-  border-color: #d9534f;
-}
-.list-group-item-danger:focus:not(:last-child), .list-group-item-danger:hover:not(:last-child),
-a.list-group-item-danger:focus:not(:last-child),
-a.list-group-item-danger:hover:not(:last-child),
-button.list-group-item-danger:focus:not(:last-child),
-button.list-group-item-danger:hover:not(:last-child) {
-  border-bottom-width: 2px;
-}
-.list-group-item-danger.active, .list-group-item-danger.active:focus, .list-group-item-danger.active:hover,
-a.list-group-item-danger.active,
-a.list-group-item-danger.active:focus,
-a.list-group-item-danger.active:hover,
-button.list-group-item-danger.active,
-button.list-group-item-danger.active:focus,
-button.list-group-item-danger.active:hover {
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d9534f;
-}
-
-.list-group-item-state,
-a.list-group-item-state,
-button.list-group-item-state {
-  color: #d9534f;
-  background-color: #fff;
-}
-.list-group-item-state .list-group-item-heading,
-a.list-group-item-state .list-group-item-heading,
-button.list-group-item-state .list-group-item-heading {
-  color: inherit;
-}
-.list-group-item-state:focus, .list-group-item-state:hover,
-a.list-group-item-state:focus,
-a.list-group-item-state:hover,
-button.list-group-item-state:focus,
-button.list-group-item-state:hover {
-  color: #d9534f;
-  background-color: #f2f2f2;
-  border-color: #d9534f;
-}
-.list-group-item-state:focus:not(:last-child), .list-group-item-state:hover:not(:last-child),
-a.list-group-item-state:focus:not(:last-child),
-a.list-group-item-state:hover:not(:last-child),
-button.list-group-item-state:focus:not(:last-child),
-button.list-group-item-state:hover:not(:last-child) {
-  border-bottom-width: 2px;
-}
-.list-group-item-state.active, .list-group-item-state.active:focus, .list-group-item-state.active:hover,
-a.list-group-item-state.active,
-a.list-group-item-state.active:focus,
-a.list-group-item-state.active:hover,
-button.list-group-item-state.active,
-button.list-group-item-state.active:focus,
-button.list-group-item-state.active:hover {
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d9534f;
-}
-
-.list-group-lg .list-group-item {
-  font-size: 1.125rem;
-  padding: 0.85rem 1.35rem;
-}
-
-.list-group-sm .list-group-item {
-  font-size: 0.85rem;
-  padding: 0.625rem 1rem;
-}
-
-.list-group-xs .list-group-item {
-  font-size: 0.75rem;
-  padding: 0.5rem 0.9rem;
-}
-
-.list-group-hz {
-  display: table;
-}
-.list-group-hz .list-group-item {
-  display: table-cell;
-  padding: 5px 10px;
-  border: none !important;
+.list-group-item-danger > a:focus,
+.list-group-item-danger > a:hover {
+  background-color: #F2DEDE;
 }
 
 .thumbnail {
