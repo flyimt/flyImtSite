@@ -51,12 +51,12 @@
     <div class="row">
       <div class="col-md-9">
         <section class="fi-docs-section" id="fonticon">
-          <h1 class="m-b-6">字体图标<small><code>_fonts.scss</code></small></h1>
+          <h2 class="m-b-6">字体图标<small><code>_fonts.scss</code></small></h2>
           <p class="lead">Flyimt内置了 Font Awesome 字体图标，请移步<a href="http://fontawesome.dashgame.com/" target="_blank">Font Awesome</a>进行查看。</p>
         </section>
 
         <section class="fi-docs-section" id="dropdown">
-          <h1 class="m-b-6">下拉菜单<small><code>_dropdown.scss</code></small></h1>
+          <h2 class="m-b-6">下拉菜单<small><code>_dropdown.scss</code></small></h2>
           <p class="lead">用于有子菜单或者上下文的的菜单项。<code>dropdown.js</code>使其有了交互。</p>
 
           <h3 id="dropdown_default">默认下拉菜单</h3>
@@ -215,7 +215,7 @@
         </section>
 
         <section id="btn_group">
-          <h1 class="m-b-6">按钮组</h1>
+          <h2 class="m-b-6">按钮组</h2>
           <p class="lead">通过按钮组容器把一组按钮放在同一行里。按钮组中的<code>button</code>的样式可以随意组合。</p>
 
           <h3 id="btn_group_example">实例</h3>
@@ -375,60 +375,10 @@
               </pre>
             </div>
           </div>
-
-          <h3 id="btn_group_bar">工具栏</h3>
-          <p><code>.btn-group、.btn、.input-group</code>可以组成工具栏。</p>
-          <div class="fi-docs-example">
-            <div class="fi-docs-surface">
-              <div class="btn-bar">
-                <button class="btn btn-default">left</button>
-                <div class="btn-group">
-                  <button class="btn btn-default">left</button>
-                  <button class="btn btn-default">center</button>
-                  <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle">dropdown</button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                      <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="input-group">
-                  <span class="input-group-addon">$</span>
-                  <input type="text" class="form-control"/>
-                </div>
-                <button class="btn btn-default">right</button>
-              </div>
-            </div>
-            <div class="fi-docs-code">
-              <i class="fa fa-file-code-o fi-docs-copy"></i>
-              <pre>
-                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-bar"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"btn-group"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>left<span class="label">&lt;/button></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>center<span class="label">&lt;/button></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"dropdown"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default dropdown-toggle"</span><span class="label">&gt;</span>dropdown<span class="label">&lt;/button></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"dropdown-menu"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>Action<span class="label">&lt;/a>&lt;/li></span></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>Action<span class="label">&lt;/a>&lt;/li></span></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/ul></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;/div</span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span></span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>right<span class="label">&lt;/button></span><br/>
-                <span class="label">&lt;/div></span>
-              </pre>
-            </div>
-          </div>
         </section>
 
         <section class="fi-docs-section" id="input_group">
-          <h1 class="m-b-6">输入框组</h1>
+          <h2 class="m-b-6">输入框组</h2>
           <p class="lead">通过在文本输入框<code>&lt;input></code>前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。为<code>.input-group</code>赋予<code>.input-group-addon</code>类，可以给<code>.form-control</code>的前面或后面添加额外的元素。</p>
 
           <h3 id="input_group_example">实例</h3>
@@ -473,7 +423,6 @@
               </div>
             </div>
             <div class="fi-docs-code">
-              <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
                 <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-lg"</span><span class="label">&gt;</span><br/>
                 &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
@@ -492,13 +441,13 @@
           </div>
 
           <h3 id="input_group_btn">按钮输入框组</h3>
-          <p>在输入框的任意一侧添加按钮。</p>
+          <p>在输入框的任意一侧添加按钮。按钮需要处于<code>.input-group-btn</code>内部，并且添加<code>.btn btn-default</code>类。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
               <div class="input-group">
                 <input type="text" class="form-control"/>
                 <div class="input-group-btn">
-                  <button class="btn btn-primary">search</button>
+                  <button class="btn btn-default">search</button>
                 </div>
               </div>
             </div>
@@ -508,32 +457,77 @@
                 <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group"</span><span class="label">&gt;</span><br/>
                 &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
                 &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group-btn"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-primary</span>search<span class="label">&lt;/button></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&gt;</span>search<span class="label">&lt;/button></span><br/>
                 &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
                 <span class="label">&lt;/div></span><br/>
               </pre>
             </div>
           </div>
 
-          <h3 id="input_group_block">块级输入框组</h3>
-          <p>块级输入框组占满父元素。</p>
+          <h3 id="input_group_situations">情境</h3>
+          <p>Flyomt 内置了 7 种情境，下面介绍其他6种。如果是按钮输入框组，需要对按钮添加相应的类（例如：<code>.btn-primary</code>或者<code>btn-primary-outline</code>）。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
-              <div class="input-group input-group-block">
+              <div class="input-group input-group-primary">
+                <span class="input-group-addon">$</span>
                 <input type="text" class="form-control"/>
-                <div class="input-group-btn">
-                  <button class="btn btn-primary">search</button>
-                </div>
+              </div>
+              <br/>
+              <div class="input-group input-group-secondary">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+              </div>
+              <br/>
+              <div class="input-group input-group-success">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+              </div>
+              <br/>
+              <div class="input-group input-group-info">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+              </div>
+              <br/>
+              <div class="input-group input-group-warning">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
+              </div>
+              <br/>
+              <div class="input-group input-group-danger">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control"/>
               </div>
             </div>
             <div class="fi-docs-code">
-              <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-block"</span><span class="label">&gt;</span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-primary"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
                 &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group-btn"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> class=</span><span class="value">"btn btn-primary</span>search<span class="label">&lt;/button></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-secondary"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-success"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-info"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-warning"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"input-group input-group-danger"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;span</span><span class="attr"> class=</span><span class="value">"input-group-addon"</span><span class="label">&gt;</span>$<span class="label">&lt;/span></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="label">/></span><br/>
                 <span class="label">&lt;/div></span><br/>
               </pre>
             </div>
@@ -541,7 +535,7 @@
         </section>
 
         <section class="fi-docs-section" id="nav_path">
-          <h1 class="m-b-6">路径导航</h1>
+          <h2 class="m-b-6">路径导航</h2>
           <p class="lead">在一个带有层次的导航结构中标明当前页面的位置。</p>
           <p>各路径间的分隔符已经自动通过<code>:before</code>和<code>content</code>属性添加了。</p>
           <div class="fi-docs-example">
@@ -571,7 +565,7 @@
         </section>
 
         <section class="fi-docs-section" id="pagination">
-          <h1 class="m-b-6">分页</h1>
+          <h2 class="m-b-6">分页</h2>
           <p class="lead">提供带有展示页码的分页组件和翻页组件。</p>
           <p><code>&laquo;</code>用<code>&amp;#171;</code>或<code>&amp;laquo;</code>表示，
             <code>&raquo;</code>用<code>&amp;#187;</code>或<code>&amp;raquo;</code>表示。
@@ -734,7 +728,7 @@
         </section>
 
         <section class="fi-docs-section" id="label">
-          <h1 class="m-b-6">标签</h1>
+          <h2 class="m-b-6">标签</h1>
           <p class="lead">标签的字体大小为父元素的75%;</p>
 
           <h3 id="label_style">样式</h3>
@@ -777,7 +771,7 @@
         </section>
 
         <section class="fi-docs-section" id="jumbotron">
-          <h1 class="m-b-6">巨幕</h1>
+          <h2 class="m-b-6">巨幕</h2>
           <p class="lead">这是一个轻量、灵活的组件，它能延伸至整个浏览器视口来展示网站上的关键内容。</p>
 
           <h3 id="jumbotron_example">实例</h3>
@@ -831,7 +825,7 @@
         </section>
 
         <section class="fi-docs-section" id="thumbnail">
-          <h1 class="m-b-6">缩略图</h1>
+          <h2 class="m-b-6">缩略图</h2>
           <p class="lead">通过缩略图组件扩展 Flyimt 的 <a href="./global.html#grid">栅格系统</a>，可以很容易地展示栅格样式的图像、视频、文本等内容。</p>
           <p>如果你想实现一个瀑布流，你需要使用一个第三方插件，比如
             <a href="http://masonry.desandro.com">Masonry</a>、<a href="http://isotope.metafizzy.co">Isotope</a> 或
@@ -905,7 +899,7 @@
         </section>
 
         <section class="fi-docs-section" id="alert">
-          <h1 class="m-b-6">警告框</h1>
+          <h2 class="m-b-6">警告框</h2>
           <p class="lead">警告框组件通过提供一些灵活的预定义消息，为常见的用户动作提供反馈消息。警告框中的消息一般比较重要，自带背景醒目。</p>
 
           <h3 id="alert_example">实例</h3>
@@ -987,7 +981,7 @@
         </section>
 
         <section class="fi-docs-section" id="progress">
-          <h1 class="m-b-6">进度条</h1>
+          <h2 class="m-b-6">进度条</h2>
           <p class="lead">通过这些简单、灵活的进度条，为当前工作流程或动作提供实时反馈。</p>
 
           <h3 id="progress_default">默认进度条</h3>
@@ -1083,7 +1077,7 @@
         </section>
 
         <section class="fi-docs-section" id="list_group">
-          <h1 class="m-b-6">列表组</h1>
+          <h2 class="m-b-6">列表组</h2>
           <p class="lead">列表组能用于显示一组简单的元素，还能用于复杂的定制的内容。</p>
 
           <h3 id="list_group_default">默认列表</h3>
@@ -1351,7 +1345,7 @@
         </section>
 
         <section class="fi-docs-section" id="media">
-          <h1 class="m-b-6">媒体对象</h1>
+          <h2 class="m-b-6">媒体对象</h2>
           <p class="lead">媒体对像主要用于评论等互动模块。</p>
 
           <h3 id="media_example">实例</h3>
@@ -1497,7 +1491,6 @@
                 <li><a class="nav-link" href="#btn_group_block">块组</a></li>
                 <li><a class="nav-link" href="#btn_group_vt">垂直组</a></li>
                 <li><a class="nav-link" href="#btn_group_dropdown">带下拉框的按钮组</a></li>
-                <li><a class="nav-link" href="#btn_group_bar">工具栏</a></li>
               </ul>
             </li>
             <li>
@@ -1506,7 +1499,7 @@
                 <li><a class="nav-link" href="#input_group_example">实例</a></li>
                 <li><a class="nav-link" href="#input_group_size">尺寸</a></li>
                 <li><a class="nav-link" href="#input_group_btn">按钮输入框组</a></li>
-                <li><a class="nav-link" href="#input_group_block">块级输入框组</a></li>
+                <li><a class="nav-link" href="#input_group_situations">情境</a></li>
               </ul>
             </li>
             <li>

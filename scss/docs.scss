@@ -4,18 +4,29 @@
   position: relative;
   padding: 80px 0;
   margin-bottom: 60px;
+  color: #CEEDE5;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #2EC6A0;
   background-image: linear-gradient(to bottom, #2EC6A0 0px, #74EDCE 100%);
   background-repeat: repeat-x;
-  color: #CEEDE5;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 
   h1 {
     font-size: 60px;
   }
 
-  h4 {
-    font-size: 24px;
+  .fi-docs-fiicon {
+    padding: 30px;
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    color: #fff;
+    font-size: 110px;
+  }
+
+  .lead {
+    width: 80%;
+    font-size: 30px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -24,6 +35,15 @@
   padding-top: 40px;
   background-color: #fff;
   color: #555;
+  p {
+    text-align: justify;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 130px;
+  }
 }
 
 .fi-docs-section {

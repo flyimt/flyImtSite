@@ -50,8 +50,8 @@
     <div class="row">
       <div class="col-md-9">
         <section class="fi-docs-section" id="grid">
-          <h1 class="m-b-6">栅格系统 <small><code>_grid.scss</code></small></h1>
-          <h4>栅格系统对于布局尤其是响应式来说至关重要，它随着屏幕或者窗口视口的大小自动布局。</h4>
+          <h2 class="m-b-6">栅格系统 <small><code>_grid.scss</code></small></h2>
+          <p class="lead">栅格系统对于布局尤其是响应式来说至关重要，它随着屏幕或者窗口视口的大小自动布局。</p>
 
           <h3 id="grid_introduce">简介</h3>
           <p>栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，你的内容就可以放入这些创建好的布局中。
@@ -135,7 +135,7 @@
         </section>
 
         <section class="fi-docs-section" id="type">
-          <h1 class="m-b-6">调整<small><code>_type.scss</code></small></h1>
+          <h2 class="m-b-6">调整<small><code>_type.scss</code></small></h2>
 
           <h3 id="type_head">标题</h3>
           <p>对HTML中的标题标签<code>&lt;h1> ~ &lt;h6></code>进行了字体大小的调整，并对其内部的 <code>&lt;small></code>标签进行了特殊处理，大小为 <span class="text-info">60%</span>。</p>
@@ -329,7 +329,7 @@
         </section>
 
         <section class="fi-docs-section" id="code">
-          <h1 class="m-b-6">代码<small><code>_code.scss</code></small></h1>
+          <h2 class="m-b-6">代码<small><code>_code.scss</code></small></h2>
 
           <h3 id="code_code">内联代码</h3>
           <p><code>&lt;code></code>包裹内联样式的代码片段。</p>
@@ -409,8 +409,8 @@
         </section>
 
         <section class="fi-docs-section" id="table">
-          <h1 class="m-b-6">表格<small><code>_tables.scss</code></small></h1>
-          <p>想要和栗子保持一致，就别偷懒把<code>&lt;thead>、&lt;tbody></code>这些元素给落下了哦。</p>
+          <h2 class="m-b-6">表格<small><code>_tables.scss</code></small></h2>
+          <p class="lead">想要和栗子保持一致，就别偷懒把<code>&lt;thead>、&lt;tbody></code>这些元素给落下了哦。</p>
 
           <h3 id="table_default">默认表格</h3>
           <p>在<code>&lt;table></code>标签上添加<code>.table</code>类，为其添加默认样式。</p>
@@ -591,14 +591,13 @@
         </section>
 
         <section class="fi-docs-section" id="form">
-          <h1 class="m-b-6">表单<small><code>_forms.scss</code></small></h1>
-          <p>表单样式，敬请期待。</p>
+          <h2 class="m-b-6">表单<small><code>_forms.scss</code></small></h2>
+          <p class="lead">表单样式，敬请期待。</p>
         </section>
 
         <section class="fi-docs-section" id="button">
-          <h1 class="m-b-6">按钮<small><code>_buttons.scss</code></small></h1>
-          <p>可以为<code>&lt;a>、&lt;button>、&lt;input></code>添加样式。</p>
-          <p class="text-danger">所有按钮都要添加<code>.btn</code>基类。</p>
+          <h2 class="m-b-6">按钮<small><code>_buttons.scss</code></small></h2>
+          <p class="lead">可以为<code>&lt;a>、&lt;button>、&lt;input></code>添加样式。所有按钮都要添加<code>.btn</code>基类。</p>
 
           <h3 id="button_brand">基本按钮</h3>
           <div class="fi-docs-example">
@@ -714,7 +713,7 @@
         </section>
 
         <section class="fi-docs-section" id="image">
-          <h1 class="m-b-6">图片<small><code>_images.scss</code></small></h1>
+          <h2 class="m-b-6">图片<small><code>_images.scss</code></small></h2>
 
           <h3 id="image_responsive">响应式图片</h3>
           <p>
@@ -750,8 +749,8 @@
         </section>
 
         <section class="fi-docs-section" id="assist">
-          <h1 class="m-b-6">辅助类</h1>
-          <p>辅助类设定了一些在任何地方都可以使用的类。</p>
+          <h2 class="m-b-6">辅助类</h2>
+          <p class="lead">辅助类设定了一些在任何地方都可以使用的类。</p>
 
           <h3 id="assist_font_size">文字大小</h3>
           <p>Flyimt可以快速设置9种大小的文字。</p>
@@ -856,8 +855,8 @@
               <p class="text-success m-b-0">success</p>
               <p class="text-warning m-b-0">warning</p>
               <p class="text-danger m-b-0">danger</p>
-              <p class="text-black m-b-0">black</p>
-              <p class="text-white bg-black p-l-2">white</p>
+              <p class="text-dark m-b-0">dark</p>
+              <p class="text-light bg-dark">light</p>
             </div>
             <div class="fi-docs-code">
               <pre>
@@ -867,8 +866,8 @@
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-success"</span><span class="label">&gt;</span>success<span class="label">&lt;/p></span><br/>
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-warning"</span><span class="label">&gt;</span>warning<span class="label">&lt;/p></span><br/>
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-danger"</span><span class="label">&gt;</span>danger<span class="label">&lt;/p></span><br/>
-                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-black"</span><span class="label">&gt;</span>black<span class="label">&lt;/p></span><br/>
-                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-white"</span><span class="label">&gt;</span>white<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-dark"</span><span class="label">&gt;</span>dark<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"text-light"</span><span class="label">&gt;</span>light<span class="label">&lt;/p></span><br/>
               </pre>
             </div>
           </div>
@@ -919,8 +918,9 @@
               <p class="bg-success m-b-2">success</p>
               <p class="bg-warning m-b-2">warning</p>
               <p class="bg-danger m-b-2">danger</p>
-              <p class="bg-black text-white m-b-2">black</p>
-              <p class="bg-white">white</p>
+              <p class="bg-dark text-light m-b-2">dark</p>
+              <p class="bg-light m-b-2">light</p>
+              <p class="bg-perspective m-b-2">perspective</p>
             </div>
             <div class="fi-docs-code">
               <pre>
@@ -930,8 +930,9 @@
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-success"</span><span class="label">&gt;</span>success<span class="label">&lt;/p></span><br/>
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-warning"</span><span class="label">&gt;</span>warning<span class="label">&lt;/p></span><br/>
                 <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-danger"</span><span class="label">&gt;</span>danger<span class="label">&lt;/p></span><br/>
-                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-black"</span><span class="label">&gt;</span>black<span class="label">&lt;/p></span><br/>
-                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-white"</span><span class="label">&gt;</span>white<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-dark"</span><span class="label">&gt;</span>dark<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-light"</span><span class="label">&gt;</span>light<span class="label">&lt;/p></span><br/>
+                <span class="label">&lt;p</span><span class="attr"> class=</span><span class="value">"bg-perspective"</span><span class="label">&gt;</span>perspective<span class="label">&lt;/p></span><br/>
               </pre>
             </div>
           </div>
@@ -1195,21 +1196,21 @@
 <script>
   (function() {
 
-//    function setSidebarVisibility() {
-//      var windowWidth = $(window).width();
-//      if(windowWidth < 768) {
-//        $('.sidebar').css({'display':'none'})
-//        return false;
-//      }else {
-//        $('.sidebar').css({'display':'block'})
-//        return true;
-//      }
-//    }
+    function setSidebarVisibility() {
+      var windowWidth = $(window).width();
+      if(windowWidth < 768) {
+        $('.sidebar').css({'display':'none'})
+        return false;
+      }else {
+        $('.sidebar').css({'display':'block'})
+        return true;
+      }
+    }
     // BEGIN: 通过滚动距离设置侧边导航的position
     //
 
     $(window).scroll(function() {
-//      if(!setSidebarVisibility()) {return;}
+      if(!setSidebarVisibility()) {return;}
       var yheight = getScrollTop(); //滚动条距顶端的距离
       var referenceTop = $('#sidebar_top_marker').offset().top;
 
@@ -1242,9 +1243,9 @@
     //
     // END: 通过滚动距离设置侧边导航的position
 
-//    $(window).resize(function() {
-//      setSidebarVisibility();
-//    })
+    $(window).resize(function() {
+      setSidebarVisibility();
+    })
   })()
 </script>
 </body>
