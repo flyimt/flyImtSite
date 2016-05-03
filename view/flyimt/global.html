@@ -592,7 +592,55 @@
 
         <section class="fi-docs-section" id="form">
           <h2 class="m-b-6">表单<small><code>_forms.scss</code></small></h2>
-          <p class="lead">表单样式，敬请期待。</p>
+          <p class="lead">Flyimt 对表单进行系列的优化。其中的<code>.form-control</code>是<code>&lt;input>, &lt;textarea>, &lt;select></code>的重要类。</p>
+
+          <h3 id="form_example">基本实例</h3>
+          <p>建议每一个表单项用<code>.form-group</code>类进行修饰。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <form>
+                <fieldset class="form-group">
+                  <label>input</label>
+                  <input type="text" class="form-control" placeholder="user name"/>
+                </fieldset>
+
+                <fieldset class="form-group">
+                  <label>textarea</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </fieldset>
+
+                <fieldset class="form-group">
+                  <label>Select</label>
+                  <div class="select">
+                    <select class="form-control">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                    <div class="triangle-down"></div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="form-group form-file">
+                  <label>input file</label>
+                  <input type="file" class="form-control" name="upload"/>
+                  <label class="file-surface">点击上传</label>
+                </fieldset>
+              </form>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-default"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-primary"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-secondary"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-info"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-success"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-warning"</span><span class="label">&lt;/button></span><br/>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"btn btn-danger"</span><span class="label">&lt;/button></span><br/>
+              </pre>
+            </div>
+          </div>
         </section>
 
         <section class="fi-docs-section" id="button">
@@ -1133,7 +1181,7 @@
             <li>
               <a class="nav-link" href="#form">表单</a>
               <ul class="nav">
-                <li><a class="nav-link" href="#">默认表单</a></li>
+                <li><a class="nav-link" href="#form_example">基本实例</a></li>
                 <li><a class="nav-link" href="#">表单</a></li>
                 <li><a class="nav-link" href="#">表单</a></li>
                 <li><a class="nav-link" href="#">表单</a></li>
@@ -1195,22 +1243,10 @@
 <script src="../../js/flyimt.min.js"></script>
 <script>
   (function() {
-
-    function setSidebarVisibility() {
-      var windowWidth = $(window).width();
-      if(windowWidth < 768) {
-        $('.sidebar').css({'display':'none'})
-        return false;
-      }else {
-        $('.sidebar').css({'display':'block'})
-        return true;
-      }
-    }
     // BEGIN: 通过滚动距离设置侧边导航的position
     //
 
     $(window).scroll(function() {
-      if(!setSidebarVisibility()) {return;}
       var yheight = getScrollTop(); //滚动条距顶端的距离
       var referenceTop = $('#sidebar_top_marker').offset().top;
 
@@ -1242,10 +1278,6 @@
 
     //
     // END: 通过滚动距离设置侧边导航的position
-
-    $(window).resize(function() {
-      setSidebarVisibility();
-    })
   })()
 </script>
 </body>

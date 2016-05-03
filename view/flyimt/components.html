@@ -1909,22 +1909,10 @@
 <script src="../../js/flyimt.min.js"></script>
 <script>
   (function() {
-
-    function setSidebarVisibility() {
-      var windowWidth = $(window).width();
-      if(windowWidth < 768) {
-        $('.sidebar').css({'display':'none'})
-        return false;
-      }else {
-        $('.sidebar').css({'display':'block'})
-        return true;
-      }
-    }
     // BEGIN: 通过滚动距离设置侧边导航的position
     //
 
     $(window).scroll(function() {
-      if(!setSidebarVisibility()) {return;}
       var yheight = getScrollTop(); //滚动条距顶端的距离
       var referenceTop = $('#sidebar_top_marker').offset().top;
 
@@ -1956,10 +1944,6 @@
 
     //
     // END: 通过滚动距离设置侧边导航的position
-
-    $(window).resize(function() {
-      setSidebarVisibility();
-    })
   })()
 </script>
 </body>
