@@ -2501,7 +2501,6 @@ fieldset[disabled] .form-control {
 .form-group > label {
   display: inline-block;
   font-weight: 700;
-  margin-bottom: 5px;
   max-width: 100%;
 }
 
@@ -2707,8 +2706,8 @@ select.form-control > option {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 3rem;
-  height: 1.5rem;
+  width: 48px;
+  height: 24px;
   margin-bottom: 10px;
 }
 .checkbox-switch input[type="checkbox"] {
@@ -2722,8 +2721,8 @@ select.form-control > option {
   position: absolute;
   left: 0;
   text-indent: -9999px;
-  width: 3rem;
-  height: 1.5rem;
+  width: 48px;
+  height: 24px;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
@@ -2731,11 +2730,11 @@ select.form-control > option {
   background-color: #fff;
   border-radius: 1000px;
   content: "";
-  left: .12rem;
+  left: 1px;
   position: absolute;
-  top: 0.08rem;
-  width: 1.375rem;
-  height: 1.375rem;
+  top: 1px;
+  width: 22px;
+  height: 22px;
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
 }
@@ -2743,7 +2742,7 @@ select.form-control > option {
   background-color: #0275d8;
 }
 .checkbox-switch input[type="checkbox"]:checked + label:after {
-  left: 1.6rem;
+  left: 25px;
 }
 .checkbox-switch.disabled input[type="checkbox"] + label {
   cursor: not-allowed;
@@ -2751,39 +2750,39 @@ select.form-control > option {
 }
 .checkbox-switch.disabled input[type="checkbox"] + label:after {
   cursor: not-allowed;
-  left: .125rem;
+  left: 1px;
 }
 
 .checkbox-switch-lg {
-  width: 4rem;
-  height: 2rem;
+  width: 64px;
+  height: 32px;
 }
 .checkbox-switch-lg input[type="checkbox"]:checked + label, .checkbox-switch-lg input[type="checkbox"]:not(:checked) + label {
-  width: 4rem;
-  height: 2rem;
+  width: 64px;
+  height: 32px;
 }
 .checkbox-switch-lg input[type="checkbox"]:checked + label:after, .checkbox-switch-lg input[type="checkbox"]:not(:checked) + label:after {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 30px;
+  height: 30px;
 }
 .checkbox-switch-lg input[type="checkbox"]:checked + label:after {
-  left: 2.1rem;
+  left: 33px;
 }
 
 .checkbox-switch-sm {
-  width: 2rem;
-  height: 1rem;
+  width: 32px;
+  height: 16px;
 }
 .checkbox-switch-sm input[type="checkbox"]:checked + label, .checkbox-switch-sm input[type="checkbox"]:not(:checked) + label {
-  width: 2rem;
-  height: 1rem;
+  width: 32px;
+  height: 16px;
 }
 .checkbox-switch-sm input[type="checkbox"]:checked + label:after, .checkbox-switch-sm input[type="checkbox"]:not(:checked) + label:after {
-  width: 0.875rem;
-  height: 0.875rem;
+  width: 14px;
+  height: 14px;
 }
 .checkbox-switch-sm input[type="checkbox"]:checked + label:after {
-  left: 1.1rem;
+  left: 17px;
 }
 
 .checkbox-switch-secondary input[type="checkbox"]:checked + label {
@@ -2829,11 +2828,13 @@ input[type="checkbox"] {
 }
 .form-file input[type="file"] {
   position: absolute;
+  height: 100%;
   opacity: 0;
   background-color: transparent;
 }
 .form-file .file-surface {
   width: 100%;
+  height: 100%;
   padding: .37rem .75rem;
   background-color: #0275d8;
   text-align: center;
