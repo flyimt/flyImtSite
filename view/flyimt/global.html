@@ -10,7 +10,7 @@
   <title></title>
 </head>
 <body data-spy="scroll" data-offset="180">
-<header>
+<header id="top">
   <nav class="navbar navbar-dark">
     <div class="container">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -822,7 +822,7 @@
 
           <h3 id="form_validate">验证</h3>
           <p>为<code>&lt;form-group></code>标签添加<code>.form-group-success, .form-group-warning, .form-group-error</code>类，添加验证状态。</p>
-          <p><coce>.form-control-feedback</coce>是可选项。</p>
+          <p><code>.form-control-feedback</code>是可选项。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
               <fieldset class="form-group form-group-success">
@@ -905,7 +905,7 @@
             <div class="fi-docs-surface">
               <div class="checkbox">
                 <input id="checkbox_1_1" type="checkbox" name="checkbox1"/>
-                <label for="checkbox_1_1">默认复选框</label>
+                <label for="checkbox_1_1">复选框</label>
               </div>
             </div>
             <div class="fi-docs-code">
@@ -919,33 +919,102 @@
             </div>
           </div>
 
+          <h4>选中状态</h4>
+          <p>给<code>&lt;input></code>添加<code>checked</code>属性。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="checkbox">
+                <input id="checkbox_2_1" type="checkbox" name="checkbox1" checked/>
+                <label for="checkbox_2_1">复选框</label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>禁用状态</h4>
+          <p>禁用复选框需要给<code>.checkbox</code>添加<code>.disabled</code>类，并且给<code>&lt;input></code>添加<code>disabled</code>属性。一个主外，一个主内。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="checkbox disabled">
+                <input id="checkbox_3_1" type="checkbox" name="checkbox1" disabled/>
+                <label for="checkbox_3_1">复选框</label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox disabled"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>水平排列</h4>
+          <p>将<code>.checkbox</code>变为<code>.checkbox-inline</code>，复选框将水平排列</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="checkbox-inline">
+                <input id="checkbox_4_1" type="checkbox" name="checkbox2" checked/>
+                <label for="checkbox_4_1">默认checkbox</label>
+              </div>
+              <div class="checkbox-inline">
+                <input id="checkbox_4_2" type="checkbox" name="checkbox2"/>
+                <label for="checkbox_4_2">默认checkbox</label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-inline"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-inline"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
           <h4>情境</h4>
           <p><code>.checkbox</code>有 7 种情境，下面介绍其他6种。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
               <div class="checkbox checkbox-primary">
-                <input id="checkbox_1_2" type="checkbox" name="checkbox1" checked/>
-                <label for="checkbox_1_2">复选框</label>
+                <input id="checkbox_5_1" type="checkbox" name="checkbox1" checked/>
+                <label for="checkbox_5_1">复选框</label>
               </div>
               <div class="checkbox checkbox-secondary">
-                <input id="checkbox_1_3" type="checkbox" name="checkbox1" checked/>
-                <label for="checkbox_1_3">复选框</label>
+                <input id="checkbox_5_2" type="checkbox" name="checkbox1" checked/>
+                <label for="checkbox_5_2">复选框</label>
               </div>
               <div class="checkbox checkbox-success">
-                <input id="checkbox_1_4" type="checkbox" name="checkbox1" checked/>
-                <label for="checkbox_1_4">复选框</label>
+                <input id="checkbox_5_3" type="checkbox" name="checkbox1" checked/>
+                <label for="checkbox_5_3">复选框</label>
               </div>
               <div class="checkbox checkbox-info">
-                <input id="checkbox_1_5" type="checkbox" name="checkbox1" checked/>
-                <label for="checkbox_1_5">复选框</label>
+                <input id="checkbox_5_4" type="checkbox" name="checkbox1" checked/>
+                <label for="checkbox_5_4">复选框</label>
               </div>
               <div class="checkbox checkbox-warning">
-                <input id="checkbox_1_6" type="checkbox" name="checkbox1" checked/>
-                <label for="checkbox_1_6">复选框</label>
+                <input id="checkbox_5_5" type="checkbox" name="checkbox1" checked/>
+                <label for="checkbox_5_5">复选框</label>
               </div>
               <div class="checkbox checkbox-danger">
-                <input id="checkbox_1_7" type="checkbox" name="checkbox1" checked/>
-                <label for="checkbox_1_7">复选框</label>
+                <input id="checkbox_5_6" type="checkbox" name="checkbox1" checked/>
+                <label for="checkbox_5_6">复选框</label>
               </div>
             </div>
             <div class="fi-docs-code">
@@ -983,108 +1052,409 @@
             </div>
           </div>
 
-          <h4>禁用状态</h4>
-          <p>禁用复选框需要给<code>.checkbox</code>添加<code>.disabled</code>类，并且将<code>input</code>禁用掉。一个主外，一个主内。</p>
+          <h3 id="form_switch">Switch</h3>
+          <p class="lead">将<code>.checkbox</code>变为<code>.checkbox-switch</code>。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
-              <div class="checkbox disabled">
-                <input id="checkbox_1_2" type="checkbox" name="checkbox1" disabled/>
-                <label for="checkbox_1_2">复选框</label>
+              <div class="checkbox-switch">
+                <input id="checkbox_switch_1_1" type="checkbox">
+                <label for="checkbox_switch_1_1"></label>
               </div>
             </div>
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox disabled"</span><span class="label">&gt;</span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>选中状态</h4>
+          <p>给<code>&lt;input></code>标签添加<code>checked</code>属性。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="checkbox-switch">
+                <input id="checkbox_switch_2_1" type="checkbox" checked>
+                <label for="checkbox_switch_2_1"></label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h5>禁用状态</h5>
+          <p>禁用Switch需要给<code>.checkbox-switch</code>添加<code>.disabled</code>类，并且给<code>&lt;input></code>添加<code>disabled</code>属性。一个主外，一个主内。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="checkbox-switch disabled">
+                <input id="checkbox_switch_3_1" type="checkbox" disabled>
+                <label for="checkbox_switch_3_1"></label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch disabled"</span><span class="label">&gt;</span><br/>
                 &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>尺寸</h4>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="checkbox-switch checkbox-switch-lg">
+                <input id="checkbox_switch_4_1" type="checkbox" checked>
+                <label for="checkbox_switch_4_1"></label>
+              </div>
+              <br/>
+              <div class="checkbox-switch">
+                <input id="checkbox_switch_4_2" type="checkbox" checked>
+                <label for="checkbox_switch_4_2"></label>
+              </div>
+              <br/>
+              <div class="checkbox-switch checkbox-switch-sm">
+                <input id="checkbox_switch_4_3" type="checkbox" checked>
+                <label for="checkbox_switch_4_3"></label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch-lg"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch-sm"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h5>情境</h5>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="checkbox-switch">
+                <input id="checkbox_switch_5_1" type="checkbox" checked>
+                <label for="checkbox_switch_5_1"></label>
+              </div>
+              <br/>
+              <div class="checkbox-switch checkbox-switch-secondary">
+                <input id="checkbox_switch_5_2" type="checkbox" checked>
+                <label for="checkbox_switch_5_2"></label>
+              </div>
+              <br/>
+              <div class="checkbox-switch checkbox-switch-success">
+                <input id="checkbox_switch_5_3" type="checkbox" checked>
+                <label for="checkbox_switch_5_3"></label>
+              </div>
+              <br/>
+              <div class="checkbox-switch checkbox-switch-info">
+                <input id="checkbox_switch_5_4" type="checkbox" checked>
+                <label for="checkbox_switch_5_4"></label>
+              </div>
+              <br/>
+              <div class="checkbox-switch checkbox-switch-warning">
+                <input id="checkbox_switch_5_5" type="checkbox" checked>
+                <label for="checkbox_switch_5_5"></label>
+              </div>
+              <br/>
+              <div class="checkbox-switch checkbox-switch-danger">
+                <input id="checkbox_switch_5_6" type="checkbox" checked>
+                <label for="checkbox_switch_5_6"></label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch-secondary"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch-success"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch-info"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch-warning"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-switch checkbox-switch-danger"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span><span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="form_radio">radio</h3>
+          <p><code>.radio</code>的结构要求比较严格。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="radio">
+                <input id="radio_1_1" type="radio" name="radio1"/>
+                <label for="radio_1_1">单选框</label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>选中状态</h4>
+          <p>给<code>&lt;input></code>标签添加<code>checked</code>属性。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="radio">
+                <input id="radio_2_1" type="radio" checked>
+                <label for="radio_2_1">单选框</label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h5>禁用状态</h5>
+          <p>给<code>&lt;input></code>标签添加<code>disabled</code>属性。</p>
+          <p><code>.radio</code>的<code>.disabled</code>类可选，它只是为鼠标添加手势样式。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="radio">
+                <input id="radio_3_1" type="radio" disabled>
+                <label for="radio_3_1">单选框</label>
+              </div>
+              <div class="radio disabled">
+                <input id="radio_3_2" type="radio" disabled>
+                <label for="radio_3_2">单选框</label>
+              </div>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio-switch"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio-switch disabled"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
                 <span class="label">&lt;/div></span><br/>
               </pre>
             </div>
           </div>
 
           <h4>水平排列</h4>
-          <p>将<code>.checkbox</code>变为<code>.checkbox-inline</code>，复选框将水平排列</p>
+          <p>将<code>.radio</code>变为<code>.radio-inline</code>，复选框将水平排列</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
-              <div class="checkbox-inline">
-                <input id="checkbox_2_1" type="checkbox" name="checkbox2" checked/>
-                <label for="checkbox_2_1">默认checkbox</label>
+              <div class="radio-inline">
+                <input id="radio_4_1" type="radio" name="radio2" checked/>
+                <label for="radio_4_1">单选框</label>
               </div>
-              <div class="checkbox-inline">
-                <input id="checkbox_2_2" type="checkbox" name="checkbox2"/>
-                <label for="checkbox_2_2">默认checkbox</label>
+              <div class="radio-inline">
+                <input id="radio_4_2" type="radio" name="radio2"/>
+                <label for="radio_4_2">单选框</label>
               </div>
             </div>
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-inline"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio-inline"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> checked</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
                 <span class="label">&lt;/div></span><br/>
                 <br/>
-                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-inline"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio-inline"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"></span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
                 <span class="label">&lt;/div></span><br/>
               </pre>
             </div>
           </div>
 
-          <h4>Switch</h4>
-          <p>将<code>.checkbox</code>变为<code>.checkbox-switch</code>，复选框将水平排列</p>
+          <h4>情境</h4>
+          <p><code>.radio</code>有 7 种情境，下面介绍其他6种。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
-              <div class="checkbox-switch checkbox-switch-lg">
-                <input id="example1" type="checkbox" checked>
-                <label for="example1">Check</label>
+              <div class="radio radio-primary">
+                <input id="radio_5_1" type="radio" name="radio1" checked/>
+                <label for="radio_5_1">单选框</label>
               </div>
-              <br/>
-              <label>checkbox-switch</label><br/>
-              <div class="checkbox-switch">
-                <input id="example2" type="checkbox" checked>
-                <label for="example2">Check</label>
+              <div class="radio radio-secondary">
+                <input id="radio_5_2" type="radio" name="radio2" checked/>
+                <label for="radio_5_2">单选框</label>
               </div>
-              <div class="checkbox-switch checkbox-switch-secondary">
-                <input id="example3" type="checkbox" checked>
-                <label for="example3">Check</label>
+              <div class="radio radio-success">
+                <input id="radio_5_3" type="radio" name="radio3" checked/>
+                <label for="radio_5_3">单选框</label>
               </div>
-              <div class="checkbox-switch checkbox-switch-success">
-                <input id="example4" type="checkbox" checked>
-                <label for="example4">Check</label>
+              <div class="radio radio-info">
+                <input id="radio_5_4" type="radio" name="radio4" checked/>
+                <label for="radio_5_4">单选框</label>
               </div>
-              <div class="checkbox-switch checkbox-switch-info">
-                <input id="example5" type="checkbox" checked>
-                <label for="example5">Check</label>
+              <div class="radio radio-warning">
+                <input id="radio_5_5" type="radio" name="radio5" checked/>
+                <label for="radio_5_5">单选框</label>
               </div>
-              <div class="checkbox-switch checkbox-switch-warning">
-                <input id="example6" type="checkbox" checked>
-                <label for="example6">Check</label>
+              <div class="radio radio-danger">
+                <input id="radio_5_6" type="radio" name="radio6" checked/>
+                <label for="radio_5_6">单选框</label>
               </div>
-              <div class="checkbox-switch checkbox-switch-danger">
-                <input id="example7" type="checkbox" checked>
-                <label for="example7">Check</label>
-              </div>
-              <br/>
-              <label>checkbox-switch-sm</label><br/>
-              <div class="checkbox-switch checkbox-switch-sm">
-                <input id="example8" type="checkbox" checked>
-                <label for="example8">Check</label>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio radio-primary"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio radio-secondary"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio radio-success"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio radio-info"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio radio-warning"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"radio radio-danger"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"radio"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>单选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="form_file">文件上传</h3>
+          <p class="lead">在<code>file</code>外面包裹一层<code>.form-file</code>，实现样式优化。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <div class="form-file">
+                <input type="file" class="form-control" name="upload"/>
+                <label class="file-surface">点击上传</label>
               </div>
             </div>
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-inline"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"form-file"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"file"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="attr"> name=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> class=</span><span class="value">"file-surface"</span><span class="label">&gt;</span>文件上传<span class="label">&lt;/label></span><br/>
                 <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="form_control">form-control</h3>
+          <p><code>.form-control</code>是一个比较重要的类，在任何地方都可以使用。</p>
+
+          <h4>实例</h4>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <input type="text" class="form-control" placeholder="user name"/>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="attr"> placeholder=</span><span class="value">"..."</span><span class="label">/></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>尺寸</h4>
+          <p>Flyimt 为<code>.form-control</code>提供了3种尺寸。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <input type="text" class="form-control form-control-lg" placeholder="form-control-lg"/>
+              <br/>
+              <input type="text" class="form-control" placeholder="default"/>
+              <br/>
+              <input type="text" class="form-control form-control-sm" placeholder="form-control-sm"/>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control form-control-lg"</span><span class="attr"> placeholder=</span><span class="value">"..."</span><span class="label">/></span><br/>
                 <br/>
-                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"checkbox-inline"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"checkbox"</span><span class="attr"> id=</span><span class="value">"..."</span><span class="attr"> name=</span><span class="value">"..."</span><span class="attr"> disabled</span><span class="label">/></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;label</span><span class="attr"> for=</span><span class="value">"..."</span><span class="label">&gt;</span>复选框<span class="label">&lt;/label></span><br/>
-                <span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control"</span><span class="attr"> placeholder=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                <br/>
+                <span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control form-control-sm"</span><span class="attr"> placeholder=</span><span class="value">"..."</span><span class="label">/></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h4>验证</h4>
+          <p>为<code>.form-control</code>添加<code>.form-control-success, .form-control-warning, .form-control-error</code>表达验证状态。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <input type="text" class="form-control form-control-success" placeholder="form-control-success"/>
+              <br/>
+              <input type="text" class="form-control form-control-warning" placeholder="form-control-warning"/>
+              <br/>
+              <input type="text" class="form-control form-control-error" placeholder="form-control-error"/>
+            </div>
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control form-control-success"</span><span class="attr"> placeholder=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                <br/>
+                <span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control form-control-warning"</span><span class="attr"> placeholder=</span><span class="value">"..."</span><span class="label">/></span><br/>
+                <br/>
+                <span class="label">&lt;input</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> class=</span><span class="value">"form-control form-control-error"</span><span class="attr"> placeholder=</span><span class="value">"..."</span><span class="label">/></span><br/>
               </pre>
             </div>
           </div>
@@ -1635,6 +2005,7 @@
                 <li><a class="nav-link" href="#form_validate">验证</a></li>
                 <li><a class="nav-link" href="#form_select">select</a></li>
                 <li><a class="nav-link" href="#form_checkbox">checkbox</a></li>
+                <li><a class="nav-link" href="#form_switch">switch</a></li>
                 <li><a class="nav-link" href="#form_radio">radio</a></li>
                 <li><a class="nav-link" href="#form_file">文件上传</a></li>
                 <li><a class="nav-link" href="#form_control">form-control</a></li>
@@ -1674,6 +2045,9 @@
               </ul>
             </li>
           </ul>
+          <div class="back-to-top">
+            <a class="border-none" href="#top"><i class="fa fa-arrow-up"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -1729,6 +2103,7 @@
 
     //
     // END: 通过滚动距离设置侧边导航的position
+
   })()
 </script>
 </body>

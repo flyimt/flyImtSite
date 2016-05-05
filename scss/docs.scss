@@ -1,4 +1,5 @@
 @import "variables";
+@import "compass/css3";
 
 .fi-docs-masthead {
   position: relative;
@@ -77,6 +78,8 @@
   }
 
   .fi-docs-surface {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     &:before {
       content: "∞Â¿ı£∫";
       display: block;
@@ -87,6 +90,9 @@
   .fi-docs-code {
     margin-top: -1px;
     background-color: $pre-bg;
+    border: 1px solid $pre-bg;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 
     .fi-docs-copy {
       display: inline-block;
@@ -149,5 +155,43 @@
   .list-group {
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+}
+
+
+@keyframes up {
+  50% {
+    @include transform(translateY(-35px));
+  }
+  50.0001% {
+    @include transform(translateY(35px));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+.back-to-top {
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+    background: none;
+    color: $brand-theme-color;
+    i {
+      display: inline-block;
+      font-size: 28px;
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+
+    &:hover {
+      i {
+        @include animation(up 1s linear infinite);
+      }
+    }
   }
 }
