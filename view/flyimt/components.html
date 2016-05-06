@@ -13,13 +13,13 @@
 <header>
   <nav class="navbar navbar-dark">
     <div class="container">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="">
         <i class="fa fa-bars"></i>
       </button>
 
       <a href="../index.html" class="navbar-brand">FlyImt</a>
 
-      <div id="navbar" class="navbar-collapse collapse">
+      <div id="" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="nav-item"><a href="javascript:;" class="nav-link">敬请期待</a></li>
           <li class="nav-item"><a href="javascript:;" class="nav-link">敬请期待</a></li>
@@ -829,6 +829,56 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
                 &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
                 <span class="label">&lt;/div></span><br/>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="fi-docs-section" id="navbar">
+          <h2 class="m-b-6">导航条<small><code>_navbar.scss</code></small></h2>
+          <p class="lead">导航条是在您的应用或网站中作为导航页头的响应式基础组件。它们在移动设备上可以折叠（并且可开可关），且在视口（viewport）宽度增加时逐渐变为水平展开模式。</p>
+
+          <h3 id="navbar_default">默认导航条</h3>
+          <p>默认的导航条是白色的背景，暗色的文字。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-surface">
+              <nav class="navbar">
+                <div class="container">
+                  <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar1">
+                    <i class="fa fa-bars"></i>
+                  </button>
+                  <a class="navbar-brand" href="javascript:;">商标</a>
+                  <div id="navbar1" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav right">
+                      <li><a href="javascript:;">项目</a></li>
+                      <li><a href="javascript:;">项目</a></li>
+                      <li><a href="javascript:;">项目</a></li>
+                      <li><a href="javascript:;">项目</a></li>
+                      <li><a href="javascript:;">项目</a></li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" href="javascript:;">项目</a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="javascript:;">项目</a></li>
+                          <li class="dropdown-item"><a href="javascript:;">项目</a></li>
+                          <li class="dropdown-item"><a href="javascript:;">项目</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="right">
+                      <input class="form-control left" type="text" placeholder="Searching..."/>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="fi-docs-code">
+              <i class="fa fa-file-code-o fi-docs-copy"></i>
+              <pre>
+                <span class="label">&lt;ol</span><span class="attr"> class=</span><span class="value">"breadcrumb"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                <span class="label">&lt;/ol></span><br/>
               </pre>
             </div>
           </div>
@@ -1812,6 +1862,17 @@
                 <li><a class="nav-link" href="#nav_vt">垂直导航</a></li>
                 <li><a class="nav-link" href="#nav_tabs">标签页导航</a></li>
                 <li><a class="nav-link" href="#nav_tabs_vt">垂直标签导航</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#navbar">导航条</a>
+              <ul class="nav">
+                <li><a class="nav-link" href="#navbar_default">默认导航条</a></li>
+                <li><a class="nav-link" href="#navbar_fixed">固定位置</a></li>
+                <li><a class="nav-link" href="#navbar_dark">黑色导航条</a></li>
+                <li><a class="nav-link" href="#navbar_theme">主题导航条</a></li>
+                <li><a class="nav-link" href="#navbar_perspective">透明导航条</a></li>
+                <li><a class="nav-link" href="#navbar_college">折叠</a></li>
               </ul>
             </li>
             <li>
