@@ -77,7 +77,7 @@
 .fi-docs-example .fi-docs-surface:before,
 .fi-docs-example .fi-docs-code:before {
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   color: #818a91;
 }
 /* line 80, ../scss/docs.scss */
