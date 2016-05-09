@@ -1,64 +1,74 @@
 /* line 3, ../scss/sidebar-scrollspy.scss */
 .sidebar {
   width: 100%;
+  max-width: 320px;
 }
-/* line 6, ../scss/sidebar-scrollspy.scss */
+/* line 7, ../scss/sidebar-scrollspy.scss */
 .sidebar li {
+  float: none;
   padding: 0;
-  width: 100%;
 }
 /* line 11, ../scss/sidebar-scrollspy.scss */
+.sidebar li:hover, .sidebar li:focus {
+  background-color: #fff;
+}
+/* line 14, ../scss/sidebar-scrollspy.scss */
+.sidebar li:hover a, .sidebar li:focus a {
+  background-color: #fff;
+}
+/* line 20, ../scss/sidebar-scrollspy.scss */
+.sidebar > ul > li {
+  display: table;
+}
+/* line 24, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav-link {
   position: relative;
   padding-left: 20px;
   color: #55595c;
 }
-/* line 16, ../scss/sidebar-scrollspy.scss */
-.sidebar .nav-link:hover {
+/* line 29, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav-link:hover, .sidebar .nav-link:focus {
   color: #51d6b5;
 }
-/* line 20, ../scss/sidebar-scrollspy.scss */
+/* line 34, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav-link:before {
   position: absolute;
   left: 0;
 }
-/* line 25, ../scss/sidebar-scrollspy.scss */
+/* line 39, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav-link + ul {
   position: absolute;
   width: 100%;
+  min-width: 200px;
   top: 2px;
   left: 85px;
   z-index: 1;
 }
-/* line 34, ../scss/sidebar-scrollspy.scss */
+/* line 49, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav .nav-link.active {
   color: #2EC6A0;
 }
-/* line 37, ../scss/sidebar-scrollspy.scss */
+/* line 52, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav .nav-link.active:before {
   content: "\27A4";
 }
-/* line 43, ../scss/sidebar-scrollspy.scss */
-.sidebar ul {
-  width: 100%;
-}
-/* line 45, ../scss/sidebar-scrollspy.scss */
+/* line 60, ../scss/sidebar-scrollspy.scss */
 .sidebar ul ul {
   display: none;
   font-size: 80%;
   padding-left: 10px;
 }
-/* line 51, ../scss/sidebar-scrollspy.scss */
+/* line 66, ../scss/sidebar-scrollspy.scss */
 .sidebar ul .nav-link.active + ul {
   display: block;
 }
-/* line 57, ../scss/sidebar-scrollspy.scss */
+/* line 72, ../scss/sidebar-scrollspy.scss */
 .sidebar > ul > li {
   position: relative;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 63, ../scss/sidebar-scrollspy.scss */
+  /* line 78, ../scss/sidebar-scrollspy.scss */
   .sidebar {
     display: none;
   }

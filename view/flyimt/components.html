@@ -21,9 +21,9 @@
 
       <div id="" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="nav-item"><a href="javascript:;" class="nav-link">敬请期待</a></li>
-          <li class="nav-item"><a href="javascript:;" class="nav-link">敬请期待</a></li>
-          <li class="nav-item dropdown">
+          <li><a href="javascript:;">敬请期待</a></li>
+          <li><a href="javascript:;">敬请期待</a></li>
+          <li class="dropdown">
             <a class="nav-link dropdown-toggle" href="javascript:;">Flyimt</a>
             <ul class="dropdown-menu">
               <li class="dropdown-item"><a href="./introduction.html">简介</a></li>
@@ -840,6 +840,7 @@
 
           <h3 id="navbar_default">默认导航条</h3>
           <p>默认的导航条是白色的背景，暗色的文字。</p>
+          <p><code>.container</code>可以在<code>.navbar</code>的外部，栅格系统很灵活。</p>
           <div class="fi-docs-example">
             <div class="fi-docs-surface">
               <nav class="navbar">
@@ -848,7 +849,7 @@
                     <i class="fa fa-bars"></i>
                   </button>
                   <a class="navbar-brand" href="javascript:;">商标</a>
-                  <div id="navbar1" class="navbar-collapse collapse">
+                  <div class="navbar-collapse collapse" id="navbar1">
                     <ul class="nav navbar-nav right">
                       <li><a href="javascript:;">项目</a></li>
                       <li><a href="javascript:;">项目</a></li>
@@ -865,7 +866,7 @@
                       </li>
                     </ul>
                     <div class="right">
-                      <input class="form-control left" type="text" placeholder="Searching..."/>
+                      <input class="form-control left" type="text" placeholder="搜索..."/>
                     </div>
                   </div>
                 </div>
@@ -874,11 +875,121 @@
             <div class="fi-docs-code">
               <i class="fa fa-file-code-o fi-docs-copy"></i>
               <pre>
-                <span class="label">&lt;ol</span><span class="attr"> class=</span><span class="value">"breadcrumb"</span><span class="label">&gt;</span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
-                &nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>item<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
-                <span class="label">&lt;/ol></span><br/>
+                <span class="label">&lt;nav</span><span class="attr"> class=</span><span class="value">"navbar"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"container"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"navbar-toggle collapse"</span><span class="attr"> data-toggle=</span><span class="value">"collapse"</span><span class="attr"> data-target=</span><span class="value">"#navbar1"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;i</span><span class="attr"> class=</span><span class="value">"fa fa-bars"</span><span class="label">&gt;&lt;i></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/button></span><br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;a</span><span class="attr"> class=</span><span class="value">"navbar-brand"</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>商标<span class="label">&lt;/a></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"navbar-collapse collapse"</span><span class="attr"> id=</span><span class="value">"navbar1"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;ul</span><span class="attr"> class</span><span class="value">"nav navbar-nav right"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li></span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a></span><span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;a</span><span class="attr"> class=</span><span class="value">"dropdown-toggle"</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;ul</span><span class="attr"> class=</span><span class="value">"dropdown-menu"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a>&lt;/li></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a>&lt;/li></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;li</span><span class="attr"> class=</span><span class="value">"dropdown-item"</span><span class="label">&gt;</span><span class="label">&lt;a</span><span class="attr"> href=</span><span class="value">"javascript:;"</span><span class="label">&gt;</span>项目<span class="label">&lt;/a>&lt;/li></span></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/ul</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/li></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/ul></span><br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"right"</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;input</span><span class="attr"> class=</span><span class="value">"form-control right"</span><span class="attr"> type=</span><span class="value">"text"</span><span class="attr"> placeholder=</span><span class="value">"搜索..."</span><span class="label">/></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;/div></span><br/>
+                <span class="label">&lt;/nav></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="navbar_fixed">固定位置</h3>
+          <p>导航条可以固定在顶部和底部，但是，在设置了固定位置后，为了避免导航条将正文内容遮盖，要进行一些设置。导航条的高度是<span class="text-info">50px;</span>，正文部分要把它的位置留出来。</p>
+          <ul>
+            <li><code>.navbar-fixed-top:</code>固定在顶部。</li>
+            <li><code>.navbar-fixed-bottom:</code>固定在底部。</li>
+            <li><code>.navbar-sticky-top:</code><code>body</code>的滚动条位置没有超过导航条时，导航条在它本来的位置；超过了导航条的位置，导条就固定在底部。</li>
+          </ul>
+          <div class="fi-docs-example">
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;nav</span><span class="attr"> class=</span><span class="value">"navbar navbar-fixed-top"</span><span class="label">&gt;</span><br/>
+                ... <br/>
+                <span class="label">&lt;/nav></span><br/>
+                <br/>
+                <span class="label">&lt;nav</span><span class="attr"> class=</span><span class="value">"navbar navbar-fixed-bottom"</span><span class="label">&gt;</span><br/>
+                ... <br/>
+                <span class="label">&lt;/nav></span><br/>
+                <br/>
+                <span class="label">&lt;nav</span><span class="attr"> class=</span><span class="value">"navbar navbar-sticky-top"</span><span class="label">&gt;</span><br/>
+                ... <br/>
+                <span class="label">&lt;/nav></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="navbar_dark">黑色导航条</h3>
+          <p>通过添加<code>.navbar-dark</code>将导航条外观变为黑色系。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;nav</span><span class="attr"> class=</span><span class="value">"navbar navbar-dark"</span><span class="label">&gt;</span><br/>
+                ... <br/>
+                <span class="label">&lt;/nav></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="navbar_theme">主题导航条</h3>
+          <p>主题导航条需要用户自己定制。在源文件的<code>_variables.scss</code>文件中，修改下面的值进行定制：</p>
+          <ul>
+            <li><code>$navbar-theme-bg:</code>背景色。</li>
+            <li><code>$navbar-theme-color:</code>文字颜色。</li>
+            <li><code>$navbar-theme-hover-color:</code>鼠标移动到导航项上时的文字颜色。</li>
+            <li><code>$navbar-theme-active-bg:</code>鼠标移动到导航项上时的背景色。</li>
+            <li><code>$navbar-dark-disabled-color:</code>禁用项的文字颜色。</li>
+          </ul>
+          <div class="fi-docs-example">
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;nav</span><span class="attr"> class=</span><span class="value">"navbar navbar-theme"</span><span class="label">&gt;</span><br/>
+                ... <br/>
+                <span class="label">&lt;/nav></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="navbar_perspective">透明导航条</h3>
+          <p>通过添加<code>.navbar-perspective</code>类设置透明导航条。透明导航条的背景是透明色。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;nav</span><span class="attr"> class=</span><span class="value">"navbar navbar-perspective"</span><span class="label">&gt;</span><br/>
+                ... <br/>
+                <span class="label">&lt;/nav></span><br/>
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="navbar_collapse">折叠</h3>
+          <p>导航条在在视口（viewport）宽度小于<code>768px</code>时，会折叠成一个按钮，点击按钮可以显示/隐藏导航的内容；增加视口宽度时逐渐变为展开模式。</p>
+          <p>折叠依赖<code>collapse.js</code>插件。如果 JavaScript 被禁用，并且视口（viewport）足够窄，致使导航条折叠起来，导航条将不能被打开，.navbar-collapse 内所包含的内容也将不可见。</p>
+          <div class="fi-docs-example">
+            <div class="fi-docs-code">
+              <pre>
+                <span class="label">&lt;button</span><span class="attr"> type=</span><span class="value">"button"</span><span class="attr"> class=</span><span class="value">"navbar-toggle collapse"</span><span class="attr"> data-toggle=</span><span class="value">"collapse"</span><span class="attr"> data-target=</span><span class="value">"#navbar1"</span><span class="label">&gt;</span><br/>
+                &nbsp;&nbsp;<span class="label">&lt;i</span><span class="attr"> class=</span><span class="value">"fa fa-bars"</span><span class="label">&gt;&lt;i></span><br/>
+                <span class="label">&lt;/button></span><br/>
+                <br/>
+                <span class="label">&lt;div</span><span class="attr"> class=</span><span class="value">"navbar-collapse collapse"</span><span class="attr"> id=</span><span class="value">"navbar1"</span><span class="label">&gt;</span><br/>
+                ... <br/>
+                <span class="label">&lt;/div></span><br/>
               </pre>
             </div>
           </div>
