@@ -4,55 +4,62 @@
 }
 /* line 6, ../scss/sidebar-scrollspy.scss */
 .sidebar li {
-  width: 100%;
   padding: 0;
+  width: 100%;
 }
-/* line 10, ../scss/sidebar-scrollspy.scss */
+/* line 11, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav-link {
-  display: inline-block;
   position: relative;
   padding-left: 20px;
   color: #55595c;
 }
-/* line 13, ../scss/sidebar-scrollspy.scss */
+/* line 16, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav-link:hover {
   color: #51d6b5;
 }
-/* line 21, ../scss/sidebar-scrollspy.scss */
+/* line 20, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav-link:before {
   position: absolute;
   left: 0;
 }
-/* line 26, ../scss/sidebar-scrollspy.scss */
+/* line 25, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav-link + ul {
   position: absolute;
+  width: 100%;
   top: 2px;
   left: 85px;
   z-index: 1;
 }
-/* line 35, ../scss/sidebar-scrollspy.scss */
+/* line 34, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav .nav-link.active {
   color: #2EC6A0;
 }
-/* line 38, ../scss/sidebar-scrollspy.scss */
+/* line 37, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav .nav-link.active:before {
   content: "\27A4";
 }
-/* line 44, ../scss/sidebar-scrollspy.scss */
+/* line 43, ../scss/sidebar-scrollspy.scss */
 .sidebar ul {
   width: 100%;
 }
-/* line 46, ../scss/sidebar-scrollspy.scss */
+/* line 45, ../scss/sidebar-scrollspy.scss */
 .sidebar ul ul {
   display: none;
   font-size: 80%;
   padding-left: 10px;
 }
-/* line 52, ../scss/sidebar-scrollspy.scss */
+/* line 51, ../scss/sidebar-scrollspy.scss */
 .sidebar ul .nav-link.active + ul {
   display: block;
 }
-/* line 58, ../scss/sidebar-scrollspy.scss */
+/* line 57, ../scss/sidebar-scrollspy.scss */
 .sidebar > ul > li {
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 63, ../scss/sidebar-scrollspy.scss */
+  .sidebar {
+    display: none;
+  }
 }
