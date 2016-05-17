@@ -6,37 +6,39 @@
 /* line 7, ../scss/sidebar-scrollspy.scss */
 .sidebar li {
   float: none;
+  position: relative;
   padding: 0;
 }
-/* line 11, ../scss/sidebar-scrollspy.scss */
-.sidebar li:hover, .sidebar li:focus {
-  background-color: #fff;
+/* line 12, ../scss/sidebar-scrollspy.scss */
+.sidebar li.active, .sidebar li:hover, .sidebar li:focus {
+  background: none !important;
 }
-/* line 14, ../scss/sidebar-scrollspy.scss */
-.sidebar li:hover a, .sidebar li:focus a {
-  background-color: #fff;
+/* line 16, ../scss/sidebar-scrollspy.scss */
+.sidebar li.active a, .sidebar li:hover a, .sidebar li:focus a {
+  background: none !important;
 }
-/* line 20, ../scss/sidebar-scrollspy.scss */
+/* line 22, ../scss/sidebar-scrollspy.scss */
 .sidebar > ul > li {
   display: table;
 }
-/* line 24, ../scss/sidebar-scrollspy.scss */
-.sidebar .nav-link {
+/* line 26, ../scss/sidebar-scrollspy.scss */
+.sidebar a {
+  display: inline-block !important;
   position: relative;
   padding-left: 20px;
   color: #55595c;
 }
-/* line 29, ../scss/sidebar-scrollspy.scss */
-.sidebar .nav-link:hover, .sidebar .nav-link:focus {
+/* line 32, ../scss/sidebar-scrollspy.scss */
+.sidebar a:hover, .sidebar a:focus {
   color: #51d6b5;
 }
-/* line 34, ../scss/sidebar-scrollspy.scss */
-.sidebar .nav-link:before {
+/* line 37, ../scss/sidebar-scrollspy.scss */
+.sidebar a:before {
   position: absolute;
   left: 0;
 }
-/* line 39, ../scss/sidebar-scrollspy.scss */
-.sidebar .nav-link + ul {
+/* line 42, ../scss/sidebar-scrollspy.scss */
+.sidebar a + ul {
   position: absolute;
   width: 100%;
   min-width: 200px;
@@ -44,31 +46,40 @@
   left: 85px;
   z-index: 1;
 }
-/* line 49, ../scss/sidebar-scrollspy.scss */
-.sidebar .nav .nav-link.active {
-  color: #2EC6A0;
+/* line 54, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav li.active, .sidebar .nav li.active > a {
+  color: #2EC6A0 !important;
 }
-/* line 52, ../scss/sidebar-scrollspy.scss */
-.sidebar .nav .nav-link.active:before {
+/* line 59, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav li.active:before {
   content: "\27A4";
+  display: inline-block;
+  position: absolute;
+  left: -20px;
 }
-/* line 60, ../scss/sidebar-scrollspy.scss */
+/* line 69, ../scss/sidebar-scrollspy.scss */
 .sidebar ul ul {
   display: none;
   font-size: 80%;
   padding-left: 10px;
 }
-/* line 66, ../scss/sidebar-scrollspy.scss */
-.sidebar ul .nav-link.active + ul {
+/* line 75, ../scss/sidebar-scrollspy.scss */
+.sidebar ul li.active ul {
   display: block;
 }
-/* line 72, ../scss/sidebar-scrollspy.scss */
+/* line 81, ../scss/sidebar-scrollspy.scss */
 .sidebar > ul > li {
   position: relative;
 }
 
+/* line 87, ../scss/sidebar-scrollspy.scss */
+.back-to-top a {
+  margin-left: 2px;
+  padding-left: 0;
+}
+
 @media screen and (max-width: 768px) {
-  /* line 78, ../scss/sidebar-scrollspy.scss */
+  /* line 94, ../scss/sidebar-scrollspy.scss */
   .sidebar {
     display: none;
   }

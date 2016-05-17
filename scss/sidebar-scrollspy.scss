@@ -6,13 +6,15 @@
 
   li {
     float: none;
+    position: relative;
     padding: 0;
 
+    &.active,
     &:hover,
     &:focus {
-      background-color: #fff;
+      background: none !important;
       a {
-        background-color: #fff;
+        background: none !important;
       }
     }
   }
@@ -21,7 +23,8 @@
     display: table;
   }
 
-  .nav-link {
+  a {
+    display: inline-block !important;
     position: relative;
     padding-left: 20px;
     color: $gray;
@@ -45,25 +48,31 @@
       z-index: 1;
     }
   }
+
   .nav {
-    .nav-link.active {
-      color: $brand-theme-color;
+    li.active {
+      &,
+      & > a {
+        color: $brand-theme-color !important;
+      }
 
       &:before {
         content: "\27A4";
+        display: inline-block;
+        position: absolute;
+        left: -20px;
       }
     }
   }
 
   ul{
-    //width: 100%;
     ul {
       display: none;
       font-size: 80%;
       padding-left: $space-base * 2;
     }
 
-    .nav-link.active + ul {
+    li.active  ul {
       display: block;
     }
 
@@ -71,6 +80,13 @@
 
   > ul > li {
     position: relative;
+  }
+}
+
+.back-to-top {
+  a {
+    margin-left: 2px;
+    padding-left: 0;
   }
 }
 
