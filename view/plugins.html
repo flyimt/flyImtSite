@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <link rel="stylesheet" href="../css/yyui.css"/>
-  <link rel="stylesheet" href="../css/common.css"/>
-  <link rel="stylesheet" href="../css/index.css"/>
   <title></title>
 </head>
-<body class="index-bg">
+<body data-spy="scroll" data-offset="180">
 <header>
   <nav class="navbar navbar-dark">
     <div class="container">
@@ -30,30 +28,18 @@
     </div>
   </nav>
 </header>
-<main>
-  <div class="container-full">
-    <div class="weather">
-      <div class="media">
-        <div class="media-left">
-          <i class="fa fa-cloud"></i>
-        </div>
-        <div class="media-body">
-          <p class="media-heading text-light" id="weather_city"></p>
-          <p id="weather_temperature"></p>
-        </div>
-      </div>
-    </div>
 
-    <div class="clock center">
-      <canvas id="canvas" width=400 height=400>大家的浏览器都装上宝马发动机了，您的浏览器还是拖拉机发动机。是时候升级了！！！</canvas>
-    </div>
-
-    <p class="text-center warning text-capitalize">what's the goal today?</p>
+<footer class="fi-docs-footer">
+  <div class="container">
+    <p class="text-center">Designed by kelp and built by yayo.</p>
+    <p class="text-center">wellcome to feedback, and we will make it better.</p>
+    <ul class="list-inline text-center">
+      <li><a href="javascript:;" class="text-muted">当前版本1.0.0</a></li>
+      <li><a href="https://github.com/yayocn/yyui" target="_blank">github</a></li>
+    </ul>
   </div>
-</main>
+</footer>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/yyui.min.js"></script>
-<script src="../js/clock.js"></script>
-<script src="../js/weather.js"></script>
 </body>
 </html>

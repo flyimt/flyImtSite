@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="../css/yyui.css"/>
+  <link rel="stylesheet" href="../css/common.css"/>
+  <link rel="stylesheet" href="../css/docs.css"/>
+  <title></title>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <a href="index.html" class="navbar-brand">YY UI</a>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="introduction.html">简介</a></li>
+          <li><a href="start.html">开始</a></li>
+          <li><a href="global.html">全局样式</a></li>
+          <li><a href="components.html">组件</a></li>
+          <li><a href="plugins.html">插件</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="fi-docs-masthead">
+    <div class="container">
+      <h1>开始</h1>
+      <h4>简要的介绍 yyui，以及下载、使用。</h4>
+    </div>
+  </div>
+
+  <div class="fi-docs-feature">
+    <div class="container">
+      <h2 class="fi-docs-title m-b-6">下载</h2>
+      <h5 class="m-b-6">YYUI 提供两种方式供您使用。</h5>
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>开发环境</h3>
+          <p>编译并且压缩后的css、javascript文件，不含文档和源代码。</p>
+          <button type="button" class="btn btn-block btn-lg btn-success-outline">下载yyui</button>
+        </div>
+        <div class="col-sm-4">
+          <h3>源码</h3>
+          <p>yayo的所有开发源码，包括sass、JavaScript 和 字体文件、文档、工具等。</p>
+          <button type="button" class="btn btn-block btn-lg btn-success-outline">下载源码</button>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <h2 class="fi-docs-title m-b-6">使用</h2>
+      <h5 class="m-b-6">使用 YYUI 需要引入css、js文件以及字体文件。</h5>
+
+      <h3>引用css文件</h3>
+      <div class="fi-docs-example">
+        <div class="fi-docs-code">
+          <pre>
+            <span class="label">&lt;link</span><span class="attr"> href=</span><span class="value">"路径/yyui.css"</span><span class="attr"> rel=</span><span class="value">"stylesheet"</span><span class="label">/></span>
+          </pre>
+        </div>
+      </div>
+
+      <h3>引用js文件</h3>
+      <p class="text-danger">yyui.js 依赖 jquery。</p>
+      <div class="fi-docs-example">
+        <div class="fi-docs-code">
+          <pre>
+            <span class="label">&lt;script</span>
+            <span class="attr"> src=</span><span class="value">"路径/jquery.min.js"</span><span class="label">/>&lt;/script></span><br/>
+            <span class="label">&lt;script</span>
+            <span class="attr"> src=</span><span class="value">"路径/yyui.min.js"</span><span class="label">/>&lt;/script></span>
+          </pre>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <h2 class="fi-docs-title m-b-6">兼容性</h2>
+      <p>yyui 使用了大量的h5，css3的特性，建议运用于使用现代浏览器的场景，具体的兼容性yayo还未做测试。</p>
+    </div>
+  </div>
+</main>
+
+<footer class="fi-docs-footer">
+  <div class="container">
+    <p class="text-center">Designed by kelp and built by yayo.</p>
+    <p class="text-center">wellcome to feedback, and we will make it better.</p>
+    <ul class="list-inline text-center">
+      <li><a href="javascript:;" class="text-muted">当前版本1.0.0</a></li>
+      <li><a href="https://github.com/yayocn/yyui" target="_blank">github</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/yyui.min.js"></script>
+</body>
+</html>
