@@ -4559,8 +4559,9 @@ pre .note {
   width: 100%;
   max-width: 100%;
   margin-bottom: 15px;
+  font-size: 0.85rem;
 }
-/* line 6, ../scss/_tables.scss */
+/* line 7, ../scss/_tables.scss */
 .table th,
 .table td {
   padding: 0.75rem;
@@ -4568,16 +4569,16 @@ pre .note {
   vertical-align: top;
   border-top: 1px solid #eceeef;
 }
-/* line 14, ../scss/_tables.scss */
+/* line 15, ../scss/_tables.scss */
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #eceeef;
 }
-/* line 19, ../scss/_tables.scss */
+/* line 20, ../scss/_tables.scss */
 .table tbody + tbody {
   border-top: 2px solid #eceeef;
 }
-/* line 23, ../scss/_tables.scss */
+/* line 24, ../scss/_tables.scss */
 .table .table {
   background-color: #fff;
 }
@@ -4586,28 +4587,28 @@ pre .note {
   background-color: #ddd;
 }
 
-/* line 35, ../scss/_tables.scss */
+/* line 36, ../scss/_tables.scss */
 .table-sm th,
 .table-sm td {
   padding: 0.3rem;
 }
 
-/* line 41, ../scss/_tables.scss */
+/* line 42, ../scss/_tables.scss */
 .table-border {
   border: 1px solid #eceeef;
 }
-/* line 44, ../scss/_tables.scss */
+/* line 45, ../scss/_tables.scss */
 .table-border th,
 .table-border td {
   border: 1px solid #eceeef;
 }
-/* line 50, ../scss/_tables.scss */
+/* line 51, ../scss/_tables.scss */
 .table-border thead th,
 .table-border thead td {
   border-bottom-width: 2px;
 }
 
-/* line 58, ../scss/_tables.scss */
+/* line 59, ../scss/_tables.scss */
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: #eee;
 }
@@ -4730,7 +4731,7 @@ pre .note {
   background-color: #d43f3a;
 }
 
-/* line 71, ../scss/_tables.scss */
+/* line 72, ../scss/_tables.scss */
 .table-responsive {
   display: block;
   width: 100%;
@@ -8665,7 +8666,7 @@ pre .note {
 /* line 6, ../scss/_navbar.scss */
 .navbar {
   position: relative;
-  padding: 5px 10px;
+  padding: 6px 12px;
   background-color: #fff;
 }
 /* line 9, ../scss/mixins/_assists.scss */
@@ -9342,7 +9343,7 @@ progress {
   margin-bottom: 10px;
   height: 15px;
   border: 1px solid #0275d8;
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding: 1px;
   color: #fff;
   -moz-border-radius: 1000px;
