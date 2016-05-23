@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 4, ../scss/docs.scss */
-.fi-docs-masthead {
+.yyui-docs-masthead {
   position: relative;
   padding: 80px 0;
   margin-bottom: 60px;
@@ -11,96 +11,99 @@
   background-repeat: repeat-x;
 }
 /* line 14, ../scss/docs.scss */
-.fi-docs-masthead h1 {
+.yyui-docs-masthead h1 {
   font-size: 60px;
 }
 /* line 18, ../scss/docs.scss */
-.fi-docs-masthead .fi-docs-fiicon {
-  padding: 30px;
-  width: 170px;
-  height: 170px;
-  line-height: 170px;
+.yyui-docs-masthead .yyui-docs-log {
+  display: inline-block;
+  height: 144px;
+  width: 144px;
+  margin: 0 auto 30px;
+  border: 1px solid #fff;
+  border-radius: 20px;
   color: #fff;
-  font-size: 110px;
+  font-size: 108px;
+  line-height: 144px;
 }
-/* line 27, ../scss/docs.scss */
-.fi-docs-masthead .lead {
+/* line 30, ../scss/docs.scss */
+.yyui-docs-masthead .lead {
   width: 80%;
   font-size: 30px;
   margin: 0 auto 50px;
 }
 
-/* line 34, ../scss/docs.scss */
-.fi-docs-feature {
+/* line 37, ../scss/docs.scss */
+.yyui-docs-feature {
   padding-bottom: 40px;
   padding-top: 40px;
   background-color: #fff;
   color: #555;
 }
-/* line 39, ../scss/docs.scss */
-.fi-docs-feature p {
+/* line 42, ../scss/docs.scss */
+.yyui-docs-feature p {
   text-align: justify;
 }
-/* line 43, ../scss/docs.scss */
-.fi-docs-feature img {
+/* line 46, ../scss/docs.scss */
+.yyui-docs-feature img {
   display: block;
   margin: 0 auto;
   height: 130px;
 }
 
-/* line 50, ../scss/docs.scss */
-.fi-docs-section {
+/* line 53, ../scss/docs.scss */
+.yyui-docs-section {
   margin-bottom: 60px;
 }
 
-/* line 54, ../scss/docs.scss */
-.fi-docs-title {
+/* line 57, ../scss/docs.scss */
+.yyui-docs-title {
   color: #333;
   font-size: 40px;
 }
 
-/* line 59, ../scss/docs.scss */
-.fi-docs-example {
+/* line 62, ../scss/docs.scss */
+.yyui-docs-example {
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 63, ../scss/docs.scss */
-.fi-docs-example .fi-docs-surface,
-.fi-docs-example .fi-docs-code {
+/* line 66, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-surface,
+.yyui-docs-example .yyui-docs-code {
   position: relative;
   width: 100%;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-/* line 73, ../scss/docs.scss */
-.fi-docs-example .fi-docs-surface:before,
-.fi-docs-example .fi-docs-code:before {
+/* line 76, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-surface:before,
+.yyui-docs-example .yyui-docs-code:before {
   font-size: 14px;
   font-weight: 500;
   color: #818a91;
 }
-/* line 80, ../scss/docs.scss */
-.fi-docs-example .fi-docs-surface {
+/* line 83, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-surface {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-/* line 83, ../scss/docs.scss */
-.fi-docs-example .fi-docs-surface:before {
+/* line 86, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-surface:before {
   content: "板栗：";
   display: block;
   margin-bottom: 20px;
 }
-/* line 90, ../scss/docs.scss */
-.fi-docs-example .fi-docs-code {
+/* line 93, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-code {
   margin-top: -1px;
   background-color: #3f3f3f;
   border: 1px solid #3f3f3f;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 97, ../scss/docs.scss */
-.fi-docs-example .fi-docs-code .fi-docs-copy {
+/* line 100, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-code .yyui-docs-copy {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -110,20 +113,20 @@
   color: #fff;
   box-shadow: 1px 1px 4px #262626;
 }
-/* line 107, ../scss/docs.scss */
-.fi-docs-example .fi-docs-code .fi-docs-copy:hover {
+/* line 110, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-code .yyui-docs-copy:hover {
   background-color: #2EC6A0;
   border-color: #2EC6A0;
   cursor: pointer;
   box-shadow: 1px 1px 4px #249d7f;
 }
-/* line 115, ../scss/docs.scss */
-.fi-docs-example .fi-docs-code pre {
+/* line 118, ../scss/docs.scss */
+.yyui-docs-example .yyui-docs-code pre {
   border: 0;
 }
 
-/* line 122, ../scss/docs.scss */
-.fi-docs-note {
+/* line 125, ../scss/docs.scss */
+.yyui-docs-note {
   padding: 24px 20px 20px 80px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -134,29 +137,29 @@
   font-size: 14px;
   line-height: 23px;
 }
-/* line 135, ../scss/docs.scss */
-.fi-docs-note p {
+/* line 138, ../scss/docs.scss */
+.yyui-docs-note p {
   margin-bottom: 0;
   text-indent: 2em;
 }
 
-/* line 141, ../scss/docs.scss */
-.fi-docs-footer {
+/* line 144, ../scss/docs.scss */
+.yyui-docs-footer {
   font-size: .85em;
 }
-/* line 144, ../scss/docs.scss */
-.fi-docs-footer .container,
-.fi-docs-footer .container-full {
+/* line 147, ../scss/docs.scss */
+.yyui-docs-footer .container,
+.yyui-docs-footer .container-full {
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: 1px solid #ddd;
 }
-/* line 151, ../scss/docs.scss */
-.fi-docs-footer p {
+/* line 154, ../scss/docs.scss */
+.yyui-docs-footer p {
   margin-bottom: 0;
 }
-/* line 155, ../scss/docs.scss */
-.fi-docs-footer .list-group {
+/* line 158, ../scss/docs.scss */
+.yyui-docs-footer .list-group {
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -181,25 +184,25 @@
     transform: translateY(0);
   }
 }
-/* line 174, ../scss/docs.scss */
+/* line 177, ../scss/docs.scss */
 .back-to-top a {
   display: inline-block;
   margin-top: 20px;
   margin-left: 10px;
   overflow: hidden;
   background: none;
-  color: #2EC6A0;
+  color: #36c6d3;
 }
-/* line 181, ../scss/docs.scss */
+/* line 184, ../scss/docs.scss */
 .back-to-top a i {
   display: inline-block;
   font-size: 28px;
 }
-/* line 186, ../scss/docs.scss */
+/* line 189, ../scss/docs.scss */
 .back-to-top a:focus, .back-to-top a:hover {
   outline: none;
 }
-/* line 192, ../scss/docs.scss */
+/* line 195, ../scss/docs.scss */
 .back-to-top a:hover i {
   -moz-animation: up 1s linear infinite;
   -webkit-animation: up 1s linear infinite;

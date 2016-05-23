@@ -30,7 +30,7 @@
 }
 /* line 32, ../scss/sidebar-scrollspy.scss */
 .sidebar a:hover, .sidebar a:focus {
-  color: #51d6b5;
+  color: #60d2dc;
 }
 /* line 37, ../scss/sidebar-scrollspy.scss */
 .sidebar a:before {
@@ -48,7 +48,7 @@
 }
 /* line 54, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav li.active, .sidebar .nav li.active > a {
-  color: #2EC6A0 !important;
+  color: #36c6d3 !important;
 }
 /* line 59, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav li.active:before {

@@ -14,7 +14,7 @@
         //var tq = citytq + " " + img + " " + _w.s1 + " " + _w.t1 + "¡æ¡«" + _w.t2 + "¡æ  " + _w.d1 + _w.p1 + "¼¶";
         //console.log(tq)
         var city = document.getElementById('weather_city');
-        city.innerHTML = citytq + '<span class="right">' + _w.s1 + '</span>';
+        city.innerHTML = citytq + '<span class="f-r">' + _w.s1 + '</span>';
 
         var temperature = document.getElementById('weather_temperature');
         temperature.innerHTML =  _w.t2 + "`C ~ " + _w.t1 + "`C";
