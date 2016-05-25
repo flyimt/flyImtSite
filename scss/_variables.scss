@@ -24,3 +24,20 @@ $pre-bg: #3f3f3f;
 //
 
 $enable-round:    true !default;
+$enable-hover-media-query: false !default;
+
+//
+// navbar
+//
+
+$navbar-theme-bg: #fff !default;
+$navbar-theme-color: $brand-theme-color !default;
+$navbar-theme-hover-color: darken($navbar-theme-color, 10%) !default;
+
+//
+// Button
+//
+
+$btn-theme-color: #fff !default;
+$btn-theme-border: $brand-theme-color !default;
+$btn-theme-bg: $brand-theme-color !default;
