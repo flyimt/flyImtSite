@@ -4,40 +4,53 @@
   max-width: 320px;
 }
 /* line 7, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav > li {
+  float: none;
+}
+/* line 10, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav > li {
+  padding: 0 0 0 20px;
+}
+/* line 12, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav > li > a {
+  padding: 0;
+}
+/* line 17, ../scss/sidebar-scrollspy.scss */
 .sidebar li {
   float: none;
   position: relative;
   padding: 0;
 }
-/* line 12, ../scss/sidebar-scrollspy.scss */
+/* line 22, ../scss/sidebar-scrollspy.scss */
 .sidebar li.active, .sidebar li:hover, .sidebar li:focus {
   background: none !important;
 }
-/* line 16, ../scss/sidebar-scrollspy.scss */
+/* line 26, ../scss/sidebar-scrollspy.scss */
 .sidebar li.active a, .sidebar li:hover a, .sidebar li:focus a {
   background: none !important;
 }
-/* line 22, ../scss/sidebar-scrollspy.scss */
+/* line 32, ../scss/sidebar-scrollspy.scss */
 .sidebar > ul > li {
+  float: none;
   display: table;
+  padding: 0;
 }
-/* line 26, ../scss/sidebar-scrollspy.scss */
+/* line 38, ../scss/sidebar-scrollspy.scss */
 .sidebar a {
   display: inline-block !important;
   position: relative;
-  padding-left: 20px;
   color: #55595c;
 }
-/* line 32, ../scss/sidebar-scrollspy.scss */
+/* line 43, ../scss/sidebar-scrollspy.scss */
 .sidebar a:hover, .sidebar a:focus {
   color: #60d2dc;
 }
-/* line 37, ../scss/sidebar-scrollspy.scss */
+/* line 48, ../scss/sidebar-scrollspy.scss */
 .sidebar a:before {
   position: absolute;
   left: 0;
 }
-/* line 42, ../scss/sidebar-scrollspy.scss */
+/* line 53, ../scss/sidebar-scrollspy.scss */
 .sidebar a + ul {
   position: absolute;
   width: 100%;
@@ -46,40 +59,40 @@
   left: 85px;
   z-index: 1;
 }
-/* line 54, ../scss/sidebar-scrollspy.scss */
+/* line 65, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav li.active, .sidebar .nav li.active > a {
   color: #36c6d3 !important;
 }
-/* line 59, ../scss/sidebar-scrollspy.scss */
+/* line 70, ../scss/sidebar-scrollspy.scss */
 .sidebar .nav li.active:before {
   content: "\27A4";
   display: inline-block;
   position: absolute;
   left: -20px;
 }
-/* line 69, ../scss/sidebar-scrollspy.scss */
+/* line 80, ../scss/sidebar-scrollspy.scss */
 .sidebar ul ul {
   display: none;
   font-size: 80%;
   padding-left: 10px;
 }
-/* line 75, ../scss/sidebar-scrollspy.scss */
+/* line 86, ../scss/sidebar-scrollspy.scss */
 .sidebar ul li.active ul {
   display: block;
 }
-/* line 81, ../scss/sidebar-scrollspy.scss */
+/* line 92, ../scss/sidebar-scrollspy.scss */
 .sidebar > ul > li {
   position: relative;
 }
 
-/* line 87, ../scss/sidebar-scrollspy.scss */
+/* line 98, ../scss/sidebar-scrollspy.scss */
 .back-to-top a {
   margin-left: 2px;
   padding-left: 0;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 94, ../scss/sidebar-scrollspy.scss */
+  /* line 105, ../scss/sidebar-scrollspy.scss */
   .sidebar {
     display: none;
   }

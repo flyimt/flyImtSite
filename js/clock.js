@@ -23,7 +23,7 @@
     },
     drawRuling: function() {
       var deg = 2 * Math.PI / 12;
-      // ´ó¿Ì¶È
+      // å¤§åˆ»åº¦
       this.context.save();
       this.context.beginPath();
       for (var i = 0; i < 12; i++) {
@@ -37,7 +37,7 @@
       this.context.stroke();
       this.context.closePath();
       this.context.restore();
-      // Ð¡¿Ì¶È
+      // å°åˆ»åº¦
       this.context.save();
       var deg1 = 2 * Math.PI / 60;
       this.context.beginPath();
@@ -60,10 +60,10 @@
         m = '0' + m;
       }
       var s = this.time.getSeconds().toString();
-      // ÎÄ×Ö
+      // æ–‡å­—
       this.context.save();
       this.context.fillStyle = "#fff";
-      this.context.font = '50px Arial,Î¢ÈíÑÅºÚ';
+      this.context.font = '50px Arial,Î¢å¾®è½¯é›…é»‘';
       this.context.textAlign = 'center';
       this.context.textBaseline = 'middle';
       this.context.fillText(h + " : " + m, 0, 200);
@@ -73,7 +73,7 @@
       var hdeg = (this.time.getHours() % 12) * 2 * Math.PI / 12;
       var mdeg = this.time.getMinutes() * 2 * Math.PI / 60;
       var sdeg = this.time.getSeconds() * 2 * Math.PI / 60
-      // Ê±Õë
+      // æ—¶é’ˆ
       this.context.save();
       this.context.rotate(hdeg + mdeg / 12 + sdeg / 720);
       this.context.beginPath();
@@ -84,7 +84,7 @@
       this.context.stroke();
       this.context.closePath();
       this.context.restore();
-      // ·ÖÕë
+      // åˆ†é’ˆ
       this.context.save();
       this.context.rotate(mdeg + sdeg / 60);
       this.context.beginPath();
@@ -95,7 +95,7 @@
       this.context.stroke();
       this.context.closePath();
       this.context.restore();
-      // ÃëÕë
+      // ç§’é’ˆ
       this.context.save();
       this.context.rotate(sdeg);
       this.context.beginPath();
@@ -109,7 +109,12 @@
     }
   }
 
-  var clock = new Clock('canvas');
-  clock.run();
+  setTimeout(function() {
+    if(document.getElementById('index_clock')){
+      var clock = new Clock('index_clock');
+      clock.run();
+    }
+  }, 100)
+
 })()
 

@@ -74,7 +74,7 @@
   color: #36c6d3;
   background-image: none;
   background-color: transparent;
-  border-color: #36c6d3;
+  border-color: #36c6d3 !important;
 }
 /* line 51, ../scss/theme/mixins/_buttons.scss */
 .btn-theme-outline:focus, .btn-theme-outline.focus, .btn-theme-outline:active, .btn-theme-outline.active, .open > .btn-theme-outline.dropdown-toggle {

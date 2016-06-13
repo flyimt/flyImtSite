@@ -46,7 +46,7 @@
   color: $color;
   background-image: none;
   background-color: transparent;
-  border-color: $color;
+  border-color: $color !important;
 
   &:focus,
   &.focus,

@@ -4,6 +4,16 @@
   width: 100%;
   max-width: 320px;
 
+  .nav>li {
+    float: none;
+  }
+  .nav > li {
+    padding: 0 0 0 20px;
+    & > a {
+      padding: 0;
+    }
+  }
+
   li {
     float: none;
     position: relative;
@@ -20,13 +30,14 @@
   }
 
   > ul > li {
+    float: none;
     display: table;
+    padding: 0;
   }
 
   a {
     display: inline-block !important;
     position: relative;
-    padding-left: 20px;
     color: $gray;
 
     &:hover,
