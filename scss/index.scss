@@ -1,5 +1,12 @@
 @import "compass/css3";
+body {
+  min-height: 768px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .index-bg {
+  padding: 80px 0;
   background-image: url("../img/index-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +25,7 @@
   }
 
   p {
-    text-indent: 0;
+    text-indent: 0 !important;
   }
 }
 

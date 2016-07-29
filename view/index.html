@@ -17,9 +17,9 @@
   <title>YY UI -- 好用的前端框架</title>
   <link rel="icon" href="../yyuiicon.ico"/>
 </head>
-<body class="index-bg">
+<body>
 <header>
-  <nav class="navbar ">
+  <nav class="navbar navbar-dark">
     <div class="container">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
         <i class="fa fa-bars"></i>
@@ -39,7 +39,7 @@
     </div>
   </nav>
 </header>
-<main>
+<main class="index-bg">
   <div class="container-full">
     <div class="weather">
       <div class="media">
@@ -60,11 +60,17 @@
     <p class="text-center warning text-capitalize">what's the goal today?</p>
   </div>
 </main>
+
+<footer class="text-center font-13 m-t-8">
+  <a class="text-muted" href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备16016100号</a>
+</footer>
+
 <!-- build:js -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/yyui.min.js"></script>
 <script src="../js/clock.js"></script>
 <script src="../js/weather.js"></script>
+<script src="../js/index.js"></script>
 <!-- endbuild -->
 </body>
 </html>
