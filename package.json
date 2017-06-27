@@ -1,0 +1,26 @@
+{
+  "name": "yyuiSite",
+  "version": "2.0.0",
+  "description": "a front frameworkwork ",
+  "author": "yayo <yayocn@qq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "node build/dev-server"
+  },
+  "dependencies": {
+    "vue": "^2.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.3"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

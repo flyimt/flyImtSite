@@ -1,0 +1,99 @@
+/* line 3, ../scss/sidebar-scrollspy.scss */
+.sidebar {
+  width: 100%;
+  max-width: 320px;
+}
+/* line 7, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav > li {
+  float: none;
+}
+/* line 10, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav > li {
+  padding: 0 0 0 20px;
+}
+/* line 12, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav > li > a {
+  padding: 0;
+}
+/* line 17, ../scss/sidebar-scrollspy.scss */
+.sidebar li {
+  float: none;
+  position: relative;
+  padding: 0;
+}
+/* line 22, ../scss/sidebar-scrollspy.scss */
+.sidebar li.active, .sidebar li:hover, .sidebar li:focus {
+  background: none !important;
+}
+/* line 26, ../scss/sidebar-scrollspy.scss */
+.sidebar li.active a, .sidebar li:hover a, .sidebar li:focus a {
+  background: none !important;
+}
+/* line 32, ../scss/sidebar-scrollspy.scss */
+.sidebar > ul > li {
+  float: none;
+  display: table;
+  padding: 0;
+}
+/* line 38, ../scss/sidebar-scrollspy.scss */
+.sidebar a {
+  display: inline-block !important;
+  position: relative;
+  color: #55595c;
+}
+/* line 43, ../scss/sidebar-scrollspy.scss */
+.sidebar a:hover, .sidebar a:focus {
+  color: #60d2dc;
+}
+/* line 48, ../scss/sidebar-scrollspy.scss */
+.sidebar a:before {
+  position: absolute;
+  left: 0;
+}
+/* line 53, ../scss/sidebar-scrollspy.scss */
+.sidebar a + ul {
+  position: absolute;
+  width: 100%;
+  min-width: 200px;
+  top: 2px;
+  left: 85px;
+  z-index: 1;
+}
+/* line 65, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav li.active, .sidebar .nav li.active > a {
+  color: #36c6d3 !important;
+}
+/* line 70, ../scss/sidebar-scrollspy.scss */
+.sidebar .nav li.active:before {
+  content: "\27A4";
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+}
+/* line 80, ../scss/sidebar-scrollspy.scss */
+.sidebar ul ul {
+  display: none;
+  font-size: 80%;
+  padding-left: 10px;
+}
+/* line 86, ../scss/sidebar-scrollspy.scss */
+.sidebar ul li.active ul {
+  display: block;
+}
+/* line 92, ../scss/sidebar-scrollspy.scss */
+.sidebar > ul > li {
+  position: relative;
+}
+
+/* line 98, ../scss/sidebar-scrollspy.scss */
+.back-to-top a {
+  margin-left: 2px;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 105, ../scss/sidebar-scrollspy.scss */
+  .sidebar {
+    display: none;
+  }
+}
