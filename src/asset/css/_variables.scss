@@ -1,0 +1,43 @@
+$gray-dark:         #373a3c !default;
+$gray:              #55595c !default;
+$gray-light:        #818a91 !default;
+$gray-lighter:      #eceeef !default;
+$gray-lightest:     #f7f7f9 !default;
+
+
+$brand-primary:     #36c6d3 !default;
+$brand-secondary:   #375A7F !default;
+$brand-info:        #3bb4f2 !default;
+$brand-success:     #2EC6A0 !default;
+$brand-warning:     #f0ad4e !default;
+$brand-danger:      #d9534f !default;
+
+$brand-theme-color:  $brand-primary !default;
+
+
+$space-base: 5px;
+$border-radius:  4px;
+$pre-bg: #3f3f3f;
+
+//
+// Switch
+//
+
+$enable-round:    true !default;
+$enable-hover-media-query: false !default;
+
+//
+// navbar
+//
+
+$navbar-theme-bg: #fff !default;
+$navbar-theme-color: $brand-theme-color !default;
+$navbar-theme-hover-color: darken($navbar-theme-color, 10%) !default;
+
+//
+// Button
+//
+
+$btn-theme-color: #fff !default;
+$btn-theme-border: $brand-theme-color !default;
+$btn-theme-bg: $brand-theme-color !default;

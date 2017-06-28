@@ -1,0 +1,62 @@
+.sidebar {
+  width: 100%;
+  max-width: 320px; }
+  .sidebar .nav > li {
+    float: none; }
+  .sidebar .nav > li {
+    padding: 0 0 0 20px; }
+    .sidebar .nav > li > a {
+      padding: 0; }
+  .sidebar li {
+    float: none;
+    position: relative;
+    padding: 0; }
+    .sidebar li.active, .sidebar li:hover, .sidebar li:focus {
+      background: none !important; }
+      .sidebar li.active a, .sidebar li:hover a, .sidebar li:focus a {
+        background: none !important; }
+  .sidebar > ul > li {
+    float: none;
+    display: table;
+    padding: 0; }
+  .sidebar a {
+    display: inline-block !important;
+    position: relative;
+    color: #55595c; }
+    .sidebar a:hover, .sidebar a:focus {
+      color: #60d2dc; }
+    .sidebar a:before {
+      position: absolute;
+      left: 0; }
+    .sidebar a + ul {
+      position: absolute;
+      width: 100%;
+      min-width: 200px;
+      top: 2px;
+      left: 85px;
+      z-index: 1; }
+  .sidebar .nav li.active, .sidebar .nav li.active > a {
+    color: #36c6d3 !important; }
+  .sidebar .nav li.active:before {
+    content: "\27A4";
+    display: inline-block;
+    position: absolute;
+    left: -20px; }
+  .sidebar ul ul {
+    display: none;
+    font-size: 80%;
+    padding-left: 10px; }
+  .sidebar ul li.active ul {
+    display: block; }
+  .sidebar > ul > li {
+    position: relative; }
+
+.back-to-top a {
+  margin-left: 2px;
+  padding-left: 0; }
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none; } }
+
+/*# sourceMappingURL=sidebar-scrollspy.css.map */

@@ -1,0 +1,54 @@
+@import "../_variables";
+@import "../_mixins";
+
+//
+// Theme navbar
+//
+
+.navbar-yyui-site {
+  background-color: $navbar-theme-bg;
+
+  .navbar-brand {
+    color: $navbar-theme-color;
+    background-color: $navbar-theme-bg;
+    @include hover-focus {
+      color: $navbar-theme-hover-color;
+    }
+  }
+
+  .navbar-toggle {
+    color: $navbar-theme-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      background-color: $navbar-theme-bg;
+      color: $navbar-theme-color;
+      &:hover {
+        color: $navbar-theme-hover-color;
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    &:after {
+      border-top-color: $navbar-theme-color;
+    }
+    &.up:after {
+      border-bottom-color: $navbar-theme-color;
+    }
+  }
+}
+
+//
+// Buttons
+//
+
+.btn-theme {
+  @include button-variant($btn-theme-color, $btn-theme-bg, $btn-theme-border);
+}
+
+.btn-theme-outline {
+  @include button-outline-variant($btn-theme-bg);
+}
+

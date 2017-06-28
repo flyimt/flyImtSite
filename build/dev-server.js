@@ -1,5 +1,4 @@
 var express = require('express')
-var path = require('path')
 var proxyMiddleware = require('http-proxy-middleware')
 var opn = require('opn')
 var config = require('../config')
@@ -19,16 +18,19 @@ Object.keys(proxyTable).forEach((context) => {
   app.use(proxyMiddleware(context, options))
 })
 
-app.set('views', '/src/view')
+app.set('views', './src/view')
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'html')
-app.use(express.static('/src/asset'))
+app.use(express.static('./src/asset'))
 
 app.get('/', (req, res) => {
   res.render('index')
 })
 
+// routes
+var yyui = require('../src/route/yyui')
+app.use('/yyui', yyui)
+
 module.exports = app.listen(port, () => {
-  console.log('启动')
   opn('http://127.0.0.1:' + port)
 })
