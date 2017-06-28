@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 
 
 var Files = {
-  html: 'view/*.html',
+  html: 'views/*.html',
   css: 'css/*.css',
   js: 'js/*.js',
   fonts: 'fonts/*',
@@ -88,7 +88,7 @@ gulp.task('html', ['resetCssAndJs'], function() {
 
   return gulp.src(['rev/**/*.json', 'build/html/*.html'])
     .pipe(revCollector())
-    .pipe(gulp.dest('dist/view/'));
+    .pipe(gulp.dest('dist/views/'));
 })
 
 // delDistFolder

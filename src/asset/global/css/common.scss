@@ -1,0 +1,55 @@
+.fixed-top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+//.pt-relative {
+//  position: relative;
+//}
+
+.pt-absolute {
+  position: absolute;
+}
+
+.pt-fixed {
+  position: fixed;
+}
+
+.center-vt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.center-vt-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+//.divider-lg {
+//   margin-top: 40px;
+//   margin-bottom: 40px;
+//   border-top: 1px solid #ddd;
+// }
+//
+//.divider {
+//  margin-top: 20px;
+//  margin-bottom: 20px;
+//  border-top: 1px solid #ddd;
+//}
+//
+//.divider-sm {
+//  margin-top: 10px;
+//  margin-bottom: 10px;
+//  border-top: 1px solid #ddd;
+//}

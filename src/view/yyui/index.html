@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="这是一个前端框架，融入大量的css3和h5的元素。" />
+  <meta name="keywords" content="前端,framework,h5，css3" />
+
+  <!-- build:css -->
+  <link rel="stylesheet" href="/lib/yyui/yyui.css"/>
+  <!-- endbuild -->
+
+  <title>YY UI -- 好用的前端框架</title>
+  <link rel="icon" href="../yyuiicon.ico"/>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <a href="index.html" class="navbar-brand">YY UI</a>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="introduction.html">简介</a></li>
+          <li><a href="start.html">开始</a></li>
+          <li><a href="global.html">全局样式</a></li>
+          <li><a href="components.html">组件</a></li>
+          <li><a href="plugins.html">插件</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="index-bg">
+  <div class="container-full">
+    <div class="weather">
+      <div class="media">
+        <div class="media-left">
+          <i class="fa fa-cloud"></i>
+        </div>
+        <div class="media-body">
+          <p class="media-heading text-light" id="weather_city"></p>
+          <p id="weather_temperature"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="clock center">
+      <canvas id="index_clock" width=400 height=400>大家的浏览器都装上宝马发动机了，您的浏览器还是拖拉机发动机。是时候升级了！！！</canvas>
+    </div>
+
+    <p class="text-center warning text-capitalize">what's the goal today?</p>
+  </div>
+</main>
+
+<footer class="text-center font-13 m-t-8">
+  <a class="text-muted" href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备16016100号</a>
+</footer>
+
+<!-- build:js -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/clock.js"></script>
+<script src="/js/weather.js"></script>
+<!-- endbuild -->
+</body>
+</html>

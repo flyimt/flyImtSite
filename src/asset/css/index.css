@@ -1,0 +1,35 @@
+body {
+  min-height: 768px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.index-bg {
+  padding: 80px 0;
+  background-image: url(/image/bigbg-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.weather {
+  position: absolute;
+  top: 53px;
+  right: 0;
+  padding: 20px 20px;
+  width: 220px;
+  color: #fff; }
+  .weather .fa-cloud {
+    font-size: 50px; }
+  .weather p {
+    text-indent: 0 !important; }
+
+.clock {
+  margin-top: 100px;
+  height: 400px;
+  width: 400px;
+  color: #fff;
+  text-align: center; }
+
+.warning {
+  font-size: 80px;
+  color: #fff; }
+
+/*# sourceMappingURL=index.css.map */
